@@ -1,4 +1,5 @@
 import React from 'react'
+import { galleryData } from '../data/gallery'
 
 const Gallery = () => {
   return (
