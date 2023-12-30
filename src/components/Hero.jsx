@@ -122,7 +122,8 @@ const Hero = () => {
             }}
             justifyContent={"center"}
           >
-            <Typography variant="h1" fontFamily={"Marcellus"} fontWeight={600} textAlign={"center"} color={"#D8E9A8"}>
+            <Typography variant="h1" fontFamily={"Marcellus"} fontWeight={600} textAlign={"center"} color={"#D8E9A8"} 
+            data-aos="zoom-in">
               <span style={{
                 color: 'red'
               }}>SIT</span>MUN 20<span style={{
