@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import styles from '../../pages/Gallery.module.css';
-import ReactDOM from 'react-dom';
-import ReactImageZoom from 'react-image-zoom';
+import React, { useState, useEffect } from "react";
+import styles from "../../pages/Gallery.module.css";
+import ReactDOM from "react-dom";
+import ReactImageZoom from "react-image-zoom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { galleryData } from '../../data/gallery';
+import { galleryData } from "../../data/gallery";
 const Gallery = () => {
   // const [galleryData, setGalleryData] = useState({ gallery1: [], gallery2: [] });
 
@@ -51,8 +51,7 @@ const Gallery = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 12000,
-    
-    rtl:true,
+    rtl: true,
     responsive: [
       {
         breakpoint: 800,
@@ -78,7 +77,7 @@ const Gallery = () => {
       },
     ],
   };
-console.log(galleryData);
+  console.log(galleryData);
 
   // useEffect(() => {
   //   const fetchData = async () => {
@@ -96,27 +95,44 @@ console.log(galleryData);
   //   fetchData();
   // }, []);
 
-  
   return (
     <div>
-      
-        <div >
+      <div>
         <Slider {...settings} className={styles.slider}>
-          {galleryData?.map((item,id) => {
-            {id%2==0 &&<div key={id} className={styles.sliderItem}>
-              <img src={item.url} alt={`Image ${id}`} className={styles.sliderimg}/>
-            </div>}
-        })}
-          </Slider>
-          <Slider {...settings1} className={styles.slider1}>
-          {galleryData?.map((item,id) => {
-            {id%2!=0 &&<div key={id} className={styles.sliderItem}>
-              <img src={item.url} alt={`Image ${id}`} className={styles.sliderimg}/>
-            </div>}
-        })}
-          </Slider>
-        </div>
-      
+          {galleryData?.map((item, id) => {
+            if (id % 2 == 0) {
+              return (
+                <div key={id} className={styles.sliderItem}>
+                  <img
+                    src={item.url}
+                    alt={`Image ${id}`}
+                    className={styles.sliderimg}
+                  />
+                </div>
+              );
+            } else {
+              return null;
+            }
+          })}
+        </Slider>
+        <Slider {...settings1} className={styles.slider1}>
+          {galleryData?.map((item, id) => {
+            if (id % 2 != 0) {
+              return (
+                <div key={id} className={styles.sliderItem}>
+                  <img
+                    src={item.url}
+                    alt={`Image ${id}`}
+                    className={styles.sliderimg}
+                  />
+                </div>
+              );
+            } else {
+              return null;
+            }
+          })}
+        </Slider>
+      </div>
     </div>
   );
 };
