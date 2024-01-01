@@ -27,10 +27,11 @@ body{
   .sliderimg {
     height: 240px;
     width: 95%; 
-    
+    object-fit: cover;
+    border-radius: 3%;
   }
   
-  .sliderItem img:hover {
+  .sliderItem:hover img {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);

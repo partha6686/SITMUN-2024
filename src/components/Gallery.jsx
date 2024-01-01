@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import styles from '../pages/Gallery.module.css';
-import ReactDOM from 'react-dom';
-import ReactImageZoom from 'react-image-zoom';
+import React, { useState, useEffect } from "react";
+import styles from "../pages/Gallery.module.css";
+import ReactDOM from "react-dom";
+import ReactImageZoom from "react-image-zoom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { galleryData } from "../data/gallery";
 const Gallery = () => {
-  const [galleryData, setGalleryData] = useState({ gallery1: [], gallery2: [] });
+  // const [galleryData, setGalleryData] = useState({ gallery1: [], gallery2: [] });
 
   const settings = {
     dots: false,
@@ -50,8 +51,7 @@ const Gallery = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 12000,
-    
-    rtl:true,
+    rtl: true,
     responsive: [
       {
         breakpoint: 800,
@@ -77,44 +77,62 @@ const Gallery = () => {
       },
     ],
   };
+  console.log(galleryData);
 
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const res1 = await fetch("http://localhost:4000/gallery1");
+  //       const res2 = await fetch("http://localhost:4000/gallery2");
+  //       const data1 = await res1.json();
+  //       const data2 = await res2.json();
+  //       setGalleryData({ gallery1: data1, gallery2: data2 });
+  //     } catch (error) {
+  //       console.error('Error fetching data:', error);
+  //     }
+  //   };
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res1 = await fetch("http://localhost:4000/gallery1");
-        const res2 = await fetch("http://localhost:4000/gallery2");
-        const data1 = await res1.json();
-        const data2 = await res2.json();
-        setGalleryData({ gallery1: data1, gallery2: data2 });
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
+  //   fetchData();
+  // }, []);
 
-    fetchData();
-  }, []);
-  
   return (
     <div>
-      
-        <div >
+      <div>
         <Slider {...settings} className={styles.slider}>
-          {galleryData.gallery1.map((item) => (
-            <div key={item.id} className={styles.sliderItem}>
-              <img src={item.url} alt={`Image ${item.id}`} className={styles.sliderimg}/>
-            </div>
-          ))}
-          </Slider>
-          <Slider {...settings1} className={styles.slider1}>
-          {galleryData.gallery2.map((item) => (
-            <div key={item.id} className={styles.sliderItem}>
-              <img src={item.url} alt={`Image ${item.id}`} className={styles.sliderimg}/>
-            </div>
-          ))}
-          </Slider>
-        </div>
-      
+          {galleryData?.map((item, id) => {
+            if (id % 2 == 0) {
+              return (
+                <div key={id} className={styles.sliderItem}>
+                  <img
+                    src={item.url}
+                    alt={`Image ${id}`}
+                    className={styles.sliderimg}
+                  />
+                </div>
+              );
+            } else {
+              return null;
+            }
+          })}
+        </Slider>
+        <Slider {...settings1} className={styles.slider1}>
+          {galleryData?.map((item, id) => {
+            if (id % 2 != 0) {
+              return (
+                <div key={id} className={styles.sliderItem}>
+                  <img
+                    src={item.url}
+                    alt={`Image ${id}`}
+                    className={styles.sliderimg}
+                  />
+                </div>
+              );
+            } else {
+              return null;
+            }
+          })}
+        </Slider>
+      </div>
     </div>
   );
 };
