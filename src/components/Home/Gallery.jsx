@@ -103,9 +103,9 @@ console.log(galleryData);
         <div >
         <Slider {...settings} className={styles.slider}>
           {galleryData?.map((item,id) => {
-            {id%2==0 &&<div key={id} className={styles.sliderItem}>
+            return {id%2==0 ? <div key={id} className={styles.sliderItem}>
               <img src={item.url} alt={`Image ${id}`} className={styles.sliderimg}/>
-            </div>}
+            </div> : null}
         })}
           </Slider>
           <Slider {...settings1} className={styles.slider1}>
