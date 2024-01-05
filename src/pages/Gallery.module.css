@@ -1,6 +1,7 @@
-body{
-  
-}
+/* body{
+  background-color: #166d3b;
+background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
+} */
 .slider {
     height: 240px;
     margin: 0 auto;
@@ -27,10 +28,11 @@ body{
   .sliderimg {
     height: 240px;
     width: 95%; 
-    
+    object-fit: cover;
+    border-radius: 3%;
   }
   
-  .sliderItem img:hover {
+  .sliderItem:hover img {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);

@@ -3,7 +3,8 @@ import Navbar from '../components/shared/Navbar'
 import Hero from '../components/Home/Hero'
 import Gallery from '../components/Home/Gallery'
 import Footer from '../components/shared/Footer'
-import About from '../components/Home/About'
+import CalcTimeDelta from '../components/Countdown'
+import Feedback from '../components/Feedback'
 
 const Home = () => {
   return (
@@ -11,7 +12,9 @@ const Home = () => {
       <Navbar />
       <Hero />
       <About />
+      <CalcTimeDelta />
       <Gallery />
+      <Feedback/>
       <Footer />
     </div>
   )
