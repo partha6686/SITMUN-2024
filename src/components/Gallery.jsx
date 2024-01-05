@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React,{ useState, useEffect,useRef } from "react";
 import styles from "../pages/Gallery.module.css";
 import ReactDOM from "react-dom";
 import ReactImageZoom from "react-image-zoom";
@@ -8,7 +8,7 @@ import Slider from "react-slick";
 import { galleryData } from "../data/gallery";
 const Gallery = () => {
   // const [galleryData, setGalleryData] = useState({ gallery1: [], gallery2: [] });
-
+  const sliderRef = useRef(null);
   const settings = {
     dots: false,
     infinite: true,
@@ -98,7 +98,7 @@ const Gallery = () => {
   return (
     <div>
       <div>
-        <Slider {...settings} className={styles.slider}>
+        <Slider {...settings} ref={sliderRef} className={styles.slider}>
           {galleryData?.map((item, id) => {
             if (id % 2 == 0) {
               return (
@@ -115,7 +115,7 @@ const Gallery = () => {
             }
           })}
         </Slider>
-        <Slider {...settings1} className={styles.slider1}>
+        <Slider {...settings1} ref={sliderRef} className={styles.slider1}>
           {galleryData?.map((item, id) => {
             if (id % 2 != 0) {
               return (
