@@ -11,6 +11,7 @@ const Gallery = () => {
   const sliderRef = useRef(null);
   const settings = {
     dots: false,
+    arrows:false,
     infinite: true,
     speed: 12000,
     slidesToShow: 4,
@@ -47,6 +48,7 @@ const Gallery = () => {
   const settings1 = {
     dots: false,
     infinite: true,
+    arrows:false,
     speed: 12000,
     slidesToShow: 4,
     slidesToScroll: 1,
