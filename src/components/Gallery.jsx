@@ -16,6 +16,7 @@ const Gallery = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
+    // pauseOnHover: true,
     autoplaySpeed: 12000,
     responsive: [
       {
@@ -49,6 +50,7 @@ const Gallery = () => {
     speed: 12000,
     slidesToShow: 4,
     slidesToScroll: 1,
+    // pauseOnHover: true,
     autoplay: true,
     autoplaySpeed: 12000,
     rtl: true,
@@ -97,7 +99,7 @@ const Gallery = () => {
 
   return (
     <div>
-      <div>
+      <div className={styles.Container}>
         <Slider {...settings} ref={sliderRef} className={styles.slider}>
           {galleryData?.map((item, id) => {
             if (id % 2 == 0) {

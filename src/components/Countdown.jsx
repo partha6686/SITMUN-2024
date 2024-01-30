@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { zeroPad } from 'react-countdown';
 import styles from "../pages/Countdown.module.css"
 const CalcTimeDelta = () => {
     const targetDate = '2024-01-30T11:50:59';
@@ -31,10 +32,10 @@ const CalcTimeDelta = () => {
         <div className={styles.head}><h1>Live In</h1> </div>
         
       <div className={styles.cont}>
-            <div className={styles.day}><h1 >{timeDelta.days}  </h1><p>days  </p></div>
-            <div className={styles.hour}><h1 > {timeDelta.hours}  </h1><p>hours </p></div>
-            <div className={styles.min}><h1 > {timeDelta.minutes}  </h1><p>minutes </p></div>
-            <div className={styles.sec}><h1 > {timeDelta.seconds} </h1><p>seconds </p></div>
+            <div className={styles.day}><h1 >{zeroPad(timeDelta.days)}  </h1><p>days  </p></div>
+            <div className={styles.hour}><h1 > {zeroPad(timeDelta.hours)}  </h1><p>hours </p></div>
+            <div className={styles.min}><h1 > {zeroPad(timeDelta.minutes)}  </h1><p>minutes </p></div>
+            <div className={styles.sec}><h1 > {zeroPad(timeDelta.seconds)} </h1><p>seconds </p></div>
         </div>
     </div>
   );
