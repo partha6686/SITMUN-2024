@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { zeroPad } from 'react-countdown';
 import styles from "../pages/Countdown.module.css"
 const CalcTimeDelta = () => {
-    const targetDate = '2024-01-30T11:50:59';
+    const targetDate = '2024-03-27T11:59:59';
 
   const calculateTimeDelta = () => {
     const now = new Date().getTime();
