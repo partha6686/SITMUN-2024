@@ -1,8 +1,9 @@
 import React from 'react'
+import Hero, { SideBar } from '../components/Home/Hero'
 
 const Team = () => {
   return (
-    <div>Hello</div>
+    <SideBar />
   )
 }
 

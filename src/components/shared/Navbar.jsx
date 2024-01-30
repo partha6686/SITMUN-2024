@@ -10,6 +10,7 @@ import Menu from "@mui/material/Menu";
 import { MenuItem, Button } from "@mui/material";
 
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const pages = ["Products", "Pricing", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];

@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { galleryData } from "../../data/gallery";
+import { Typography } from "@mui/material";
 const Gallery = () => {
   // const [galleryData, setGalleryData] = useState({ gallery1: [], gallery2: [] });
 
@@ -95,7 +96,8 @@ const Gallery = () => {
   // }, []);
 
   return (
-    <div>
+    <div className={styles.main}>
+      <Typography variant="h2" fontFamily={"Marcellus"} textAlign={"center"} paddingBottom={"5vh"}>Artistic Compilations</Typography>
       <div>
         <Slider {...settings} className={styles.slider}>
           {galleryData?.map((item, id) => {
