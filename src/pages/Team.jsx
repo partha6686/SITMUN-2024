@@ -3,7 +3,7 @@ import Hero, { SideBar } from '../components/Home/Hero'
 
 const Team = () => {
   return (
-    <SideBar />
+    <Hero />
   )
 }
 

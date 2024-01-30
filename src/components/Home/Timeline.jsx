@@ -17,6 +17,7 @@ const TimelineView = () => {
         justifyContent: "center",
         alignItems: "center",
         padding: "5vh 0",
+        background: '#000'
       }}
     >
       <Container>
@@ -100,6 +101,7 @@ function EventDetail({ heading, details, odd }) {
           borderRight: odd % 2 != 0 ? "0" : "3px solid rgba(78,159,61,1)",
           borderLeft: odd % 2 == 0 ? "0" : "3px solid rgba(78,159,61,1)",
           boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+          background: 'linear-gradient(137deg, rgba(78,159,61,1) 0%, rgba(0,0,0,1) 100%)'
         }}
       >
         <Typography

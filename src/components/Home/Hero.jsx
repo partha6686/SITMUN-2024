@@ -150,13 +150,13 @@ export const SideBar = () => {
             </Typography>
           </NavLink>
 
-          <NavLink to={"/"}>
+          <NavLink to={"/xyz"}>
             <Typography
               variant="h6"
               fontFamily={"DM Serif Display"}
               className="navLink"
             >
-              Home
+              Random
             </Typography>
           </NavLink>
         </Stack>
