@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=PT+Sans+Narrow:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Oswald:wght@500&family=PT+Sans+Narrow:wght@700&display=swap');
+
+.about-event-container {
+    background-color: #00040f;
+    padding: 0 5vw;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease-in-out;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (width < 700px) {
+    .about-main-container {
+        flex-direction: column;
+    }
+
+    .about-event-container {
+        padding: 10px;
+    }
+
+    .text-container {
+        padding: 10px;
+    }
+}
+
+.about-event-container:hover {
+    background-color: #0f0b0bfe;
+}
+
+.about-main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-container {
+    flex: 1;
+    color: rgb(199, 203, 238);
+    font-family: PT Sans Narrow;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* transition: transform 0.3s ease-in-out,border-color 0.3s ease-in-out; */
+    border-radius: 21px;
+}
+
+/* .text-container:hover {
+    transform: scale(1.07); 
+    border: 2px solid black;
+    background-color: black;
+  } */
+.about-image-container {
+    flex: 1;
+    margin-left: 20px;
+    /* Add margin for separation */
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.heading {
+    color: #5ec82d;
+    font-family: Marcellus;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.about-image-container img {
+    margin-top: 75px;
+    width: 375px;
+    height: 250px;
+    border-radius: 22px;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    -webkit-transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.about-image-container:hover img {
+    transform: scale(1.07);
+    /* Adjust the scale factor as needed for the zoom effect */
+    /* border: 2px solid #00ff4c;  Adjust the animation duration as needed */
+    box-shadow: 0 0 0 2px rgb(23, 22, 22), 0 0 0 4px #00ff4c;
+}

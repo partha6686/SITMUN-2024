@@ -149,16 +149,6 @@ export const SideBar = () => {
               Committee
             </Typography>
           </NavLink>
-
-          <NavLink to={"/xyz"}>
-            <Typography
-              variant="h6"
-              fontFamily={"DM Serif Display"}
-              className="navLink"
-            >
-              Random
-            </Typography>
-          </NavLink>
         </Stack>
   )
 }
