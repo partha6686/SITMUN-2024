@@ -1,6 +1,6 @@
-import React from 'react';
-import '../../styles/message.css'; // Import your CSS file
-import SgImage from "../../assets/sg.jpg"
+import React from "react";
+import "../../styles/message.css"; // Import your CSS file
+import SgImage from "../../assets/sg.jpg";
 
 const SecGenMsg = () => {
   return (
@@ -10,14 +10,42 @@ const SecGenMsg = () => {
           <h1 className="gradient-text">Message from Secretary General</h1>
         </div>
         <p>
-          "In the realm of unwavering resolutions, SITMUN has consistently championed the spirit of dynamic debate, hosting some of the most thrilling and intellectually stimulating competitions throughout its existence. Whether facing the challenges of the year 2021 or navigating through the complex market conditions of 2022, our resolute determination has consistently drawn immense interest, bringing together diverse minds in a collective effort to create something extraordinary. As we eagerly anticipate the advent of the exhilarating year 2024, we proudly present the 6th edition of SITMUN.In a world that yearns for transformation, we believe it calls for individualistic mindsets to chart a new course. Join us this March 2024 to be part of a unique journey where we strive to build the future and engage in compelling debates to foster a fresh understanding. The spirit of SITMUN beckons you to participate in this transformative experience, where ideas intersect, perspectives harmonize, and a new chapter of diplomacy unfolds. Let us collectively shape the discourse and pave the way for a future that mirrors the collective brilliance of diverse intellects. See you at SITMUN 2024, where words collide, and the future is crafted."
+          "My name is Namrata Mishra, and it is with distinct honour that I
+          welcome you all to the 6th iteration of the SIT Model United Nations
+          conference! I have been a part of SITMUN as a Delegate, Coordinator,
+          and OC Member, and it is now my privilege to lead the Secretariat as
+          Secretary General for the conference. With my incredible team, I am
+          confident that this year’s conference will surpass all expectations
+          for SITMUN and redefine what our conference has historically
+          delivered. SITMUN's mission is simple; we strive to provide young
+          leaders a stimulating platform to debate, discuss, and resolve
+          critical global issues by promoting equity, creativity, and diplomacy.
+          At SITMUN, Model United Nations is more than a simulation of the UN,
+          but rather, it is a space for delegates to delve into the world of
+          international issues and develop stronger public speaking,
+          communication, critical thinking, and diplomacy skills. Whether you
+          are the most passionate and knowledgeable political thinker or,
+          perhaps, are someone foreign to the world of diplomacy, SITMUN is for
+          you. To my delegates— SITMUN is your space to collaborate, engage and
+          debate the world of today, to lead the world of tomorrow. The legacy
+          of SITMUN is established by a long line of predecessors who have
+          established our conference as one of the best in the circuit. This
+          year is no exception, as the 6th iteration of SITMUN could not be
+          possible without the contributions of my hard-working, passionate, and
+          dedicated Secretariat and OC members. They are, genuinely, one of the
+          most brilliant individuals I know, and I have no doubt that their
+          talents and efforts will reflect in your SITMUN experience. I am
+          thrilled to see what SITMUN 2024 will bring, and I am incredibly
+          excited to welcome you all to the conference this March."
         </p>
       </div>
       <div className="image-container">
         <img src={SgImage} alt="Event Image" />
         <div className="signature">
           <div className="dance">Namrata Mishra</div>
-          <div className="sec"><b>Secretary General,SITMUN 2024</b></div>
+          <div className="sec">
+            <b>Secretary General,SITMUN 2024</b>
+          </div>
         </div>
       </div>
     </div>
