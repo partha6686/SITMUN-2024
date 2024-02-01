@@ -1,9 +1,10 @@
 import React from 'react'
-
-const Heading = () => {
+import styles from "../../styles/Header.module.css"
+const Heading = (props) => {
+  const {Heading}=props;
   return (
-    <div>Heading</div>
+    <div className={styles.head}><h1>{Heading}</h1></div>
   )
 }
 
-export default Heading
+export default Heading;

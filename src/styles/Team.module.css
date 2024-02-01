@@ -23,7 +23,7 @@
     font-size: 65px;
     font-weight: 800;
     text-align: center;
-    color:#FFFFFF;
+    /* color:#FFFFFF; */
     margin:-25% 0% 25% 0%;
     
 }
@@ -31,7 +31,7 @@
   backdrop-filter: blur(5px);
   }
 .heading h1{
-  color: #16621f ;
+  /* color: #16621f ; */
   font-size:clamp(2.5rem, 10vw, 5rem);
   margin: -36px auto 21px;
   text-align: center;
@@ -49,7 +49,7 @@
 }
 
 .team{
-    color:#16621f;
+    /* color:#16621f; */
 }
 
 .cardbody{

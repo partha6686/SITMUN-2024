@@ -23,8 +23,8 @@ const Home = () => {
     >
       <Navbar />
       <Hero />
-      <CalcTimeDelta />
       <About />
+      <CalcTimeDelta />
       <Gallery />
       <TimelineView />
       <Feedback />
