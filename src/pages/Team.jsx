@@ -17,7 +17,9 @@ import {
 
 import { teamdata } from "../data/team";
 import { SideBar } from "../components/Home/Hero";
+import Heading from "../components/shared/Heading";
 const Team = () => {
+  const props = { Heading: "MEET OUR TEAM" };
   const [order, setorder] = useState("Core Secretariat");
   return (
     <div>
@@ -137,9 +139,7 @@ const Team = () => {
           </div>
           <div className={styles.meet}>
             <div className={styles.our}>
-              <h1>
-                Meet Our <span className={styles.team}>Team</span>
-              </h1>
+            <h1><Heading {...props} /></h1>
             </div>
           </div>
         </div>

@@ -6,6 +6,7 @@ import Committee from "./pages/Committee";
 function App() {
   return (
     <>
+    
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -13,8 +14,9 @@ function App() {
           <Route path="/committee" element={<Committee />} />
         </Routes>
       </BrowserRouter>
+     
     </>
   );
-}
+  }
 
 export default App;
