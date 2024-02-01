@@ -1,0 +1,28 @@
+.active {
+    /* background: #6e9600; */
+    color: #1E5128;
+    padding: 3vh 0.5vw;
+    text-decoration: none;
+    margin-left: 2vw;
+}
+
+.active:hover h6 {
+    color: aqua;
+}
+.active h6 {
+    color: greenyellow;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navLink {
+    transform: rotate(270deg);
+    text-transform: uppercase;
+    padding: 1vw 1vh;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}

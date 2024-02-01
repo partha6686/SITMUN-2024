@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "../../pages/Gallery.module.css";
 import ReactDOM from "react-dom";
-import ReactImageZoom from "react-image-zoom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { galleryData } from "../../data/gallery";
+import { Typography } from "@mui/material";
 const Gallery = () => {
   // const [galleryData, setGalleryData] = useState({ gallery1: [], gallery2: [] });
+
+  const sliderRef1 = useRef(null);
 
   const settings = {
     dots: false,
@@ -96,9 +98,9 @@ const Gallery = () => {
   // }, []);
 
   return (
-    <div>
+    <div className={styles.main}>
       <div>
-        <Slider {...settings} className={styles.slider}>
+        <Slider {...settings} className={styles.slider} ref={sliderRef1}>
           {galleryData?.map((item, id) => {
             if (id % 2 == 0) {
               return (
@@ -115,7 +117,7 @@ const Gallery = () => {
             }
           })}
         </Slider>
-        <Slider {...settings1} className={styles.slider1}>
+        <Slider {...settings1} className={styles.slider1} ref={sliderRef1}>
           {galleryData?.map((item, id) => {
             if (id % 2 != 0) {
               return (
