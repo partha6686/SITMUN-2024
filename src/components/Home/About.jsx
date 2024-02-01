@@ -22,26 +22,6 @@ import "../../styles/about.css";
 
 
 const About = () => {
-  // useEffect(() => {
-  //   // Initialize Swiper when the component mounts
-  //   const swiper = new Swiper(".swiper", {
-  //     effect: "cards",
-  //     grabCursor: true,
-  //     initialSlide: 2,
-  //     speed: 500,
-  //     loop: true,
-  //     rotate: true,
-  //     mousewheel: {
-  //       invert: false,
-  //     },
-  //   });
-
-  //   // Cleanup Swiper when the component unmounts
-  //   return () => {
-  //     swiper.destroy();
-  //   };
-  // }, []);
-
   return (
     <section>
       <div className="content">
@@ -54,8 +34,6 @@ const About = () => {
         <Swiper className="swiper">
           <div className="swiper-wrapper">
             <SwiperSlide className="swiper-slide">
-              {/* <span>8.5</span>
-              <h2>The Queen's Gambit</h2> */}
             </SwiperSlide>
           </div>
         </Swiper>
