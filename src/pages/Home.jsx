@@ -5,10 +5,12 @@ import Gallery from "../components/Home/Gallery";
 import Footer from "../components/shared/Footer";
 import CalcTimeDelta from "../components/Countdown";
 import Feedback from "../components/Feedback";
-import About from "../components/Home/AboutUs";
+import About from "../components/Home/About";
 import TimelineView from "../components/Home/Timeline";
 import HoverFooter from "../components/shared/HoverFooter";
 import SecGenMsg from "../components/Home/Message";
+
+import "../styles/circles.css"
 
 const Home = () => {
   return (
