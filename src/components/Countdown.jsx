@@ -38,19 +38,19 @@ const CalcTimeDelta = () => {
 
         <div className={styles.cont}>
           <div className={styles.day}>
-            <h1>{zeropad(timeDelta.days)} </h1>
+            <h1>{zeroPad(timeDelta.days)} </h1>
             <h5>days </h5>
           </div>
           <div className={styles.hour}>
-            <h1>{zeropad (timeDelta.hours)} </h1>
+            <h1>{zeroPad (timeDelta.hours)} </h1>
             <h5>hours </h5>
           </div>
           <div className={styles.min}>
-            <h1> {zeropad(timeDelta.minutes)} </h1>
+            <h1> {zeroPad(timeDelta.minutes)} </h1>
             <h5>minutes </h5>
           </div>
           <div className={styles.sec}>
-            <h1> {zeropad(timeDelta.seconds)} </h1>
+            <h1> {zeroPad(timeDelta.seconds)} </h1>
             <h5>seconds </h5>
           </div>
         </div>
