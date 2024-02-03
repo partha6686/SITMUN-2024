@@ -21,7 +21,6 @@ body {
 }
 
 .testimonial {
-  width: fit-content;
   height: fit-content;
 }
 
@@ -30,11 +29,9 @@ body {
   background: rgb(102, 105, 109);
   background: linear-gradient(147deg, #166d3b 0%, #000000 74%);;
   border-radius: 20px;
-
-  padding: 30px;
   text-align: center;
   box-shadow: 0 0 10px 0 #555;
-  margin: 66px;
+ 
 }
 
 .quotes {
@@ -45,7 +42,7 @@ body {
   /* top:1142px; */
   justify-content: flex-end;
   /* float: right; */
-  margin: -20% 0% 0% 70%;
+  margin:-88px 0px 0px 264px;
   /* background: rgb(0, 225, 25); */
 }
 
@@ -61,7 +58,8 @@ body {
 }
 
 .testimonial_text {
-  margin-bottom: 20px;
+  margin-bottom: -30px;
+  padding-left: 17px;
 }
 
 .testimonial_text p {
@@ -98,9 +96,124 @@ body {
 
 
 .desc h3 {
+  color: white;
   text-align: right;
 }
 
 .desc p {
   text-align: right;
+}
+
+.main {
+  background: #000;
+  padding: 20px; 
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.testimonial_bubble {
+  padding:39px 24px 16px 45px;
+  margin: 3vw;
+}
+
+.testimonial_text p {
+  text-align: justify;
+  padding-top:0px ;
+  padding-left: 1.5vw; 
+}
+.testimonial_author img {
+  width: 8vw; 
+  height: 8vw;
+}
+.desc{
+  margin-top: 8%;
+}
+.desc h3 {
+  color: white;
+  text-align: right;
+  font-size: 19px;
+}
+
+.desc p {
+  text-align: right;
+}
+
+@media screen and (max-width: 800px)and (min-width:800px) {
+  .testimonial_bubble {
+    padding: 3vw;
+    margin: 5vw;
+  }
+  .testimonial p{
+    padding-top: 12px;
+  }
+.quotes{
+  margin: -18% 0% 0% 58%;
+}.desc p{
+  padding-top:0px;
+}
+  .desc h3{
+    font-size: medium;
+  }
+  .testimonial_author img {
+    width: 11vw;
+    height: 11vw;
+  }
+  svg{
+    width: 82% !important;
+  }
+}
+@media screen and (max-width: 1025px )and (min-width:800px) {
+  .testimonial_bubble {
+    padding: 30px 26px 19px 12px;
+    margin: 4vw;
+  }
+  .quotes{
+    margin: -17% 0% 0% 60%;
+  }
+  .testimonial_text p{
+    padding-left:22px;
+  }
+  svg{
+    width: 75% !important;
+  }
+  .testimonial_author img {
+    width: 9vw;
+    height: 9vw;
+  }
+  
+}
+@media screen and (max-width: 500px) {
+  .testimonial_bubble {
+    padding: 3vw 3vw 5vw 8vw;
+    margin: 12vw;
+  }
+  .testimonial_text p{
+    margin-top: 7px;
+  }
+  svg{
+    width: 75% !important;
+  }
+.quotes{
+  margin: -14% 0% 0% 48%;
+}
+p{
+  font-size: 14px;
+}
+  .desc h3{
+    margin:0px 0px -11px 0px;
+    font-size: 17px;
+  }
+  .desc p{
+    margin-top: 9px;
+  }
+  .testimonial_author img {
+    width: 20vw;
+    height: 20vw;
+  }
+  
 }
