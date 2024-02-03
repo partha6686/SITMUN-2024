@@ -35,7 +35,16 @@ export default function Navbar() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1, background: "#4E9F3D", width: "100%" }}>
+    <Box
+      sx={{
+        flexGrow: 0,
+        background: "transparent",
+        width: "100%",
+        "& .MuiPaper-root": {
+          maxHeight: "100vh",
+        },
+      }}
+    >
       <AppBar
         position="fixed"
         sx={{ background: "transparent", boxShadow: "none", color: "black" }}
@@ -68,7 +77,9 @@ export default function Navbar() {
             <MenuIcon />
           </IconButton>
         </Toolbar>
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{
+          background: 'transparent'
+        }}>
           <Menu
             anchorEl={anchorElNav}
             anchorOrigin={{
@@ -81,12 +92,26 @@ export default function Navbar() {
             }}
             open={Boolean(anchorElUser)}
             onClose={handleCloseUserMenu}
+            sx={{
+              flexGrow: 0.3,
+              "& .MuiList-root": {
+                color: "red",
+                width: "30vw !important",
+                minHeight: "70vh !important",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-around",
+                alignItems: "center",
+                background: `rgba(0, 112, 73, 0.374)`,
+                backdropFilter: "blur(1000px)",
+              },
+            }}
           >
             {pages.map((setting) => (
               <MenuItem
                 key={setting}
                 onClick={handleCloseUserMenu}
-                sx={{ width: "50vw" }}
+                // sx={{ width: "30vw" }}
               >
                 <Typography textAlign="center">{setting}</Typography>
               </MenuItem>

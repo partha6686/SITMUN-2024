@@ -10,15 +10,17 @@ const Gallery = () => {
   // const [galleryData, setGalleryData] = useState({ gallery1: [], gallery2: [] });
 
   const sliderRef1 = useRef(null);
+  const sliderRef2 = useRef(null);
 
   const settings = {
     dots: false,
     infinite: true,
-    speed: 12000,
+    speed:4000,
+    cssEase: 'linear',
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 12000,
+    autoplaySpeed: 0,
     responsive: [
       {
         breakpoint: 800,
@@ -48,11 +50,12 @@ const Gallery = () => {
   const settings1 = {
     dots: false,
     infinite: true,
-    speed: 12000,
+    speed:4000,
+    cssEase: 'linear',
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 12000,
+    autoplaySpeed: 0,
     rtl: true,
     responsive: [
       {
@@ -117,7 +120,7 @@ const Gallery = () => {
             }
           })}
         </Slider>
-        <Slider {...settings1} className={styles.slider1} ref={sliderRef1}>
+        <Slider {...settings1} className={styles.slider1} ref={sliderRef2}>
           {galleryData?.map((item, id) => {
             if (id % 2 != 0) {
               return (

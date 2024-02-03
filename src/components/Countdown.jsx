@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { zeroPad } from "react-countdown";
 import styles from "../pages/Countdown.module.css";
+import Heading from "./shared/Heading";
 const CalcTimeDelta = () => {
   const targetDate = "2024-03-28T11:50:59";
 
@@ -32,9 +33,9 @@ const CalcTimeDelta = () => {
   return (
     <div className={styles.main}>
       <div className={styles.box}>
-        <div className={styles.head}>
-          <h1>Live In</h1>{" "}
-        </div>
+        <Heading 
+          heading={"Live In"}
+        />
 
         <div className={styles.cont}>
           <div className={styles.day}>

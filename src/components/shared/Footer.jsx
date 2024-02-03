@@ -12,39 +12,82 @@ export default function Footer() {
     <Box
       component="footer"
       sx={{
-        background: "-webkit-linear-gradient(30deg, rgba(78,159,61,1) 50%, #137300 50%)",
+        background:
+          "-webkit-linear-gradient(30deg, rgba(78,159,61,1) 50%, #137300 50%)",
         p: 6,
-        boxShadow: 'rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset'
+        boxShadow:
+          "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset",
       }}
     >
       <Container maxWidth="lg">
-        <Grid container spacing={5} alignItems={"baseline"} justifyContent={"space-between"} width={"100%"}>
+        <Grid
+          container
+          spacing={5}
+          alignItems={"baseline"}
+          justifyContent={"space-between"}
+          width={"100%"}
+        >
           <Grid item xs={12} sm={4}>
-            <img src={Logo} alt="SITMUN" style={{ width: '50%'}}/>
-            <Typography variant="h5" color="white" gutterBottom fontFamily={"Marcellus"}>
+            <img src={Logo} alt="SITMUN" style={{ width: "50%" }} />
+            <Typography
+              variant="h5"
+              color="white"
+              gutterBottom
+              fontFamily={"Marcellus"}
+            >
               About Us
             </Typography>
-            <Typography variant="subtitle1" color="text.secondary" fontFamily={"Nunito Sans"} fontWeight={600}>
+            <Typography
+              variant="subtitle1"
+              color="text.secondary"
+              fontFamily={"Nunito Sans"}
+              fontWeight={600}
+            >
               We are XYZ company, dedicated to providing the best service to our
               customers.
             </Typography>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Typography variant="h5" color="white" gutterBottom fontFamily={"Marcellus"}>
+            <Typography
+              variant="h5"
+              color="white"
+              gutterBottom
+              fontFamily={"Marcellus"}
+            >
               Contact Us
             </Typography>
-            <Typography variant="subtitle1" color="text.secondary" fontFamily={"Nunito Sans"} fontWeight={600}>
+            <Typography
+              variant="subtitle1"
+              color="text.secondary"
+              fontFamily={"Nunito Sans"}
+              fontWeight={600}
+            >
               123 Main Street, Anytown, USA
             </Typography>
-            <Typography variant="subtitle1" color="text.secondary" fontFamily={"Nunito Sans"} fontWeight={600}>
+            <Typography
+              variant="subtitle1"
+              color="text.secondary"
+              fontFamily={"Nunito Sans"}
+              fontWeight={600}
+            >
               Email: [email protected]
             </Typography>
-            <Typography variant="subtitle1" color="text.secondary" fontFamily={"Nunito Sans"} fontWeight={600}>
+            <Typography
+              variant="subtitle1"
+              color="text.secondary"
+              fontFamily={"Nunito Sans"}
+              fontWeight={600}
+            >
               Phone: +1 234 567 8901
             </Typography>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Typography variant="h5" color="white" gutterBottom fontFamily={"Marcellus"}>
+            <Typography
+              variant="h5"
+              color="white"
+              gutterBottom
+              fontFamily={"Marcellus"}
+            >
               Follow Us
             </Typography>
             <Link href="https://www.facebook.com/" color="inherit">
@@ -63,9 +106,18 @@ export default function Footer() {
           </Grid>
         </Grid>
         <Box mt={5}>
-          <Typography variant="subtitle1" color="text.secondary" align="center" fontFamily={"Nunito Sans"}>
+          <Typography
+            variant="subtitle1"
+            color="text.secondary"
+            align="center"
+            fontFamily={"Nunito Sans"}
+          >
             {"Copyright © "}
-            <Link color="inherit" href="https://your-website.com/" fontFamily={"Nunito Sans"}>
+            <Link
+              color="inherit"
+              href="https://your-website.com/"
+              fontFamily={"Nunito Sans"}
+            >
               Your Website
             </Link>{" "}
             {new Date().getFullYear()}

@@ -2,6 +2,7 @@
   background-color: #166d3b;
 background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
 } */
+@import "http://localhost:5173/node_modules/slick-carousel/slick/fonts/slick.woff";
 .slider {
     height: 240px;
     margin: 0 auto;
@@ -23,7 +24,9 @@ background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
     overflow: hidden;
     /* border: 2px solid green; */
   }
-  
+  .bgclr{
+    background-color: aliceblue;
+  }
   .sliderimg {
     height: 240px;
     width: 100%; 

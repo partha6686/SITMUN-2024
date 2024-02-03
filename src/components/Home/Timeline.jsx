@@ -8,6 +8,19 @@ import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import Typography from "@mui/material/Typography";
 import { Box, Container, Stack } from "@mui/material";
+import Heading from "../shared/Heading";
+import { timelineOppositeContentClasses } from "@mui/lab/TimelineOppositeContent";
+// import { makeStyles } from '@mui/styles';
+
+// const useStyles = makeStyles((theme) => ({
+//   customTimelineUi: {
+//     '&.MuiTimelineItem-missingOppositeContent': {
+//       flexGrow: 0,
+//     },
+//   }
+// }))
+
+import "../../styles/circles.css"
 
 const TimelineView = () => {
   return (
@@ -17,19 +30,25 @@ const TimelineView = () => {
         justifyContent: "center",
         alignItems: "center",
         padding: "5vh 0",
-        background: '#000'
+        background: "#000",
       }}
     >
       <Container>
         <Stack spacing={5}>
-          <Typography
+          {/* <Typography
             variant="h2"
             fontFamily={"Marcellus"}
             textAlign={"center"}
           >
             SITMUN 2024 TIMELINE
-          </Typography>
-          <CustomizedTimeline />
+          </Typography> */}
+          <Heading heading={"SITMUN 2024 TIMELINE"} />
+          <Box display={{ sm: "flex", xs: "none" }}>
+            <CustomizedTimeline />
+          </Box>
+          <Box display={{ sm: "none", xs: "flex" }}>
+            <CustomizedTimelineMobile />
+          </Box>
         </Stack>
       </Container>
     </Box>
@@ -73,9 +92,9 @@ const eventTimeline = [
 
 function CustomizedTimeline() {
   return (
-    <Timeline position="alternate">
+    <Timeline>
       {eventTimeline.map((item, i) => (
-        <TimelineItem key={i}>
+        <TimelineItem position="alternate" key={i}>
           <TimelineOppositeContent>
             <Typography color="#ffffff">{item.date}</Typography>
           </TimelineOppositeContent>
@@ -84,6 +103,31 @@ function CustomizedTimeline() {
             <TimelineConnector color="blue" />
           </TimelineSeparator>
           <EventDetail heading={item.heading} details={item.details} odd={i} />
+        </TimelineItem>
+      ))}
+    </Timeline>
+  );
+}
+
+function CustomizedTimelineMobile() {
+  return (
+    <Timeline
+      sx={{
+        [`& .${timelineOppositeContentClasses.root}`]: {
+          flex: 0.2,
+        },
+        '& .MuiTimelineItem-root::before': {
+          flex: 0,
+        },
+      }}
+    >
+      {eventTimeline.map((item, i) => (
+        <TimelineItem key={i}>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector color="blue" />
+          </TimelineSeparator>
+          <EventDetailMobile heading={item.heading} details={item.details} odd={i} date={item.date} />
         </TimelineItem>
       ))}
     </Timeline>
@@ -101,7 +145,8 @@ function EventDetail({ heading, details, odd }) {
           borderRight: odd % 2 != 0 ? "0" : "3px solid rgba(78,159,61,1)",
           borderLeft: odd % 2 == 0 ? "0" : "3px solid rgba(78,159,61,1)",
           boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-          background: 'linear-gradient(137deg, rgba(78,159,61,1) 0%, rgba(0,0,0,1) 100%)'
+          background:
+            "linear-gradient(137deg, rgba(78,159,61,1) 0%, rgba(0,0,0,1) 100%)",
         }}
       >
         <Typography
@@ -113,6 +158,53 @@ function EventDetail({ heading, details, odd }) {
           color={"#cce5ff"}
         >
           {heading}
+        </Typography>
+        <Typography
+          textAlign={"center"}
+          fontFamily={"DM Serif Display"}
+          color={"#f5f5dc"}
+          fontWeight={200}
+        >
+          {details}
+        </Typography>
+      </Box>
+    </TimelineContent>
+  );
+}
+
+function EventDetailMobile({ heading, details, odd, date }) {
+  return (
+    <TimelineContent>
+      <Box
+        sx={{
+          // background: '#4d9f3d89',
+          padding: "1vh 4vw 4vh",
+          borderBottom: "3px solid rgba(78,159,61,1)",
+          borderRight: odd % 2 != 0 ? "0" : "3px solid rgba(78,159,61,1)",
+          borderLeft: odd % 2 == 0 ? "0" : "3px solid rgba(78,159,61,1)",
+          boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+          background:
+            "linear-gradient(137deg, rgba(78,159,61,1) 0%, rgba(0,0,0,1) 100%)",
+            width: '100%'
+        }}
+      >
+        <Typography
+          variant="h5"
+          textAlign={"center"}
+          paddingBottom={"2vh"}
+          fontFamily={"Marcellus"}
+          fontWeight={700}
+          color={"#cce5ff"}
+        >
+          {heading}
+        </Typography>
+        <Typography
+          textAlign={"center"}
+          fontFamily={"DM Serif Display"}
+          color={"#bababa"}
+          fontWeight={200}
+        >
+          {date}
         </Typography>
         <Typography
           textAlign={"center"}
