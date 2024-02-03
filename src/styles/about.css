@@ -15,25 +15,41 @@ section {
   justify-content: center;
   align-items: center;
   background: #000;
-  min-height: 100vh;
   overflow: hidden;
+  padding: 10vh 5vw;
 }
 
 .content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 75vw;
   background: linear-gradient(
-    180deg,
-    rgba(0, 255, 0, 0.28) 0%,
-    rgba(255, 255, 255, 0) 100%
+    130deg,
+    rgba(255, 255, 255, 0)  0%,
+    rgba(0, 255, 0, 0.28) 100%
   );
   backdrop-filter: blur(30px);
   border-radius: 20px;
   box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset, 0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
   z-index: 10;
+  padding: 2vh 2vw;
+}
+
+@media(width < 900px) {
+  .content {
+    /* padding: 5vh 2vw; */
+    width: 100%;
+  }
+
+  .info {
+    width: 100% !important;
+  }
+
+  .swiper {
+    width: 100% !important;
+  }
 }
 
 .info {
@@ -41,8 +57,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 60%;
-  padding: 5vh 2vw;
+  width: 50%;
   text-align: justify;
 }
 
@@ -98,24 +113,21 @@ section {
 /* SWIPER */
 
 .swiper {
-  width: 40%;
-  height: 450px;
-  padding: 50px 0;
+  width: 45%;
+  height: 50vh;
 }
 
 .swiper-slide {
-  position: relative;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 
 .swiper-slide span {
-  position: absolute;
   top: 0;
   right: 0;
   color: #fff;
-  padding: 7px 18px;
-  margin: 10px;
+  /* padding: 7px 18px; */
+  /* margin: 10px; */
   border-radius: 20px;
   letter-spacing: 2px;
   font-size: 0.8rem;
@@ -127,18 +139,16 @@ section {
 }
 
 .swiper-slide h2 {
-  position: absolute;
   bottom: 0;
   left: 0;
   color: #fff;
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 1.4;
-  margin: 0 0 20px 20px;
 }
 
 .swiper-slide:nth-child(1n) {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../assets/sg.JPG")
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("https://images.unsplash.com/photo-1682687220509-61b8a906ca19?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
       no-repeat 50% 50% / cover;
 }
 
