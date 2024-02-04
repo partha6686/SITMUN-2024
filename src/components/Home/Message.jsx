@@ -74,8 +74,7 @@ const Message = () => {
         alignItems: "center",
         background: "#000",
         padding: "10vh 5vw",
-        position: 'relative',
-        zIndex: 10
+        position: 'relative'
       }}
     >
       <Grid
@@ -89,7 +88,8 @@ const Message = () => {
           backdropFilter: 'blur(30px)',
           borderRadius: '2rem',
           padding: '2vh 0',
-          zIndex: 10
+          zIndex: 10,
+          boxShadow: '0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset, 0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12)'
         }}
       >
         <Grid

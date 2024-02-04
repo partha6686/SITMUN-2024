@@ -8,7 +8,7 @@ import Feedback from "../components/Feedback";
 import About from "../components/Home/About";
 import TimelineView from "../components/Home/Timeline";
 import HoverFooter from "../components/shared/HoverFooter";
-import SecGenMsg from "../components/Home/Message";
+import Message from "../components/Home/Message";
 
 import "../styles/circles.css"
 
@@ -28,9 +28,9 @@ const Home = () => {
       <Gallery />
       <TimelineView />
       <Feedback />
-      <SecGenMsg />
+      <Message />
       <Footer />
-      <HoverFooter />
+      {/* <HoverFooter /> */}
     </div>
   );
 };
