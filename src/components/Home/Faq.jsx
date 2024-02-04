@@ -35,7 +35,7 @@ const Faq = () => {
       id: 4,
       question: "What is the fees structure of SITMUN?",
       answer:
-        "Regarding the fees strcuture, don't worry we got you covered, <a href='https://ik.imagekit.io/72bccx2bu/FEES.pdf' target='_blank'>click here</a> to know about fees structure and also go through the <a href='https://ik.imagekit.io/72bccx2bu/GUIDELINES.pdf?ik-sdk-version=javascript-1.4.3&updatedAt=1671606076861' target='_blank'>Registration Guidelines</a>",
+        "Regarding the fees strcuture, don't worry we got you covered, <a style={{color: '#4E9F3D!important'}} href='https://ik.imagekit.io/72bccx2bu/FEES.pdf' target='_blank'>click here</a> to know about fees structure and also go through the <a style={{color: '#4E9F3D!important'}} href='https://ik.imagekit.io/72bccx2bu/GUIDELINES.pdf?ik-sdk-version=javascript-1.4.3&updatedAt=1671606076861' target='_blank'>Registration Guidelines</a>",
     },
   ];
 

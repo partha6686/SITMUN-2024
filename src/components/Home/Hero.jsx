@@ -56,7 +56,6 @@ const Hero = () => {
         <Stack
           spacing={5}
           justifyContent={"end"}
-          // paddingBottom={{ xs: "4vh", md: 0 }}
           backgroundColor="#4E9F3D"
           width={{ md: "4rem", xs: "2rem" }}
           display={{ md: "flex", xs: "none" }}
