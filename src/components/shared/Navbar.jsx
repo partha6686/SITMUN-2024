@@ -42,7 +42,7 @@ export default function Navbar() {
       >
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
           <Button>
-            <Typography
+            {/* <Typography
               variant="h4"
               noWrap
               component="div"
@@ -55,7 +55,7 @@ export default function Navbar() {
               }}
             >
               SITMUN
-            </Typography>
+            </Typography> */}
           </Button>
           <IconButton
             size="large"

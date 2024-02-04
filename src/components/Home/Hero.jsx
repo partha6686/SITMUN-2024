@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Box, Stack, Typography, Button } from "@mui/material";
 import HeroImg from "../../assets/hero/hero2.jpg";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -6,105 +6,206 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { NavLink } from "react-router-dom";
 
 //css file
-import "../../styles/sideBar.css"
+import "../../styles/sideBar.css";
+
+const heroImgs = [
+  "https://ik.imagekit.io/lvjdjaus38/img1.jpg",
+  "https://ik.imagekit.io/lvjdjaus38/img2.jpg",
+  "https://ik.imagekit.io/lvjdjaus38/img3.JPG",
+  "https://ik.imagekit.io/lvjdjaus38/img4.jpg",
+];
 
 const Hero = () => {
+  const [imgUrlIdx, setImgUrlIdx] = useState(0);
+
+  useEffect(() => {
+    const changeImgUrl = () => {
+      setImgUrlIdx((idx) => (idx == heroImgs.length - 1 ? 0 : idx + 1));
+    };
+    const intrval = setInterval(changeImgUrl, 2000);
+    return () => {
+      clearInterval(intrval);
+    };
+  }, []);
+
   return (
     <Box
       sx={{
         height: "100vh",
         width: "100%",
         // background: `url(${HeroImg}),linear-gradient(#4e9f3d, #4E9F3D)`,
-        backgroundImage: `linear-gradient(137deg, #191a1978 0%, #191a1978 100%), url(${HeroImg})`,
+        backgroundImage: `linear-gradient(120deg, rgba(25,26,25,0.9) 71%, rgba(30,81,40,0.8) 97%), url(${heroImgs[imgUrlIdx]})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        padding: "4vh 2vw 0 0",
         boxShadow:
           "rgba(0, 0, 0, 0.3) 0px 30px 50px, rgba(0, 0, 0, 0.22) 0px 20px 15px",
+        transition: "backgroundImage ease-in",
       }}
     >
       <Stack
-        direction={{ md: "row", xs: "column" }}
+        direction={"row"}
         justifyContent={"space-between"}
         width={"100%"}
         height={"100%"}
       >
-        <SideBar />
+        {/* <SideBar /> */}
+        <Stack
+          spacing={5}
+          justifyContent={"end"}
+          // paddingBottom={{ xs: "4vh", md: 0 }}
+          backgroundColor="#4E9F3D"
+          width={{ md: "4rem", xs: "2rem" }}
+          display={{ md: "flex", xs: "none" }}
+        >
+          <Box sx={{ transform: "rotate(-90deg)" }}>
+            <Typography
+              fontFamily={"Anton"}
+              textTransform={"capitalize"}
+              fontSize={{ md: "42px", xs: "24px" }}
+              sx={{
+                width: "100vh",
+                color: "#1E5128",
+                fontWeight: "900",
+                textWrap: "nowrap",
+                letterSpacing: "2px",
+                animation: `hashtag-move 10s linear infinite`,
+              }}
+            >
+              &nbsp;#REVOLUTIONTHROUGHRESOLUTION
+            </Typography>
+          </Box>
+        </Stack>
         <Box
           sx={{
             height: "100%",
+            width: "100%",
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
             justifyContent: "center",
           }}
         >
-          <Stack
-            sx={{
-              padding: "0 3vw",
-              maxWidth: "70%",
-            }}
-            justifyContent={"center"}
-          >
+          <Stack justifyContent={"center"}>
+            {/* <Stack
+              spacing={5}
+              justifyContent={"end"}
+              backgroundColor="#4E9F3D"
+              width={{ md: "4rem", xs: "100vw" }}
+              display={{ md: "none", xs: "block" }}
+              margin={"2rem 0"}
+              overflow={"hidden"}
+            >
+              <Box>
+                <Typography
+                  fontFamily={"Anton"}
+                  textTransform={"capitalize"}
+                  fontSize={{ md: "42px", xs: "24px" }}
+                  sx={{
+                    color: "#1E5128",
+                    fontWeight: "900",
+                    textWrap: "nowrap",
+                    letterSpacing: "2px",
+                    animation: `hashtag-move 10s linear infinite`,
+                    animationDelay: "5s"
+                  }}
+                >
+                  #REVOLUTIONTHROUGHRESOLUTION
+                </Typography>
+              </Box>
+            </Stack> */}
+
             <Typography
               variant="h1"
-              fontFamily={"Marcellus"}
+              fontFamily={"DM Sans"}
+              fontWeight={900}
+              textAlign={"center"}
+              color={"#D8E9A8"}
+              sx={{ letterSpacing: "4px" }}
+              data-aos="zoom-in"
+            >
+              <span style={{ color: "#4E9F3D", fontFamily: "DM Sans" }}>
+                SIT
+              </span>
+              MUN
+            </Typography>
+            <Typography
+              variant="h1"
+              fontFamily={"DM Sans"}
               fontWeight={600}
               textAlign={"center"}
               color={"#D8E9A8"}
               data-aos="zoom-in"
             >
-              <span
-                style={{
-                  color: "red",
-                }}
-              >
-                SIT
-              </span>
-              MUN 20
-              <span
-                style={{
-                  color: "white",
-                }}
-              >
-                24
-              </span>
+              2024
             </Typography>
-            <Typography
-              variant="h4"
-              color={"#fafafa"}
-              textAlign={"center"}
-              fontFamily={"Dancing Script"}
-              fontWeight={700}
+
+            <Stack
+              spacing={5}
+              justifyContent={"end"}
+              backgroundColor="#4E9F3D"
+              width={{ md: "4rem", xs: "100vw" }}
+              display={{ md: "none", xs: "block" }}
+              margin={"4rem 0"}
+              overflow={"hidden"}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-              quasi in ratione vel amet doloremque exercitationem maxime id,
-              magni sequi perspiciatis, repudiandae necessitatibus veritatis!
-              Voluptatibus sequi iure sed commodi accusantium.
-            </Typography>
+              <Box>
+                <Typography
+                  fontFamily={"Anton"}
+                  textTransform={"capitalize"}
+                  fontSize={{ md: "42px", xs: "24px" }}
+                  sx={{
+                    color: "#1E5128",
+                    fontWeight: "900",
+                    textWrap: "nowrap",
+                    letterSpacing: "2px",
+                    animation: `hashtag-move 10s linear infinite`,
+                  }}
+                >
+                  #REVOLUTIONTHROUGHRESOLUTION
+                </Typography>
+              </Box>
+            </Stack>
+            <Stack
+              marginTop={{xs:4, md: 6}}
+              direction={"row"}
+              spacing={4}
+              justifyContent={"space-around"}
+              // maxWidth={{ md: "100%", sm: "450px", xs: "280px" }}
+              margin={"auto"}
+            >
+              <Button
+                variant="contained"
+                sx={{
+                  padding: "12px 18px",
+                  borderRadius: "28px",
+                  fontSize: 16,
+                  fontWeight: "600",
+                }}
+                color="success"
+              >
+                Register Now
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  padding: "12px 18px",
+                  borderRadius: "28px",
+                  fontSize: 16,
+                  fontWeight: "600",
+                }}
+                color="success"
+                href="#about"
+              >
+                Know More
+              </Button>
+            </Stack>
           </Stack>
         </Box>
-        <Stack
-          spacing={5}
-          justifyContent={"center"}
-          direction={{ xs: "row", md: "column" }}
-          paddingBottom={{ xs: "4vh", md: 0 }}
-        >
-          <Button>
-            <InstagramIcon
-              sx={{ fontSize: { md: "3rem", xs: "2rem" }, color: "white" }}
-            />
-          </Button>
-          <Button>
-            <WhatsAppIcon
-              sx={{ fontSize: { md: "3rem", xs: "2rem" }, color: "white" }}
-            />
-          </Button>
-        </Stack>
+        <Box width={"4rem"} display={{ md: "block", xs: "none" }}></Box>
       </Stack>
     </Box>
   );
@@ -113,42 +214,42 @@ const Hero = () => {
 export default Hero;
 
 export const SideBar = () => {
-  return(
+  return (
     <Stack
-          direction={"column-reverse"}
-          height={"100%"}
-          justifyContent={"space-around"}
-          sx={{ display: { md: "flex", sm: "none", xs: "none" } }}
+      direction={"column-reverse"}
+      height={"100%"}
+      justifyContent={"space-around"}
+      sx={{ display: { md: "flex", sm: "none", xs: "none" } }}
+    >
+      <NavLink to={"/"}>
+        <Typography
+          variant="h6"
+          fontFamily={"DM Serif Display"}
+          className="navLink"
         >
-          <NavLink to={"/"}>
-            <Typography
-              variant="h6"
-              fontFamily={"DM Serif Display"}
-              className="navLink"
-            >
-              Home
-            </Typography>
-          </NavLink>
+          Home
+        </Typography>
+      </NavLink>
 
-          <NavLink to={"/teams"}>
-            <Typography
-              variant="h6"
-              fontFamily={"DM Serif Display"}
-              className="navLink"
-            >
-              Teams
-            </Typography>
-          </NavLink>
+      <NavLink to={"/teams"}>
+        <Typography
+          variant="h6"
+          fontFamily={"DM Serif Display"}
+          className="navLink"
+        >
+          Teams
+        </Typography>
+      </NavLink>
 
-          <NavLink to={"/committee"}>
-            <Typography
-              variant="h6"
-              fontFamily={"DM Serif Display"}
-              className="navLink"
-            >
-              Committee
-            </Typography>
-          </NavLink>
-        </Stack>
-  )
-}
+      <NavLink to={"/committee"}>
+        <Typography
+          variant="h6"
+          fontFamily={"DM Serif Display"}
+          className="navLink"
+        >
+          Committee
+        </Typography>
+      </NavLink>
+    </Stack>
+  );
+};
