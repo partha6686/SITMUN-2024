@@ -8,19 +8,16 @@ body {
   margin: 0;
 }
 
-.main-container {
-  position: relative;
-  padding: 20px;
+.mainContainer {
+  padding: 5vh 5vw;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  /* height: 70vh; */
+  height: 100vh;
 }
 
-.text-container {
-  flex: 1.2;
-  margin-right: 20px;
-  background-color: rgb(56, 53, 53);
+.textContainer {
+  /* background-color: rgb(56, 53, 53); */
   padding: 20px;
   border-radius: 8px;
   height: 100%;
@@ -30,7 +27,7 @@ body {
   margin-bottom: 20px;
 }
 
-.gradient-text {
+.gradientText {
   background: linear-gradient(to right, #00ff4c, #0f5f2f);
   -webkit-background-clip: text;
   background-clip: text;
@@ -38,27 +35,31 @@ body {
   display: inline-block;
 }
 
-.text-container p {
+/* .textContainer p {
   line-height: 1.5;
-}
-
-.image-container {
-  flex: 0.8;
-  width: 300px;
+  /* width: 50%; 
   height: 100%;
-  overflow: hidden;
-  position: relative;
+} */
+
+.imageContainer {
+  width: 40vw;
+  height: 70vh;
+  /* overflow: hidden; */
+  background: url("../assets/sg.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.main-container img {
+.mainContainer img {
   width: 100%;
   border-radius: 8px;
-  /* max-height: 100%; */
+  max-height: 100%;
 }
 
 .signature {
-  position: absolute;
-  bottom: 20px;
+  position: relative;
+  bottom: 100px;
   left: 0;
   right: 0;
   text-align: center;
@@ -84,19 +85,20 @@ body {
   margin-bottom: 5px;
   font-size: smaller;
 }
+
 /* Media Query for screens with max-width 600px (typical smartphones) */
 @media (max-width: 600px) {
-  .main-container {
+  .mainContainer {
     padding: 10px; /* Adjust padding for smaller devices */
-    flex-direction: column; /* Change flex direction for vertical alignment on mobile */
+    /* flex-direction: column; Change flex direction for vertical alignment on mobile */
     align-items: center; /* Align items in the center */
   }
 
-  .text-container {
+  .textContainer {
     margin-bottom: 10px; /* Adjust margin for spacing on mobile */
     margin-left: 8px;
   }
-  .image-container {
+  .imageContainer {
     margin-left: 0; /* Remove margin on smaller screens */
     margin-right: 10px; /* Add margin to the left for spacing */
   }
