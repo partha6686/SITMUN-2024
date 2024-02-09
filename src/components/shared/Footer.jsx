@@ -4,127 +4,116 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
 import { Facebook, Instagram, Twitter } from "@mui/icons-material";
-import { Box } from "@mui/material";
+import { Box, Stack, TextField, Button } from "@mui/material";
 import Logo from "../../assets/logo.png";
+
+import "../../styles/about.css";
 
 export default function Footer() {
   return (
     <Box
       component="footer"
       sx={{
-        background:
-          "-webkit-linear-gradient(30deg, rgba(78,159,61,1) 50%, #137300 50%)",
+        background: "-webkit-linear-gradient(30deg, #0a3900 50%, #072a00 50%)",
         p: 6,
         boxShadow:
           "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset",
+        color: "#fafafa",
+        position: "relative",
       }}
     >
-      <Container maxWidth="lg">
-        <Grid
-          container
-          spacing={5}
-          alignItems={"baseline"}
-          justifyContent={"space-between"}
-          width={"100%"}
-        >
-          <Grid item xs={12} sm={4}>
-            <img src={Logo} alt="SITMUN" style={{ width: "50%" }} />
-            <Typography
-              variant="h5"
-              color="white"
-              gutterBottom
-              fontFamily={"Marcellus"}
-            >
-              About Us
+      <Stack
+        direction={{ sm: "row", xs: "column" }}
+        justifyContent={"center"}
+        sx={{
+          zIndex: 10,
+        }}
+      >
+        <Stack spacing={3} width={"100%"} justifyContent={"center"}>
+          <Box>
+            <img src={Logo} alt="" style={{ width: "10%" }} />
+            <Typography variant="h2">SITMUN 2K24</Typography>
+            <Typography variant="h6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
             </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              fontFamily={"Nunito Sans"}
-              fontWeight={600}
-            >
-              We are XYZ company, dedicated to providing the best service to our
-              customers.
-            </Typography>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Typography
-              variant="h5"
-              color="white"
-              gutterBottom
-              fontFamily={"Marcellus"}
-            >
-              Contact Us
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              fontFamily={"Nunito Sans"}
-              fontWeight={600}
-            >
-              123 Main Street, Anytown, USA
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              fontFamily={"Nunito Sans"}
-              fontWeight={600}
-            >
-              Email: [email protected]
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              fontFamily={"Nunito Sans"}
-              fontWeight={600}
-            >
-              Phone: +1 234 567 8901
-            </Typography>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Typography
-              variant="h5"
-              color="white"
-              gutterBottom
-              fontFamily={"Marcellus"}
-            >
-              Follow Us
-            </Typography>
-            <Link href="https://www.facebook.com/" color="inherit">
+          </Box>
+          <Box>
+            <Typography>Quick Links</Typography>
+            <Stack direction={{ sm: "row", xs: "column" }} spacing={2}>
+              <Link>Home</Link>
+              <Link>Home</Link>
+              <Link>Home</Link>
+              <Link>Home</Link>
+            </Stack>
+          </Box>
+          <Box>
+            <Typography>Follow Us On</Typography>
+            <Stack direction={{ sm: "row", xs: "column" }} spacing={2}>
               <Facebook />
-            </Link>
-            <Link
-              href="https://www.instagram.com/"
-              color="inherit"
-              sx={{ pl: 1, pr: 1 }}
-            >
               <Instagram />
-            </Link>
-            <Link href="https://www.twitter.com/" color="inherit">
               <Twitter />
-            </Link>
-          </Grid>
-        </Grid>
-        <Box mt={5}>
-          <Typography
-            variant="subtitle1"
-            color="text.secondary"
-            align="center"
-            fontFamily={"Nunito Sans"}
-          >
-            {"Copyright © "}
-            <Link
-              color="inherit"
-              href="https://your-website.com/"
-              fontFamily={"Nunito Sans"}
-            >
-              Your Website
-            </Link>{" "}
-            {new Date().getFullYear()}
-            {"."}
+            </Stack>
+          </Box>
+        </Stack>
+        <Stack
+          spacing={3}
+          width={"100%"}
+          padding={"3vh 3vw"}
+          sx={{
+            background: "#dcdddc55",
+            borderRadius: "2rem",
+            backdropFilter: "blur(30px)",
+            zIndex: "10",
+            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+          }}
+        >
+          <Typography variant="h3" textAlign={"center"}>
+            Contact Us
           </Typography>
-        </Box>
-      </Container>
+          <Stack spacing={1}>
+            <TextField
+              id="outlined-basic"
+              label="Email Address"
+              variant="outlined"
+            />
+            {/* <TextField
+                id="outlined-basic"
+                label="Outlined"
+                variant="outlined"
+              /> */}
+            <TextField
+              id="outlined-basic"
+              label="Message"
+              variant="outlined"
+              multiline
+              rows={5}
+            />
+          </Stack>
+          <Button sx={{
+            background: `rgb(0, 180, 0)`,
+            color: 'white',
+            transition: 'all 0.5s ease-out',
+
+            "&:hover" : {
+              boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px',
+              background: `rgb(0, 180, 0)`,
+              borderRadius: '3rem'
+            }
+          }}>Send</Button>
+        </Stack>
+      </Stack>
+      <ul className="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </Box>
   );
 }
