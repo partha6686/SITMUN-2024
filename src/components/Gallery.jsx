@@ -1,19 +1,27 @@
-import React,{ useState, useEffect,useRef } from "react";
-import styles from "../pages/Gallery.module.css";
+import React, { useState, useEffect, useRef } from "react";
+import styles from "../../pages/Gallery.module.css";
+import ReactDOM from "react-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { galleryData } from "../../data/gallery";
+import { Typography } from "@mui/material";
 const Gallery = () => {
   // const [galleryData, setGalleryData] = useState({ gallery1: [], gallery2: [] });
-  const sliderRef = useRef(null);
+
+  const sliderRef1 = useRef(null);
+  const sliderRef2 = useRef(null);
+
   const settings = {
     dots: false,
     infinite: true,
-    speed: 12000,
-    slidesToShow: 4,
-    slidesToScroll: 2,
     autoplay: true,
-    autoplaySpeed: 12000,
+    autoplaySpeed: 0,
+    speed: 4000,
+    pauseOnHover: false,
+    cssEase: 'linear',
+    slidesToShow: 4,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 800,
@@ -43,11 +51,13 @@ const Gallery = () => {
   const settings1 = {
     dots: false,
     infinite: true,
-    speed: 12000,
-    slidesToShow: 4,
-    slidesToScroll: 2,
     autoplay: true,
-    autoplaySpeed: 12000,
+    autoplaySpeed: 0,
+    speed: 4000,
+    pauseOnHover: false,
+    cssEase: 'linear',
+    slidesToShow: 4,
+    slidesToScroll: 1,
     rtl: true,
     responsive: [
       {
@@ -74,28 +84,28 @@ const Gallery = () => {
       },
     ],
   };
+  console.log(galleryData);
 
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const res1 = await fetch("http://localhost:4000/gallery1");
+  //       const res2 = await fetch("http://localhost:4000/gallery2");
+  //       const data1 = await res1.json();
+  //       const data2 = await res2.json();
+  //       setGalleryData({ gallery1: data1, gallery2: data2 });
+  //     } catch (error) {
+  //       console.error('Error fetching data:', error);
+  //     }
+  //   };
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res1 = await fetch("http://localhost:4000/gallery1");
-        const res2 = await fetch("http://localhost:4000/gallery2");
-        const data1 = await res1.json();
-        const data2 = await res2.json();
-        setGalleryData({ gallery1: data1, gallery2: data2 });
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
+  //   fetchData();
+  // }, []);
 
-    fetchData();
-  }, []);
-  
   return (
-    <div>
+    <div className={styles.main}>
       <div>
-        <Slider {...settings} ref={sliderRef} className={styles.slider}>
+        <Slider {...settings} className={styles.slider} ref={sliderRef1}>
           {galleryData?.map((item, id) => {
             if (id % 2 == 0) {
               return (
@@ -112,7 +122,7 @@ const Gallery = () => {
             }
           })}
         </Slider>
-        <Slider {...settings1} ref={sliderRef} className={styles.slider1}>
+        <Slider {...settings1} className={styles.slider1} ref={sliderRef2}>
           {galleryData?.map((item, id) => {
             if (id % 2 != 0) {
               return (
