@@ -31,9 +31,12 @@ const TimelineView = () => {
         alignItems: "center",
         padding: "5vh 0",
         background: "#000",
+        position: 'relative',
       }}
     >
-      <Container>
+      <Container maxWidth="lg" sx={{
+        zIndex: 10
+      }}>
         <Stack spacing={5}>
           {/* <Typography
             variant="h2"
@@ -51,6 +54,18 @@ const TimelineView = () => {
           </Box>
         </Stack>
       </Container>
+      <ul className="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </Box>
   );
 };
