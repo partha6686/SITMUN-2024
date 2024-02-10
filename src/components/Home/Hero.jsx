@@ -4,16 +4,11 @@ import HeroImg from "../../assets/hero/hero2.jpg";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { NavLink } from "react-router-dom";
+import { heroImgs } from "../../data/hero";
 
 //css file
 import "../../styles/sideBar.css";
 
-const heroImgs = [
-  "https://ik.imagekit.io/lvjdjaus38/img1.jpg",
-  "https://ik.imagekit.io/lvjdjaus38/img2.jpg",
-  "https://ik.imagekit.io/lvjdjaus38/img3.JPG",
-  "https://ik.imagekit.io/lvjdjaus38/img4.jpg",
-];
 
 const Hero = () => {
   const [imgUrlIdx, setImgUrlIdx] = useState(0);
