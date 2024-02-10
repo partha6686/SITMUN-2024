@@ -1,51 +1,63 @@
 export const galleryData = [
     {
-        url: "https://images.unsplash.com/photo-1682687220509-61b8a906ca19?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        url: "https://ik.imagekit.io/0oohdkbtxa/SIT_1058.JPG?updatedAt=1707485250562"
     },
     {
-        url: "https://images.unsplash.com/photo-1682687219640-b3f11f4b7234?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        url: "https://ik.imagekit.io/0oohdkbtxa/SIT_1039.JPG?updatedAt=1707485249417"
     },
     {
-        url: "https://images.unsplash.com/photo-1682687219640-b3f11f4b7234?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        url: "https://ik.imagekit.io/0oohdkbtxa/SIT_1047.JPG?updatedAt=1707485247441"
+    },
+    {
+        url: "https://ik.imagekit.io/0oohdkbtxa/DSC_3307.jpg?updatedAt=1707484863882"
+    },
+    {
+        url: "https://ik.imagekit.io/0oohdkbtxa/_MG_0664.jpg?updatedAt=1707484981099"
+    },
+    {
+        url: "https://ik.imagekit.io/0oohdkbtxa/DSC_0235-1.jpg?updatedAt=1707485244770"
+    },
+    {
+        url: "https://ik.imagekit.io/0oohdkbtxa/DSC_0003.jpg?updatedAt=1707485213319"
     },{
-        url: "https://images.unsplash.com/photo-1682687220509-61b8a906ca19?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        url: "https://ik.imagekit.io/0oohdkbtxa/DSC_0032.jpg?updatedAt=1707485212171"
     },
     {
-        url: "https://images.unsplash.com/photo-1682687219640-b3f11f4b7234?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        url: "https://ik.imagekit.io/0oohdkbtxa/WhatsApp%20Image%202024-02-01%20at%2022.52.16.jpeg?updatedAt=1707485164726"
     },
     {
-        url: "https://images.unsplash.com/photo-1682687219640-b3f11f4b7234?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        url: "https://ik.imagekit.io/0oohdkbtxa/DSC_0178.jpg?updatedAt=1707485201531"
     },{
-        url: "https://images.unsplash.com/photo-1682687220509-61b8a906ca19?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        url: "https://ik.imagekit.io/0oohdkbtxa/WhatsApp%20Image%202024-02-01%20at%2023.18.37.jpeg?updatedAt=1707485163977"
     },
+   
     {
-        url: "https://images.unsplash.com/photo-1682687219640-b3f11f4b7234?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-        url: "https://images.unsplash.com/photo-1682687219640-b3f11f4b7234?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        url: "https://ik.imagekit.io/0oohdkbtxa/_MG_8638.jpg?updatedAt=1707485213438"
     },{
-        url: "https://images.unsplash.com/photo-1682687220509-61b8a906ca19?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        url: "https://ik.imagekit.io/0oohdkbtxa/DSC_3166.jpg?updatedAt=1707487388406"
     },
     {
-        url: "https://images.unsplash.com/photo-1682687219640-b3f11f4b7234?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        url: "https://ik.imagekit.io/0oohdkbtxa/_DSC0913.jpg?updatedAt=1707487601886"
     },
-    {
-        url: "https://images.unsplash.com/photo-1682687219640-b3f11f4b7234?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },{
-        url: "https://images.unsplash.com/photo-1682687220509-61b8a906ca19?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-        url: "https://images.unsplash.com/photo-1682687219640-b3f11f4b7234?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-        url: "https://images.unsplash.com/photo-1682687219640-b3f11f4b7234?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {url:"https://plus.unsplash.com/premium_photo-1702910931829-729785a49410?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        {url:"https://images.unsplash.com/photo-1703818770847-0f2948e0611b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8"},
-        {url:"https://images.unsplash.com/photo-1703504260184-bd5c5b3719c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8"},
-        {url:"https://images.unsplash.com/photo-1703778506344-d0ae7ec21b86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8"},
-        {url:"https://images.unsplash.com/photo-1703778506344-d0ae7ec21b86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8"},
-        {url:"https://images.unsplash.com/photo-1703798278589-245f6e47cf8b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8"},
-        {url:"https://images.unsplash.com/photo-1703820497309-333df13052f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8"}
+    
+    {url:"https://ik.imagekit.io/0oohdkbtxa/img_y1Wm5VbGvx?updatedAt=1707563123151" },
+        {url:"https://ik.imagekit.io/0oohdkbtxa/DSC_2960.jpg?updatedAt=1707488210563"},
+        {url:"https://ik.imagekit.io/0oohdkbtxa/DSC_3497.jpg?updatedAt=1707489278803"},
+        {url:"https://ik.imagekit.io/0oohdkbtxa/DSC_3440.jpg?updatedAt=1707488830667"},
+        {url:"https://ik.imagekit.io/0oohdkbtxa/DSC_3473.jpg?updatedAt=1707488970304"},
+        {url:"https://ik.imagekit.io/0oohdkbtxa/DSC_0167.jpg?updatedAt=1707488631197"},
+        
+        {url:"https://ik.imagekit.io/0oohdkbtxa/DSC_3277.jpg?updatedAt=1707488830816"},
+        {url:"https://ik.imagekit.io/0oohdkbtxa/WhatsApp%20Image%202024-02-01%20at%2023.18.37.jpeg?updatedAt=1707485163977"},
+        {url:"https://ik.imagekit.io/0oohdkbtxa/IMG_7220.jpg?updatedAt=1707491017433"},
+        {url:"https://ik.imagekit.io/0oohdkbtxa/DSC_3276.jpg?updatedAt=1707491018772"},
+        {url:"https://ik.imagekit.io/0oohdkbtxa/DSC_3363.jpg?updatedAt=1707491019019"},
+        {url:"https://ik.imagekit.io/0oohdkbtxa/IMG_7422.jpg?updatedAt=1707491019827"},
+        {url:"https://ik.imagekit.io/0oohdkbtxa/IMG_7159.jpg?updatedAt=1707491021186"},
+        {url:"https://ik.imagekit.io/0oohdkbtxa/IMG_8535.jpg?updatedAt=1707491428293"},
+        {url:"https://ik.imagekit.io/0oohdkbtxa/WhatsApp%20Image%202024-02-01%20at%2023.10.05.jpeg?updatedAt=1707491676727"},
+        {url:"https://ik.imagekit.io/0oohdkbtxa/IMG_8443.jpg?updatedAt=1707491830834"},
+        
+        
     
 ]
