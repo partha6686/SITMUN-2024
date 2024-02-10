@@ -1,6 +1,6 @@
 .faq {
   background-color: #191A19;
-  padding: 2rem;
+  padding: 10vh 10vw;
   /* margin: 20px auto; */
   font-family: sans-serif;
 }
@@ -17,7 +17,7 @@
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
   cursor: pointer;
   box-shadow: 0px 0px 8px #191919;
 }
@@ -100,6 +100,11 @@
 }
 .q-light-start {
   margin-bottom: 16px;
+}
+
+.q-light-start:hover, .q-light:hover {
+  background: #105f00;
+  color: #fff;
 }
 
 /*  MEDIA QUERRIES  */

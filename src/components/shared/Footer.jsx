@@ -7,6 +7,8 @@ import { Facebook, Instagram, Twitter } from "@mui/icons-material";
 import { Box, Stack, TextField, Button } from "@mui/material";
 import Logo from "../../assets/logo.png";
 
+import "../../styles/button.css"
+
 import "../../styles/about.css";
 
 export default function Footer() {
@@ -98,7 +100,7 @@ export default function Footer() {
             "&:hover" : {
               boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px',
               background: 'rgb(0, 180, 0)',
-              borderRadius: '3rem'
+              borderRadius: '3rem',
             }
           }}>Send</Button>
         </Stack>

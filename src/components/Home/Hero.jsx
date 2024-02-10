@@ -51,9 +51,14 @@ const Hero = () => {
         <Stack
           spacing={5}
           justifyContent={"end"}
-          backgroundColor="#4E9F3D"
+          backgroundColor="#4d9f3d78"
           width={{ md: "4rem", xs: "2rem" }}
           display={{ md: "flex", xs: "none" }}
+          overflow={"hidden"}
+          sx={{
+            backdropFilter: 'blur(30px)',
+            color: '#fafafa'
+          }}
         >
           <Box sx={{ transform: "rotate(-90deg)" }}>
             <Typography
@@ -62,7 +67,7 @@ const Hero = () => {
               fontSize={{ md: "42px", xs: "24px" }}
               sx={{
                 width: "100vh",
-                color: "#1E5128",
+                color: "#37be52",
                 fontWeight: "900",
                 textWrap: "nowrap",
                 letterSpacing: "2px",

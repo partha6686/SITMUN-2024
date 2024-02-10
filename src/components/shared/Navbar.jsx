@@ -52,22 +52,6 @@ export default function Navbar() {
         sx={{ background: "transparent", boxShadow: "none", color: "black" }}
       >
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-          <Button>
-            {/* <Typography
-              variant="h4"
-              noWrap
-              component="div"
-              sx={{
-                flexGrow: 1,
-                display: "flex",
-                justifyContent: { xs: "flex-start" },
-                color: "white",
-                fontWeight: "bold",
-              }}
-            >
-              SITMUN
-            </Typography> */}
-          </Button>
           <IconButton
             size="large"
             edge="end"
@@ -87,7 +71,7 @@ export default function Navbar() {
           <Menu
             anchorEl={anchorElNav}
             anchorOrigin={{
-              vertical: "top",
+              vertical: "bottom",
               horizontal: "right",
             }}
             transformOrigin={{
@@ -100,12 +84,12 @@ export default function Navbar() {
               py: 0,
               flexGrow: 0.3,
               "& .MuiList-root": {
-                minWidth: { xs: "50vw", sm: "40vw", md: "25vw" },
+                minWidth: { xs: "80vw", sm: "40vw", md: "25vw" },
               },
               "& .MuiPaper-root": {
                 border: "2px solid ff3cac !important",
                 borderRadius: ".75rem !important",
-                backgroundColor: "#ff3cac",
+                background: "##00ba47",
                 backgroundImage:
                   "linear-gradient(225deg, #3fff3c 0%, #00ba47 50%, #2d4f00 100%)",
               },
@@ -123,7 +107,8 @@ export default function Navbar() {
                 "& li:hover": {
                   p: ".5rem",
                   "& > h6": {
-                    color: "#ff3cac",
+                    color: "#014017",
+                    fontWeight: 'bolder',
                   },
                   borderRadius: ".5rem",
                   backgroundColor: "rgba(255, 255, 255, 0.1)",
