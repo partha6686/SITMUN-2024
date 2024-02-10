@@ -40,7 +40,7 @@ export const galleryData = [
         url: "https://ik.imagekit.io/0oohdkbtxa/_DSC0913.jpg?updatedAt=1707487601886"
     },
     
-    {url:"https://ik.imagekit.io/0oohdkbtxa/IMG_4559.jpg?updatedAt=1707487917154" },
+    {url:"https://ik.imagekit.io/0oohdkbtxa/img_y1Wm5VbGvx?updatedAt=1707563123151" },
         {url:"https://ik.imagekit.io/0oohdkbtxa/DSC_2960.jpg?updatedAt=1707488210563"},
         {url:"https://ik.imagekit.io/0oohdkbtxa/DSC_3497.jpg?updatedAt=1707489278803"},
         {url:"https://ik.imagekit.io/0oohdkbtxa/DSC_3440.jpg?updatedAt=1707488830667"},
@@ -56,7 +56,8 @@ export const galleryData = [
         {url:"https://ik.imagekit.io/0oohdkbtxa/IMG_7159.jpg?updatedAt=1707491021186"},
         {url:"https://ik.imagekit.io/0oohdkbtxa/IMG_8535.jpg?updatedAt=1707491428293"},
         {url:"https://ik.imagekit.io/0oohdkbtxa/WhatsApp%20Image%202024-02-01%20at%2023.10.05.jpeg?updatedAt=1707491676727"},
-        {url:"https://ik.imagekit.io/0oohdkbtxa/IMG_8443.jpg?updatedAt=1707491830834"}
+        {url:"https://ik.imagekit.io/0oohdkbtxa/IMG_8443.jpg?updatedAt=1707491830834"},
+        
         
     
 ]

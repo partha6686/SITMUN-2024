@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import styles from "../../pages/Gallery.module.css";
+import styles from "../../styles/Gallery.module.css";
 import ReactDOM from "react-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -18,7 +18,7 @@ const Gallery = () => {
     autoplay: true,
     autoplaySpeed: 0,
     speed: 4000,
-    pauseOnHover: false,
+    pauseOnHover: true,
     cssEase: 'linear',
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -54,7 +54,7 @@ const Gallery = () => {
     autoplay: true,
     autoplaySpeed: 0,
     speed: 4000,
-    pauseOnHover: false,
+    pauseOnHover: true,
     cssEase: 'linear',
     slidesToShow: 4,
     slidesToScroll: 1,

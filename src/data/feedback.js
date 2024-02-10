@@ -6,7 +6,7 @@ export const feedbackdata=[
         desc:"Chairperson, UNHRC(SITMUN'23)"
     },
     { 
-        text:"Discovering the world of Model United Nations at SITMUN in 2022 was like stepping into the unknown for someone with a fear of the stage. Surprisingly, it turned out to be a delightful experience, shattering my preconceived notions. Reflecting on it now, I cherish the memories it created and the valuable lesson it taught me about embracing change, no matter how uncomfortable. SITMUN not only broadened my perspective on MUNs and literary events but also uncovered a side of me that craves exploration. I encourage others to take the plunge, as I regret not starting earlier and missing out on numerous experiences. Best wishes to everyone embarking on their MUN journey – may it be as enriching as mine! Happy Mun-ning!        ",
+        text:"Discovering the world of Model United Nations at SITMUN in 2022 was like stepping into the unknown for someone with a fear of the stage. Surprisingly, it turned out to be a delightful experience, shattering my preconceived notions. Reflecting on it now, I cherish the memories it created and the valuable lesson it taught me about embracing change. SITMUN not only broadened my perspective on MUNs and literary events but also uncovered a side of me that craves exploration. I encourage others to take the plunge, as I regret not starting earlier. Best wishes to everyone embarking on their MUN journey – may it be as enriching as mine! Happy Mun-ning!        ",
 
         url:"https://ik.imagekit.io/0oohdkbtxa/Loria.jpg?updatedAt=1706970434605" , 
         auth:"Loria Manjari Gartia        ",
@@ -22,7 +22,7 @@ export const feedbackdata=[
     {
         text:"SITMUN 2023 was the best experience for me though it was my first time but I learned a lot .I got to know many things about the Model United Nations.Everyone helped me to deliver my best. It helped me to enhance my public speaking skills and I learned how to convey things in a diplomatic way. Finally, I would like to mention that we should always wisely choose a country to represent and have a very clear knowledge about that country. All the best and don't stop Mun-ning.        ",
 
-        url:"https://ik.imagekit.io/0oohdkbtxa/Aditya.jpg?updatedAt=1706970432088", 
+        url:"https://ik.imagekit.io/0oohdkbtxa/Adityaa_9fKJLss5U?updatedAt=1707563256751", 
         auth:"Aditya Pandey        ",
         desc:"3rd year, B.Tech" 
     },
@@ -33,7 +33,7 @@ export const feedbackdata=[
         desc:"3rd year, B.Tech" 
     },
     {
-        text:"Voyaging the world of Diplomacy & Model United Nations has always been like dream comes true. Began my MUN journey last year from SIT. And again i am extremely tumultuous & elated to be joining this year too. Flabbergasting experience for everyone who want to gain confidence in public speaking, building qualities of leadership as well as able to recognise your inner strength. SITMUN not only helped me to boost my confidence as well as eradicated my stage fear. It's indeed helps you to be a exquisite orator that world want. I highly request everyone to join SITMUN to discover the world of diplomacy, deliberation & your inner clandestined talent. Keep MUN-ING…… ",
+        text:"Voyaging the world of Diplomacy & Model United Nations has always been like dream comes true. Began my MUN journey last year from SIT. And again I am extremely tumultuous & elated to be joining this year too. Flabbergasting experience for everyone who want to gain confidence in public speaking, building qualities of leadership as well as able to recognise your inner strength. SITMUN not only helped me to boost my confidence as well as eradicated my stage fear. I highly request everyone to join SITMUN to discover the world of diplomacy, deliberation & your inner clandestined talent. Keep MUN-ING…… ",
         url:"https://ik.imagekit.io/0oohdkbtxa/swagat.jpg?updatedAt=1706970434152", 
         auth:"Swagat Pattnaik         ",
         desc:"3rd year, B.Tech" 
