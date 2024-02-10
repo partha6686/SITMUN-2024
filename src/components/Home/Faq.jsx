@@ -3,6 +3,7 @@ import "../../styles/faq.css";
 import Accordion from "../shared/Accordion";
 import fee from '../../assets/FEES.pdf';
 import { allFaq } from "../../data/faq";
+import Heading from "../shared/Heading";
 
 const openInNewTab = url => {
   window.open(url, '_blank', 'noopener,noreferrer');
@@ -16,7 +17,7 @@ const Faq = () => {
 
   return (
     <div className="faq">
-      {/* Heading goes here */}
+      <Heading heading={"HAVE  A  QUESTION?"} />
       <div className="faq-div">
         <div>
           {allFaq.map((faq) => (

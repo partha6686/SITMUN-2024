@@ -6,4 +6,6 @@
     -webkit-background-clip: text;
     color: transparent;
     font-family: 'Monoton', serif;
+    margin: 1rem 0;
+    word-spacing: 1rem;
 }
