@@ -13,9 +13,9 @@
     color: greenyellow;
 }
 
-a {
+/* a {
     text-decoration: none;
-}
+} */
 
 .navLink {
     transform: rotate(270deg);
