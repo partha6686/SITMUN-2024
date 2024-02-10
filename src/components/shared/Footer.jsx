@@ -31,9 +31,9 @@ export default function Footer() {
       >
         <Stack spacing={3} width={"100%"} justifyContent={"center"}>
           <Box>
-            <img src={Logo} alt="" style={{ width: "10%" }} />
-            <Typography variant="h2">SITMUN 2K24</Typography>
-            <Typography variant="h6">
+            <img src={Logo} alt="" style={{ maxWidth: "8rem" }} />
+            <Typography variant="h4">SITMUN 2K24</Typography>
+            <Typography variant="subtitle1">
               Lorem ipsum dolor sit amet, consectetur adipiscing
             </Typography>
           </Box>
@@ -46,6 +46,7 @@ export default function Footer() {
               <Link>Home</Link>
             </Stack>
           </Box>
+
           <Box>
             <Typography>Follow Us On</Typography>
             <Stack direction={{ sm: "row", xs: "column" }} spacing={2}>
@@ -90,13 +91,13 @@ export default function Footer() {
             />
           </Stack>
           <Button sx={{
-            background: `rgb(0, 180, 0)`,
+            background: 'rgb(0, 180, 0)',
             color: 'white',
             transition: 'all 0.5s ease-out',
 
             "&:hover" : {
               boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px',
-              background: `rgb(0, 180, 0)`,
+              background: 'rgb(0, 180, 0)',
               borderRadius: '3rem'
             }
           }}>Send</Button>
