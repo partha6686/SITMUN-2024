@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { zeroPad } from "react-countdown";
-import styles from "../pages/Countdown.module.css";
+import styles from "../styles/Countdown.module.css";
 const CalcTimeDelta = () => {
   const targetDate = "2024-03-28T11:50:59";
 
