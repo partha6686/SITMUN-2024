@@ -27,7 +27,7 @@ const Home = () => {
       <CalcTimeDelta />
       <About />
       <Gallery />
-      {/* <TimelineView /> */}
+      <TimelineView />
       <Feedback />
       <Message />
       <Faq />
