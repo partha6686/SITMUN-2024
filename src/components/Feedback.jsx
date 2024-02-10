@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import styles from "../pages/Feedback.module.css";
+import styles from "../styles/Feedback.module.css";
 // import Svg, { Path } from "react-native-svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

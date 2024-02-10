@@ -11,6 +11,7 @@ import HoverFooter from "../components/shared/HoverFooter";
 import Message from "../components/Home/Message";
 
 import "../styles/circles.css"
+import Faq from "../components/Home/Faq";
 
 const Home = () => {
   return (
@@ -26,9 +27,10 @@ const Home = () => {
       <CalcTimeDelta />
       <About />
       <Gallery />
-      <TimelineView />
+      {/* <TimelineView /> */}
       <Feedback />
       <Message />
+      <Faq />
       <Footer />
       {/* <HoverFooter /> */}
     </div>

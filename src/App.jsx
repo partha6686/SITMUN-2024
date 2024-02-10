@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Team from "./pages/Team";
 import Home from "./pages/Home";
 import Committee from "./pages/Committee";
+import "./App.css"
 
 function App() {
   return (
