@@ -3,23 +3,30 @@ import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
+import Container from "@mui/material/Container";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 
+import Logo from "../../assets/logo.png";
+
 import { MenuItem, Button } from "@mui/material";
 
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+//useNavigate
+import { useNavigate } from "react-router-dom";
 
-const pages = ["Products", "Pricing", "Blog", "About", "Events"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const pages = [
+  { name: "Teams", location: "/teams" },
+  { name: "Committee", location: "/committee" },
+];
 
 export default function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const navigate = useNavigate();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -37,21 +44,28 @@ export default function Navbar() {
   };
 
   return (
-    <Box
+    <Container
       sx={{
         flexGrow: 0,
         background: "transparent",
-        width: "100%",
         "& .MuiPaper-root": {
           maxHeight: "100vh",
         },
       }}
+      maxWidth="lg"
     >
       <AppBar
         position="fixed"
         sx={{ background: "transparent", boxShadow: "none", color: "black" }}
       >
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+          <Button
+            sx={{
+              paddingLeft: "3vw",
+            }}
+          >
+            <img src={Logo} alt="" width={"100vw"} />
+          </Button>
           <IconButton
             size="large"
             edge="end"
@@ -108,7 +122,7 @@ export default function Navbar() {
                   p: ".5rem",
                   "& > h6": {
                     color: "#014017",
-                    fontWeight: 'bolder',
+                    fontWeight: "bolder",
                   },
                   borderRadius: ".5rem",
                   backgroundColor: "rgba(255, 255, 255, 0.1)",
@@ -116,7 +130,10 @@ export default function Navbar() {
               }}
             >
               {pages.map((setting, i) => (
-                <MenuItem key={i} onClick={handleCloseUserMenu}>
+                <MenuItem
+                  key={i}
+                  onClick={() => navigate(`${setting.location}`)}
+                >
                   <Typography
                     variant="subtitle1"
                     sx={{
@@ -126,7 +143,7 @@ export default function Navbar() {
                       width: "100%",
                     }}
                   >
-                    {setting}
+                    {setting.name}
                   </Typography>
                 </MenuItem>
               ))}
@@ -134,6 +151,6 @@ export default function Navbar() {
           </Menu>
         </Box>
       </AppBar>
-    </Box>
+    </Container>
   );
 }

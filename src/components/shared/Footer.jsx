@@ -7,8 +7,6 @@ import { Facebook, Instagram, Twitter } from "@mui/icons-material";
 import { Box, Stack, TextField, Button } from "@mui/material";
 import Logo from "../../assets/logo.png";
 
-import "../../styles/button.css"
-
 import "../../styles/about.css";
 
 export default function Footer() {

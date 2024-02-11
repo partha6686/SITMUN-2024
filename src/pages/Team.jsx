@@ -139,7 +139,9 @@ const Team = () => {
           </div>
           <div className={styles.meet}>
             <div className={styles.our}>
-            <h1><Heading {...props} /></h1>
+              <h1>
+                <Heading {...props} />
+              </h1>
             </div>
           </div>
         </div>
