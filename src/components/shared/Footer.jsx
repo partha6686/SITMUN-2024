@@ -7,9 +7,30 @@ import { Facebook, Instagram, Twitter } from "@mui/icons-material";
 import { Box, Stack, TextField, Button } from "@mui/material";
 import Logo from "../../assets/logo.png";
 
+import { useState } from "react";
+
 import "../../styles/about.css";
 
 export default function Footer() {
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const sendEmail = () => {
+    const recipient = "delegateaffairssitmun24@gmail.com";
+    const subject = "I have a query";
+    const name = `${name}`; // Replace with the actual name
+    const message = `${message}`; // Replace with the actual message
+
+    // Generate mailto link
+    const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(
+      subject
+    )}&body=Name: ${encodeURIComponent(
+      name
+    )}%0D%0A%0D%0AMessage: ${encodeURIComponent(message)}`;
+
+    // Open default email client with mailto link
+    window.location.href = mailtoLink;
+  };
+
   return (
     <Box
       component="footer"
@@ -28,33 +49,95 @@ export default function Footer() {
         sx={{
           zIndex: 10,
         }}
+        spacing={2}
       >
-        <Stack spacing={3} width={"100%"} justifyContent={"center"}>
-          <Box>
+        <Stack spacing={4} width={"100%"} justifyContent={"center"} zIndex={10}>
+          <Stack
+            direction={{sm: "row", xs: 'column'}}
+            justifyContent={"center"}
+            alignItems={"center"}
+          >
             <img src={Logo} alt="" style={{ maxWidth: "8rem" }} />
-            <Typography variant="h4">SITMUN 2K24</Typography>
-            <Typography variant="subtitle1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing
-            </Typography>
-          </Box>
-          <Box>
-            <Typography>Quick Links</Typography>
-            <Stack direction={{ sm: "row", xs: "column" }} spacing={2}>
-              <Link>Home</Link>
-              <Link>Home</Link>
-              <Link>Home</Link>
-              <Link>Home</Link>
+            <Stack justifyContent={"center"} alignItems={"center"}>
+              <Typography variant="h3">SITMUN 2024</Typography>
+              <Typography variant="subtitle1" color={"#a7fd6a"} textAlign={"center"}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+              </Typography>
             </Stack>
-          </Box>
+          </Stack>
+          <Stack
+            justifyContent={"center"}
+            alignItems={"center"}
+            direction={{sm: "row", xs: 'column'}}
+            spacing={3}
+            display={{xs: 'none', sm: 'flex'}}
+          >
+            <Stack spacing={1} justifyContent={"center"} alignItems={"center"}>
+              <Typography variant="h5" fontWeight={"bold"}>
+                Links
+              </Typography>
+              <Stack
+                direction={"row"}
+                spacing={2}
+                sx={{
+                  "& a": {
+                    textDecoration: "none",
+                    color: "#a7fd6a",
+                  },
+                  "& a:hover": {
+                    cursor: "pointer",
+                    color: "#fafafa",
+                  },
+                }}
+              >
+                <Link to="/">Home</Link>
+                <Link to="/teams">Teams</Link>
+                <Link to="/committe">Committe</Link>
+                <Link>Register</Link>
+              </Stack>
+            </Stack>
+            <Stack spacing={1}>
+              <Typography variant="h5" fontWeight={"bold"}>
+                Follow Us On
+              </Typography>
+              <Stack
+                direction={"row"}
+                spacing={2}
+                alignItems={"center"}
+                justifyContent={"center"}
+              >
+                <Facebook color="#a7fd6a" />
+                <Instagram color="#a7fd6a" />
+                <Twitter color="#a7fd6a" />
+              </Stack>
+            </Stack>
+          </Stack>
 
-          <Box>
-            <Typography>Follow Us On</Typography>
-            <Stack direction={{ sm: "row", xs: "column" }} spacing={2}>
-              <Facebook />
-              <Instagram />
-              <Twitter />
+          <Stack
+            justifyContent={"center"}
+            alignItems={"center"}
+          >
+            <Typography variant="h5" fontWeight={"bold"}>
+              Contact us
+            </Typography>
+            <Stack direction={"column"} spacing={0} alignItems={"center"}>
+              <Typography variant="body1" color={"#a7fd6a"}>
+                Deputy Secretary General
+              </Typography>
+              <Typography variant="body1" color={"#a7fd6a"}>
+                SIT MUN 2024
+              </Typography>
+              <Typography variant="body1" color={"#a7fd6a"}>
+                Silicon Institute of Technology
+              </Typography>
+              <Typography variant="body1" color={"#a7fd6a"}>
+                Email:- meta.academics@silicon.ac.in
+              </Typography>
+              <Typography variant="body1" color={"#a7fd6a"}>
+                Phone:- +91 7717778982
+              </Typography>
             </Stack>
-          </Box>
+          </Stack>
         </Stack>
         <Stack
           spacing={3}
@@ -74,8 +157,9 @@ export default function Footer() {
           <Stack spacing={1}>
             <TextField
               id="outlined-basic"
-              label="Email Address"
+              label="Name"
               variant="outlined"
+              onChange={(e) => setName(e.target.value)}
             />
             {/* <TextField
                 id="outlined-basic"
@@ -88,19 +172,25 @@ export default function Footer() {
               variant="outlined"
               multiline
               rows={5}
+              onChange={(e) => setMessage(e.target.value)}
             />
           </Stack>
-          <Button sx={{
-            background: 'rgb(0, 180, 0)',
-            color: 'white',
-            transition: 'all 0.5s ease-out',
+          <Button
+            sx={{
+              background: "rgb(0, 180, 0)",
+              color: "white",
+              transition: "all 0.5s ease-out",
 
-            "&:hover" : {
-              boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px',
-              background: 'rgb(0, 180, 0)',
-              borderRadius: '3rem',
-            }
-          }}>Send</Button>
+              "&:hover": {
+                boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
+                background: "rgb(0, 180, 0)",
+                borderRadius: "3rem",
+              },
+            }}
+            onClick={sendEmail}
+          >
+            Send
+          </Button>
         </Stack>
       </Stack>
       <ul className="circles">

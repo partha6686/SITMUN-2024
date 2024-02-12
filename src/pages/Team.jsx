@@ -15,8 +15,9 @@ import {
   MenuDivider,
 } from "@chakra-ui/react";
 
+import Footer from "../components/shared/Footer";
+
 import { teamdata } from "../data/team";
-import { SideBar } from "../components/Home/Hero";
 import Heading from "../components/shared/Heading";
 const Team = () => {
   const props = { Heading: "MEET OUR TEAM" };
@@ -173,6 +174,7 @@ const Team = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

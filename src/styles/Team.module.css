@@ -54,7 +54,7 @@
 
 .cardbody{
   padding:1rem ;
-  background-color: #FFFFFF;
+  background-color: #000;
 }
 .cardbody p{
   color:black;
@@ -74,7 +74,7 @@
   position:relative;
   width:100%;
   height:100%;
-  background-color: white;
+  background-color: transparent;
 }
 .divider {
     position: absolute;
@@ -84,6 +84,10 @@
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
 }
 
 .divider svg {
@@ -94,7 +98,7 @@
 }
 
 .divider .shapefill {
-    fill: #FFFFFF;
+    fill: #000;
 }
 .card {
   position: relative;
@@ -102,7 +106,7 @@
 
   .Name {
     position: absolute;
-    top: 83%;
+    top: 86%;
     left: -100%;
     text-transform: capitalize;
     color: #fff;
@@ -112,11 +116,11 @@
   }
   .desig{
     position: absolute;
-    top: 90%;
+    top: 92%;
     left: -100%;
     text-transform: capitalize;
-    color: #fff;
-    font-size: 20px;
+    color: #cbcbcb;
+    font-size: 15px;
     z-index: 8;
     transition: all 0.6s ease;
   }
