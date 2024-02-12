@@ -16,6 +16,7 @@ import {
 } from "@chakra-ui/react";
 
 import Footer from "../components/shared/Footer";
+import { NavbarTeams } from "../components/shared/Navbar";
 
 import { teamdata } from "../data/team";
 import Heading from "../components/shared/Heading";
@@ -24,7 +25,7 @@ const Team = () => {
   const [order, setorder] = useState("Core Secretariat");
   return (
     <div>
-      {/* <SideBar /> */}
+      <NavbarTeams order={order} setOrder={setorder} />
       <div className={styles.container}>
         <div className={styles.head}>
           <div className={styles.head2}>
@@ -32,7 +33,7 @@ const Team = () => {
               src="https://cdn.create.vista.com/api/media/medium/677587082/stock-photo-bachelor-party-multiethnic-best-men-groom-laughing-while-standing-glasses?token="
               alt="team"
             />
-            <div className={styles.menu}>
+            {/* <div className={styles.menu}>
               <Menu>
                 <MenuButton
                   as={IconButton}
@@ -136,7 +137,7 @@ const Team = () => {
                   </MenuOptionGroup>
                 </MenuList>
               </Menu>
-            </div>
+            </div> */}
           </div>
           <div className={styles.meet}>
             <div className={styles.our}>
