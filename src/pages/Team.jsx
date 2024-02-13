@@ -1,31 +1,17 @@
 import { useEffect, useState, React, useRef } from "react";
 
 import styles from "../styles/Team.module.css";
-import { Icon } from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
-import { IconButton } from "@chakra-ui/react";
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-} from "@chakra-ui/react";
 
 import Footer from "../components/shared/Footer";
-import { NavbarTeams } from "../components/shared/Navbar";
+import Navbar from "../components/shared/Navbar";
 
 import { teamdata } from "../data/team";
 import Heading from "../components/shared/Heading";
 const Team = () => {
-  const props = { Heading: "MEET OUR TEAM" };
   const [order, setorder] = useState("Core Secretariat");
   return (
     <div>
-      <NavbarTeams order={order} setOrder={setorder} />
+      <Navbar order={order} setOrder={setorder} selectList={true} />
       <div className={styles.container}>
         <div className={styles.head}>
           <div className={styles.head2}>
@@ -141,9 +127,7 @@ const Team = () => {
           </div>
           <div className={styles.meet}>
             <div className={styles.our}>
-              <h1>
-                <Heading {...props} />
-              </h1>
+                <Heading heading={"Our Team"} />
             </div>
           </div>
         </div>
