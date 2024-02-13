@@ -15,13 +15,7 @@ import Faq from "../components/Home/Faq";
 
 const Home = () => {
   return (
-    <div
-      // style={{
-      //   background:
-      //     "linear-gradient(137deg, rgba(78,159,61,1) 0%, rgba(0,0,0,1) 100%)",
-      //   color: "white",
-      // }}
-    >
+    <div>
       <Navbar />
       <Hero />
       <CalcTimeDelta />
@@ -32,7 +26,6 @@ const Home = () => {
       <Message />
       <Faq />
       <Footer />
-      {/* <HoverFooter /> */}
     </div>
   );
 };
