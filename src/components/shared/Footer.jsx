@@ -205,6 +205,8 @@ export default function Footer() {
         <li></li>
         <li></li>
       </ul>
+      <center><hr className="hr"/></center>
+      <div className="copy"><p>&copy; Copyright 2024 SITMUN.</p></div>
     </Box>
   );
 }

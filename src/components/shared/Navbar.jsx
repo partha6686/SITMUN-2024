@@ -286,7 +286,7 @@ export default function Navbar({ order, setOrder, selectList = false }) {
                   >
                     <FormControl sx={{ m: 1, minWidth: 120 }}>
                       <InputLabel htmlFor="demo-dialog-native">
-                        Position
+                        Department
                       </InputLabel>
                       <Select
                         native
