@@ -192,7 +192,22 @@ export const teamdata=[
       "dept": "Core Secretariat",
       "url": "https://ik.imagekit.io/b5egisrd9/toWEBP/671105-1706115342544---Nakkina-Baba-Sai.webp?updatedAt=1707723414320"
     },
-    
+    {
+      "Timestamp": "2024/01/24 10:29:30 pm GMT+5:30",
+      "name": "Amlan Jyoti Prakash",
+      "Year": "4th Year",
+      "desig": "USG",
+      "dept": "Video Editing",
+      "url": "https://ik.imagekit.io/0oohdkbtxa/WhatsApp%20Image%202024-02-13%20at%2019.38.42.jpeg?updatedAt=1707833398187"
+    },
+    {
+      "Timestamp": "2024/01/24 10:29:30 pm GMT+5:30",
+      "name": "Swaraj Kumar Padhi",
+      "Year": "3rd Year",
+      "desig": "Director",
+      "dept": "Video Editing",
+      "url": "https://ik.imagekit.io/0oohdkbtxa/IMG_20240213_190702.jpg?updatedAt=1707833427168"
+    },
     {
       "Timestamp": "2024/01/20 11:56:45 pm GMT+5:30",
       "name": "Muskan Kumari",

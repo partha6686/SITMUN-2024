@@ -16,7 +16,7 @@ import "../../styles/about.css";
 
 const About = () => {
   return (
-    <section>
+    <section id="about">
       <Stack
         className="content"
         flexDirection={{ md: "row", xs: "column-reverse" }}

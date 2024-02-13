@@ -185,6 +185,14 @@
   }
 }
 @media (max-width:425px){
+  .meet{
+    font-size: 65px;
+    font-weight: 800;
+    text-align: center;
+    /* color:#FFFFFF; */
+    margin:-400px 0px 257px 0px;
+    
+}
 
   .card{
     height: 279px;
@@ -264,4 +272,14 @@
       }
     }
   }
+}
+@media screen and (max-width:500px) {
+  .meet{
+    font-size: 65px;
+    font-weight: 800;
+    text-align: center;
+    /* color:#FFFFFF; */
+    margin:-200px 0px 207px 0px;
+    
+}
 }

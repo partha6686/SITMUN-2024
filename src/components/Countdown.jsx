@@ -3,7 +3,7 @@ import { zeroPad } from "react-countdown";
 import styles from "../styles/Countdown.module.css";
 import Heading from "./shared/Heading";
 const CalcTimeDelta = () => {
-  const targetDate = "2024-03-28T11:50:59";
+  const targetDate = "2024-03-27T11:59:59";
 
   const calculateTimeDelta = () => {
     const now = new Date().getTime();

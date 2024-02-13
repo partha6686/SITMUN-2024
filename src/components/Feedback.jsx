@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { feedbackdata } from "../data/feedback";
+import Heading from "./shared/Heading";
 const Feedback = () => {
   const sliderRef = useRef(null);
   const settings = {
@@ -49,6 +50,7 @@ const Feedback = () => {
 
   return (
     <div className={styles.main}>
+      <Heading heading={"OUR TESTIMONIALS"}/>
       <Slider {...settings} ref={sliderRef} className={styles.slider}>
         {feedbackdata?.map((item, id) => (
           <div key={id} className={styles.testimonial}>

@@ -4,18 +4,18 @@ import HeroImg from "../../assets/hero/hero2.jpg";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { NavLink } from "react-router-dom";
-import { heroImgs } from "../../data/hero";
+import { heroComm } from "../../data/heroComm";
 
 //css file
 import "../../styles/sideBar.css";
 
 
-const Hero = () => {
+const HeroTeam = () => {
   const [imgUrlIdx, setImgUrlIdx] = useState(0);
 
   useEffect(() => {
     const changeImgUrl = () => {
-      setImgUrlIdx((idx) => (idx == heroImgs.length - 1 ? 0 : idx + 1));
+      setImgUrlIdx((idx) => (idx == heroComm.length - 1 ? 0 : idx + 1));
     };
     const intrval = setInterval(changeImgUrl, 2000);
     return () => {
@@ -29,7 +29,7 @@ const Hero = () => {
         height: "100vh",
         width: "100%",
         // background: `url(${HeroImg}),linear-gradient(#4e9f3d, #4E9F3D)`,
-        backgroundImage: `linear-gradient(120deg, rgba(25,26,25,0.9) 71%, rgba(30,81,40,0.8) 97%), url(${heroImgs[imgUrlIdx]})`,
+        backgroundImage: `linear-gradient(120deg, rgba(25,26,25,0.9) 71%, rgba(30,81,40,0.8) 97%), url(${heroComm[imgUrlIdx]})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -212,7 +212,7 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroTeam;
 
 export const SideBar = () => {
   return (

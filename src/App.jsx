@@ -3,6 +3,7 @@ import Team from "./pages/Team";
 import Home from "./pages/Home";
 import Committee from "./pages/Committee";
 import "./App.css"
+import About from "./components/Home/About";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
     
       <BrowserRouter>
         <Routes>
+        <Route path="/about" element={<About />} />
           <Route path="/" element={<Home />} />
           <Route path="/teams" element={<Team />} />
           <Route path="/committee" element={<Committee />} />
