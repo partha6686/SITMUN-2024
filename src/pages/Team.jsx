@@ -17,11 +17,12 @@ import {
 } from "@chakra-ui/react";
 import { heroTeam } from "../data/heroTeam";
 import Footer from "../components/shared/Footer";
+import Navbar from "../components/shared/Navbar";
 
 import { teamdata } from "../data/team";
 import Heading from "../components/shared/Heading";
 const Team = () => {
-  
+  const props = { Heading: "MEET OUR TEAM" };
   const [order, setorder] = useState("Core Secretariat");
   const [imgUrlIdx, setImgUrlIdx] = useState(0);
 
@@ -36,7 +37,7 @@ const Team = () => {
   }, []);
   return (
     <div>
-      {/* <SideBar /> */}
+      <Navbar order={order} setOrder={setorder} selectList={true} />
       <div className={styles.container}>
         <div className={styles.head}>
           <div className={styles.head2}>
@@ -58,7 +59,7 @@ const Team = () => {
         transition: "backgroundImage ease-in",
       }}
     />
-            <div className={styles.menu}>
+            {/* <div className={styles.menu}>
               <Menu>
                 <MenuButton
                   as={IconButton}
@@ -162,7 +163,7 @@ const Team = () => {
                   </MenuOptionGroup>
                 </MenuList>
               </Menu>
-            </div>
+            </div> */} 
           </div>
           <div className={styles.meet}>
             <div className={styles.our}>
