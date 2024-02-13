@@ -1,9 +1,10 @@
 import { useEffect, useState, React, useRef } from "react";
-
+import { Box, Stack, Typography, Button } from "@mui/material";
 import styles from "../styles/Team.module.css";
 import { Icon } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { IconButton } from "@chakra-ui/react";
+// import IconButton from "@mui/material/IconButton";
 import {
   Menu,
   MenuButton,
@@ -14,24 +15,49 @@ import {
   MenuOptionGroup,
   MenuDivider,
 } from "@chakra-ui/react";
-
+import { heroTeam } from "../data/heroTeam";
 import Footer from "../components/shared/Footer";
 
 import { teamdata } from "../data/team";
 import Heading from "../components/shared/Heading";
 const Team = () => {
-  const props = { Heading: "MEET OUR TEAM" };
+  
   const [order, setorder] = useState("Core Secretariat");
+  const [imgUrlIdx, setImgUrlIdx] = useState(0);
+
+  useEffect(() => {
+    const changeImgUrl = () => {
+      setImgUrlIdx((idx) => (idx == heroTeam.length - 1 ? 0 : idx + 1));
+    };
+    const intrval = setInterval(changeImgUrl, 2000);
+    return () => {
+      clearInterval(intrval);
+    };
+  }, []);
   return (
     <div>
       {/* <SideBar /> */}
       <div className={styles.container}>
         <div className={styles.head}>
           <div className={styles.head2}>
-            <img
-              src="https://cdn.create.vista.com/api/media/medium/677587082/stock-photo-bachelor-party-multiethnic-best-men-groom-laughing-while-standing-glasses?token="
-              alt="team"
-            />
+          <Box
+      sx={{
+        height: "70vh",
+        width: "100%",
+        // background: `url(${HeroImg}),linear-gradient(#4e9f3d, #4E9F3D)`,
+        backgroundImage: `linear-gradient(120deg, rgba(25,26,25,0.9) 71%, rgba(30,81,40,0.8) 97%),url(${heroTeam[imgUrlIdx]})`,
+        
+        backgroundSize: "cover",
+        objectFit:"cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        
+        transition: "backgroundImage ease-in",
+      }}
+    />
             <div className={styles.menu}>
               <Menu>
                 <MenuButton
@@ -39,10 +65,10 @@ const Team = () => {
                   position="absolute"
                   top="0"
                   right="0"
-                  margin="2"
+                  margin="7"
                   variant="ghost"
+                  color={"white"}
                 >
-                  <HamburgerIcon textColor="black" />
                 </MenuButton>
                 <MenuList bgColor="black" color="white">
                   <MenuOptionGroup
@@ -141,7 +167,7 @@ const Team = () => {
           <div className={styles.meet}>
             <div className={styles.our}>
               <h1>
-                <Heading {...props} />
+                <Heading heading={"MEET OUR TEAM"}/>
               </h1>
             </div>
           </div>

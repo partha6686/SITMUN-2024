@@ -1,10 +1,26 @@
 export const teamdata=[
+  {
+    "Timestamp": "2024/01/23 9:07:57 pm GMT+5:30",
+    "name": "Namrata Mishra",
+    "Year": "4th",
+    "desig": "Secretary General",
+    "dept": "Core Secretariat",
+    "url": "https://ik.imagekit.io/b5egisrd9/toWEBP/205446-Picsart_23-12-07_20-06-29-118---Namrata-Mishra.webp?updatedAt=1707723410750"
+  },
+  {
+    "Timestamp": "2024/01/21 12:05:13 am GMT+5:30",
+    "name": "Manas Ranjan Padhy",
+    "Year": "4th Year",
+    "desig": "Deputy Secretary General",
+    "dept": "Core Secretariat",
+    "url": "https://ik.imagekit.io/0oohdkbtxa/ManasPadhy_yFZFdW_BT?updatedAt=1707758179375"
+  },
     {
       "Timestamp": "2024/01/24 7:13:20 pm GMT+5:30",
       "name": "Partha Sarathi Praharaj",
       "Year": "4th",
       "desig": "Charge D' Affairs",
-      "dept": "Web Development",
+      "dept": "Core Secretariat",
       "url": "https://ik.imagekit.io/b5egisrd9/toWEBP/888053-IMG_20240124_191115---Partha-Sarathi-Praharaj.webp?updatedAt=1707723417261"
     },
     {
@@ -52,7 +68,7 @@ export const teamdata=[
       "name": "Jivan Jyoti Pal",
       "Year": "2nd",
       "desig": "Deputy Director",
-      "dept": "Creativity and Designing",
+      "dept": "Creativity & Designing",
       "url": "https://ik.imagekit.io/b5egisrd9/toWEBP/258538-B612_20231128_194922_468---Jivan-Jyoti-Pal.webp?updatedAt=1707724648858"
     },
     {
@@ -63,14 +79,7 @@ export const teamdata=[
       "dept": "Sponsorship",
       "url": "https://ik.imagekit.io/b5egisrd9/toWEBP/443557-WhatsApp-Image-2024-01-26-at-10.56.04---SUBHOJEET-BISWAS-B.TECH.webp?updatedAt=1707723414340"
     },
-    {
-      "Timestamp": "2024/01/21 12:05:13 am GMT+5:30",
-      "name": "Manas Ranjan Padhy",
-      "Year": "4th Year",
-      "desig": "Deputy Secretary General",
-      "dept": "",
-      "url": "https://ik.imagekit.io/b5egisrd9/toWEBP/710520-d11fff39-7de8-4bb2-a286-83fb8de46af6---Manas-Ranjan-Padhy.webp?updatedAt=1707723414620"
-    },
+    
     {
       "Timestamp": "2024/01/20 11:15:04 pm GMT+5:30",
       "name": "Prayash Nayak",
@@ -90,9 +99,9 @@ export const teamdata=[
     {
       "Timestamp": "2024/01/22 1:04:10 am GMT+5:30",
       "name": "Shraddha Mishra",
-      "Year": "2024",
+      "Year": "3RD",
       "desig": "Director",
-      "dept": "Creativity and Designing",
+      "dept": "Creativity & Designing",
       "url": "https://ik.imagekit.io/b5egisrd9/toWEBP/924769-IMG-20240120-WA0147---Shraddha-Mishra.webp?updatedAt=1707723417362"
     },
     {
@@ -132,7 +141,7 @@ export const teamdata=[
       "name": "Sourav Pratap Kanungo",
       "Year": "3rd Year",
       "desig": "Director",
-      "dept": "Delegate Affairs",
+      "dept": "EB Affairs",
       "url": "https://ik.imagekit.io/b5egisrd9/toWEBP/198095-IMG_7414---Sourav-Kanungo.webp?updatedAt=1707723410305"
     },
     {
@@ -140,7 +149,7 @@ export const teamdata=[
       "name": "Snigdha Mohapatra",
       "Year": "3rd",
       "desig": "Director",
-      "dept": "Creativity and Designing",
+      "dept": "Creativity & Designing",
       "url": "https://ik.imagekit.io/b5egisrd9/toWEBP/557049-IMG_20240117_231830---Snigdha-Mohapatra.webp?updatedAt=1707723413602"
     },
     {
@@ -172,7 +181,7 @@ export const teamdata=[
       "name": "Shubhadeep Dash",
       "Year": "4th",
       "desig": "Director General",
-      "dept": "Delegate Affairs",
+      "dept": "Core Secretariat",
       "url": "https://ik.imagekit.io/b5egisrd9/toWEBP/357467-Shubhadeep-Dash---Shubhadeep-Dash.webp?updatedAt=1707723410828"
     },
     {
@@ -180,17 +189,10 @@ export const teamdata=[
       "name": "NAKKINA BABA SAI",
       "Year": "4th Year",
       "desig": "Director General OIOS",
-      "dept": "Finance",
+      "dept": "Core Secretariat",
       "url": "https://ik.imagekit.io/b5egisrd9/toWEBP/671105-1706115342544---Nakkina-Baba-Sai.webp?updatedAt=1707723414320"
     },
-    {
-      "Timestamp": "2024/01/23 9:07:57 pm GMT+5:30",
-      "name": "Namrata Mishra",
-      "Year": "4th",
-      "desig": "Secretary General",
-      "dept": "",
-      "url": "https://ik.imagekit.io/b5egisrd9/toWEBP/205446-Picsart_23-12-07_20-06-29-118---Namrata-Mishra.webp?updatedAt=1707723410750"
-    },
+    
     {
       "Timestamp": "2024/01/20 11:56:45 pm GMT+5:30",
       "name": "Muskan Kumari",

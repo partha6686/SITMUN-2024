@@ -10,6 +10,7 @@
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 62px;
     /* margin: -20px;  */
 }
 
@@ -17,19 +18,17 @@
     height: 100vh;
     width:100%;
     object-fit: cover;
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 .meet{
     font-size: 65px;
     font-weight: 800;
     text-align: center;
     /* color:#FFFFFF; */
-    margin:-25% 0% 25% 0%;
+    margin:-300px 0px 257px 0px;
     
 }
-.our {
-  backdrop-filter: blur(5px);
-  }
+
 .heading h1{
   /* color: #16621f ; */
   font-size:clamp(2.5rem, 10vw, 5rem);
