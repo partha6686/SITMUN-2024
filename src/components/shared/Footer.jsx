@@ -70,9 +70,8 @@ export default function Footer() {
             alignItems={"center"}
             direction={{sm: "row", xs: 'column'}}
             spacing={3}
-            display={{xs: 'none', sm: 'flex'}}
           >
-            <Stack spacing={1} justifyContent={"center"} alignItems={"center"}>
+            <Stack spacing={1} justifyContent={"center"} alignItems={"center"} display={{xs: 'none', sm: 'flex'}}>
               <Typography variant="h5" fontWeight={"bold"}>
                 Links
               </Typography>

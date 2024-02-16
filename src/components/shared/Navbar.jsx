@@ -209,7 +209,7 @@ export default function Navbar({ order, setOrder, selectList = false }) {
   const handleScroll = () => {
     const position = window.scrollY;
     setScrollPosition(position);
-    console.log(position);
+    // console.log(position);
   };
 
   React.useEffect(() => {
@@ -263,6 +263,7 @@ export default function Navbar({ order, setOrder, selectList = false }) {
                   background: "rgb(20, 225, 0, 0.40)",
                   backdropFilter: "blur(30px)",
                   fontWeight: "bold",
+                  padding: '1vh 2vw',
 
                   "&:hover": {
                     backdropFilter: "blur(0px)",
@@ -388,7 +389,7 @@ export default function Navbar({ order, setOrder, selectList = false }) {
               "& .MuiPaper-root": {
                 border: "2px solid ff3cac !important",
                 borderRadius: ".75rem !important",
-                background: "##00ba47",
+                background: "#00ba47",
                 backgroundImage:
                   "linear-gradient(225deg, #3fff3c 0%, #00ba47 50%, #2d4f00 100%)",
               },
