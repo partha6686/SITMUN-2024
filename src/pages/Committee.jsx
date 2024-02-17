@@ -1,9 +1,9 @@
 import React from 'react'
 // import Hero from '../components/Home/Hero'
-import CommitteesSlider from '../components/Committee/CommitteesSlider'
-import Navbar from '../components/shared/Navbar'
-import HeroTeam from '../components/Home/HeroTeam'
-import Footer from '../components/shared/Footer'
+const CommitteesSlider = React.lazy(() => import('../components/Committee/CommitteesSlider'))
+const Navbar = React.lazy(() => import("../components/shared/Navbar"));
+const HeroTeam = React.lazy(() => import ("../components/Home/HeroTeam"));
+const Footer = React.lazy(()=> import("../components/shared/Footer"));
 
 const Committee = () => {
   return (

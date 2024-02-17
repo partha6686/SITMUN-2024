@@ -49,7 +49,7 @@ const TimelineView = () => {
           >
             SITMUN 2024 TIMELINE
           </Typography> */}
-          <Heading heading={"SITMUN 2024 TIMELINE"} />
+          <Heading heading={"TIMELINE"} />
           <Box display={{ sm: "flex", xs: "none" }}>
             <CustomizedTimeline />
           </Box>
@@ -58,7 +58,7 @@ const TimelineView = () => {
           </Box>
         </Stack>
       </Container>
-      <ul className="circles">
+      {/* <ul className="circles">
         <li></li>
         <li></li>
         <li></li>
@@ -69,7 +69,7 @@ const TimelineView = () => {
         <li></li>
         <li></li>
         <li></li>
-      </ul>
+      </ul> */}
     </Box>
   );
 };
