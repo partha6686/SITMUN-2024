@@ -224,7 +224,7 @@ export const SideBar = () => {
       direction={"column-reverse"}
       height={"100%"}
       justifyContent={"space-around"}
-      fontFamily="comfortaa,cursive"
+      fontFamily={"comfortaa,cursive"}
       sx={{ display: { md: "flex", sm: "none", xs: "none" } }}
     >
       <NavLink to={"/"}>
