@@ -1,15 +1,14 @@
 import React from "react";
-import Navbar from "../components/shared/Navbar";
-import Hero from "../components/Home/Hero";
-import Footer from "../components/shared/Footer";
+const Navbar = React.lazy(() => import("../components/shared/Navbar"));
+const Hero = React.lazy(() => import("../components/Home/Hero"));
+const Footer = React.lazy(() => import("../components/shared/Footer"));
 import CalcTimeDelta from "../components/Countdown";
 import About from "../components/Home/About";
 import TimelineView from "../components/Home/Timeline";
 import Message from "../components/Home/Message";
 import Faq from "../components/Home/Faq";
-
-const Gallery = React.lazy(() => import("../components/Home/Gallery"));
-const Feedback = React.lazy(()=> import("../components/Feedback"));
+import Gallery from "../components/Home/Gallery";
+import Feedback from "../components/Feedback";
 
 import "../styles/circles.css"
 
