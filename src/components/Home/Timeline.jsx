@@ -184,7 +184,7 @@ function EventDetail({ heading, details, odd }) {
           variant="h5"
           textAlign={"center"}
           paddingBottom={"2vh"}
-          fontFamily={"Marcellus"}
+          fontFamily={"comfortaa, cursive"}
           fontWeight={700}
           color={"#cce5ff"}
         >
@@ -192,7 +192,7 @@ function EventDetail({ heading, details, odd }) {
         </Typography>
         <Typography
           textAlign={"center"}
-          fontFamily={"DM Serif Display"}
+          fontFamily={"comfortaa, cursive"}
           color={"#f5f5dc"}
           fontWeight={200}
         >
@@ -223,7 +223,7 @@ function EventDetailMobile({ heading, details, odd, date }) {
           variant="h5"
           textAlign={"center"}
           paddingBottom={"2vh"}
-          fontFamily={"Marcellus"}
+          fontFamily={"comfortaa, cursive"}
           fontWeight={700}
           color={"#cce5ff"}
         >
@@ -231,7 +231,7 @@ function EventDetailMobile({ heading, details, odd, date }) {
         </Typography>
         <Typography
           textAlign={"center"}
-          fontFamily={"DM Serif Display"}
+          fontFamily={"comfortaa, cursive"}
           color={"#bababa"}
           fontWeight={200}
         >
@@ -239,7 +239,7 @@ function EventDetailMobile({ heading, details, odd, date }) {
         </Typography>
         <Typography
           textAlign={"center"}
-          fontFamily={"DM Serif Display"}
+          fontFamily={"comfortaa, cursive"}
           color={"#f5f5dc"}
           fontWeight={200}
         >

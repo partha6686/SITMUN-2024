@@ -277,7 +277,8 @@ export default function Navbar({ order, setOrder, selectList = false }) {
                 >
                   <InputLabel
                     htmlFor="demo-dialog-native"
-                    sx={{ color: "#fff" }}
+                    sx={{ color: "#fff" ,fontFamily:"comfortaa,cursive"}}
+                    
                   >
                     Department
                   </InputLabel>
@@ -289,6 +290,7 @@ export default function Navbar({ order, setOrder, selectList = false }) {
                       <OutlinedInput label="Position" id="demo-dialog-native" />
                     }
                     sx={{ color: "#fff" }}
+                    fontFamily={"comfortaa,cursive"}
                   >
                     <option value={"Core Secretariat"}>Core Secretariat</option>
                     <option value={"Delegate Affairs"}>Delegate Affairs</option>

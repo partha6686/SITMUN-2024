@@ -7,7 +7,7 @@
     color: transparent;
     font-family: 'Monoton', serif;
     text-align: center;
-    font-size: 55px;
+    font-size: 65px;
 }
 @media screen and (max-width:770px) {
     .head h1{

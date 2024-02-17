@@ -59,8 +59,8 @@ export default function Footer() {
           >
             <img src={Logo} alt="" style={{ maxWidth: "8rem" }} />
             <Stack justifyContent={"center"} alignItems={"center"}>
-              <Typography variant="h3">SITMUN 2024</Typography>
-              <Typography variant="subtitle1" color={"#a7fd6a"} textAlign={"center"}>
+              <Typography variant="h3" fontFamily="comfortaa,cursive">SITMUN 2024</Typography>
+              <Typography variant="subtitle1" color={"#a7fd6a"} textAlign={"center"} fontFamily="comfortaa,cursive">
                REVOLUTION THROUGH RESOLUTION
               </Typography>
             </Stack>
@@ -72,7 +72,7 @@ export default function Footer() {
             spacing={3}
           >
             <Stack spacing={1} justifyContent={"center"} alignItems={"center"} display={{xs: 'none', sm: 'flex'}}>
-              <Typography variant="h5" fontWeight={"bold"}>
+              <Typography variant="h5" fontWeight={"bold"} fontFamily="comfortaa,cursive">
                 Links
               </Typography>
               <Stack
@@ -96,7 +96,7 @@ export default function Footer() {
               </Stack>
             </Stack>
             <Stack spacing={1}>
-              <Typography variant="h5" fontWeight={"bold"}>
+              <Typography variant="h5" fontWeight={"bold"}fontFamily="comfortaa,cursive">
                 Follow Us On
               </Typography>
               <Stack
@@ -116,23 +116,23 @@ export default function Footer() {
             justifyContent={"center"}
             alignItems={"center"}
           >
-            <Typography variant="h5" fontWeight={"bold"}>
+            <Typography variant="h5" fontWeight={"bold"} fontFamily="comfortaa,cursive">
               Contact us
             </Typography>
             <Stack direction={"column"} spacing={0} alignItems={"center"}>
-              <Typography variant="body1" color={"#a7fd6a"}>
+              <Typography variant="body1" color={"#a7fd6a"}fontFamily="comfortaa,cursive">
                 Deputy Secretary General
               </Typography>
-              <Typography variant="body1" color={"#a7fd6a"}>
+              <Typography variant="body1" color={"#a7fd6a"}fontFamily="comfortaa,cursive">
                 SIT MUN 2024
               </Typography>
-              <Typography variant="body1" color={"#a7fd6a"}>
+              <Typography variant="body1" color={"#a7fd6a"}fontFamily="comfortaa,cursive">
                 Silicon Institute of Technology
               </Typography>
-              <Typography variant="body1" color={"#a7fd6a"}>
+              <Typography variant="body1" color={"#a7fd6a"}fontFamily="comfortaa,cursive">
                 Email:- meta.academics@silicon.ac.in
               </Typography>
-              <Typography variant="body1" color={"#a7fd6a"}>
+              <Typography variant="body1" color={"#a7fd6a"}fontFamily="comfortaa,cursive">
                 Phone:- +91 8763315622
               </Typography>
             </Stack>
@@ -150,7 +150,7 @@ export default function Footer() {
             boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
           }}
         >
-          <Typography variant="h3" textAlign={"center"}>
+          <Typography variant="h3" textAlign={"center"}fontFamily="comfortaa,cursive">
             Contact Us
           </Typography>
           <Stack spacing={1}>
@@ -159,6 +159,7 @@ export default function Footer() {
               label="Name"
               variant="outlined"
               onChange={(e) => setName(e.target.value)}
+              fontFamily="comfortaa,cursive"
             />
             {/* <TextField
                 id="outlined-basic"
@@ -172,12 +173,14 @@ export default function Footer() {
               multiline
               rows={5}
               onChange={(e) => setMessage(e.target.value)}
+              fontFamily="comfortaa,cursive"
             />
           </Stack>
           <Button
             sx={{
               background: "rgb(0, 180, 0)",
               color: "white",
+              fontFamily:"comfortaa,cursive",
               transition: "all 0.5s ease-out",
 
               "&:hover": {
@@ -187,6 +190,7 @@ export default function Footer() {
               },
             }}
             onClick={sendEmail}
+            
           >
             Send
           </Button>
@@ -205,7 +209,7 @@ export default function Footer() {
         <li></li>
       </ul>
       <center><hr className="hr"/></center>
-      <div className="copy"><p>&copy; Copyright 2024 SITMUN.</p></div>
+      <div className="copy" ><p>&copy; Copyright 2024 SITMUN.</p></div>
     </Box>
   );
 }
