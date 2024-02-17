@@ -1,26 +1,14 @@
 import { useEffect, useState, React, useRef } from "react";
 import { Box, Stack, Typography, Button } from "@mui/material";
 import styles from "../styles/Team.module.css";
-import { Icon } from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
-import { IconButton } from "@chakra-ui/react";
 // import IconButton from "@mui/material/IconButton";
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-} from "@chakra-ui/react";
 import { heroTeam } from "../data/heroTeam";
 import Footer from "../components/shared/Footer";
 import Navbar from "../components/shared/Navbar";
 
 import { teamdata } from "../data/team";
 import Heading from "../components/shared/Heading";
+import HeroTeam from "../components/Home/HeroTeam";
 const Team = () => {
   const props = { Heading: "MEET OUR TEAM" };
   const [order, setorder] = useState("Core Secretariat");
@@ -39,7 +27,8 @@ const Team = () => {
     <div>
       <Navbar order={order} setOrder={setorder} selectList={true} />
       <div className={styles.container}>
-        <div className={styles.head}>
+        <HeroTeam heading={order} order={order} setOrder={setorder} selectList={true} />
+        {/* <div className={styles.head}>
           <div className={styles.head2}>
           <Box
       sx={{
@@ -58,124 +47,15 @@ const Team = () => {
         
         transition: "backgroundImage ease-in",
       }}
-    />
-            {/* <div className={styles.menu}>
-              <Menu>
-                <MenuButton
-                  as={IconButton}
-                  position="absolute"
-                  top="0"
-                  right="0"
-                  margin="7"
-                  variant="ghost"
-                  color={"white"}
-                >
-                </MenuButton>
-                <MenuList bgColor="black" color="white">
-                  <MenuOptionGroup
-                    bgColor="black"
-                    color="white"
-                    defaultValue="Core Secretariat"
-                    title="Department"
-                    type="radio"
-                    onChange={(value) => {
-                      console.log(value);
-                      setorder(value);
-                    }}
-                  >
-                    <MenuItemOption
-                      value="Core Secretariat"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Core Secretariat
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="Delegate Affairs"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Delegate Affairs
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="Public Relations"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Public Relations
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="Web Development"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Web Development
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="Hospitality"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Hospitality
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="Finance"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Finance
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="Sponsorship"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Sponsorship
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="Video Editing"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Video Editing
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="Creativity & Designing"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Creativity & Designing
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="Logistics"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Logistics
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="EB Affairs"
-                      bgColor="black"
-                      color="white"
-                    >
-                      EB Affairs
-                    </MenuItemOption>
-                  </MenuOptionGroup>
-                </MenuList>
-              </Menu>
-            </div> */} 
+   />
           </div>
-          <div className={styles.meet}>
-            <div className={styles.our}>
-              <h1>
-                <Heading heading={"MEET OUR TEAM"}/>
-              </h1>
-            </div>
-          </div>
-        </div>
-        <div className={styles.heading}>
+          
+              
+            
+        </div> */}
+        {/* <div className={styles.heading}>
           <h1>{order}</h1>
-        </div>
+        </div> */}
         <div className={styles.cardrow}>
           <div className={styles.body}>
             {teamdata?.map((item, id) => {

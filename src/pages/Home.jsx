@@ -12,12 +12,12 @@ import Message from "../components/Home/Message";
 
 import "../styles/circles.css"
 import Faq from "../components/Home/Faq";
-import LoadingComponent from "../components/shared/Loader";
+
 
 const Home = () => {
   return (
     <div>
-      {/* <Navbar />
+      <Navbar />
       <Hero />
       <CalcTimeDelta />
       <About />
@@ -26,8 +26,7 @@ const Home = () => {
       <Feedback />
       <Message />
       <Faq />
-      <Footer /> */}
-      <LoadingComponent />
+      <Footer />
     </div>
   );
 };

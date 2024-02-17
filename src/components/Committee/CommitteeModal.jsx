@@ -37,7 +37,7 @@ const CommitteeModal = ({ open, setOpen, committee }) => {
         >
           {committee?.name}
         </Typography>
-        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+        <Typography id="modal-modal-description" sx={{ mt: 2, color: "#fff" }}>
           {committee?.body}
         </Typography>
         <Accordion sx={{bgcolor: "#313131",color: '#fff',boxShadow: "none"}}>
