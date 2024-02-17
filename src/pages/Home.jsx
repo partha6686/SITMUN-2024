@@ -1,7 +1,7 @@
 import React from "react";
+import Navbar from "../components/shared/Navbar";
 import Hero from "../components/Home/Hero";
 const Gallery = React.lazy(() => import("../components/Home/Gallery"));
-const Navbar = React.lazy(() => import("../components/shared/Navbar"));
 const Footer = React.lazy(()=> import("../components/shared/Footer"));
 const CalcTimeDelta = React.lazy(()=> import("../components/Countdown"));
 const Feedback = React.lazy(()=> import("../components/Feedback"));
