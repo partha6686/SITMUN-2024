@@ -1,14 +1,14 @@
-import { useEffect, useState, React, useRef } from "react";
+import React,{ useEffect, useState, useRef } from "react";
 import { Box, Stack, Typography, Button } from "@mui/material";
 import styles from "../styles/Team.module.css";
 // import IconButton from "@mui/material/IconButton";
 import { heroTeam } from "../data/heroTeam";
-import Footer from "../components/shared/Footer";
-import Navbar from "../components/shared/Navbar";
+
+const Navbar = React.lazy(() => import("../components/shared/Navbar"));
+const HeroTeam = React.lazy(() => import ("../components/Home/HeroTeam"));
+const Footer = React.lazy(()=> import("../components/shared/Footer"));
 
 import { teamdata } from "../data/team";
-import Heading from "../components/shared/Heading";
-import HeroTeam from "../components/Home/HeroTeam";
 const Team = () => {
   const props = { Heading: "MEET OUR TEAM" };
   const [order, setorder] = useState("Core Secretariat");
