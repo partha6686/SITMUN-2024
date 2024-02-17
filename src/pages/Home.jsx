@@ -13,6 +13,7 @@ import Message from "../components/Home/Message";
 import "../styles/circles.css"
 import Faq from "../components/Home/Faq";
 
+
 const Home = () => {
   return (
     <div>

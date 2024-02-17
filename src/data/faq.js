@@ -1,26 +1,38 @@
 export const allFaq = [
     {
       id: 1,
-      question: "What is Model United Nations conference or MUN conference?",
+      question: "What is Model United Nations (MUN) ?",
       answer:
-        "Model United Nations is an academic simulation of the United Nations where students play the role of delegates from different countries and attempt to solve real-world issues with the policies and perspectives of their assigned country. Delegates are given agenda to debate upon with relevance to the committee they are in. The whole debate is overseen by the Executive Board, who help the delegate throughout the process of learning. At the end of the conference, remarkable performances are rewarded.",
+        "Model United Nations (MUN) is an academic simulation of the United Nations where students play the role of delegates from various countries and simulate UN committees. Participants engage in debates, discussions, and negotiations on global issues while representing their assigned countries' perspectives.        ",
     },
     {
       id: 2,
-      question: "I’ve never done MUN but I want to start. Can I?",
+      question: "Is prior experience necessary to participate in the conference?",
       answer:
-        "Yes, absolutely! MUN is something that anyone can start at any point in time, there is no right or wrong time to start MUNing. SITMUN will be happy to host a large number of first-timers and we will provide full support to them for a memorable experience.",
+        "No prior experience is necessary to register for the conference.",
     },
     {
       id: 3,
-      question: "What are the takeaways from SITMUN?",
+      question: "What are the key rules and procedures followed in MUN sessions?      ",
       answer:
-        "MUNs aim at sharpening the oratory, debating and writing skills of the participants, in addition to critical thinking, teamwork and leadership skills. Delegates critically analyze the given agenda from their assigned country’s perspective which helps them in learning about international issues, international relations and diplomatic courtesy. Along with this, the team of photographers clicks amazing pictures which can be used for Instagram stories, posts or as profile pictures. You can expect good socials at SITMUN 2022, not to forget all the humble (men), beautiful (ladies) intelligent and kind people you get to meet.",
+        "The Model United Nations are simulated via the UNA-USA rules and procedures.        ",
     },
     {
       id: 4,
+      question: "Are there any resources available for MUN research?     ",
+      answer:
+        "The valid and proof-reading resources for the reaserch can be found from the official-published UN articles and reports, the information can be collected from the news agencies articles and official government websites of various countries.        ",
+    },
+    {
+      id: 5,
+      question: "What committees are being simulated?      ",
+      answer:
+        "  Our conference presents a variety of committees namely United Nations Human Rights Council(UNHRC), United Nations General Assembly -Disarmament and Security Council(DISEC), SDG SUMMIT and International Press.          ",
+    },
+    {
+      id: 6,
       question: "What is the fees structure of SITMUN?",
       answer:
-        "Regarding the fees strcuture, don't worry we got you covered, <a style={{color: '#4E9F3D!important'}} href='https://ik.imagekit.io/72bccx2bu/FEES.pdf' target='_blank'>click here</a> to know about fees structure and also go through the <a style={{color: '#4E9F3D!important'}} href='https://ik.imagekit.io/72bccx2bu/GUIDELINES.pdf?ik-sdk-version=javascript-1.4.3&updatedAt=1671606076861' target='_blank'>Registration Guidelines</a>",
+        "Regarding the fees strcuture, don't worry we got you covered, <a style={{color: '#4E9F3D!important'}} href='https://ik.imagekit.io/0oohdkbtxa/SITMUN%202024%20registration%20fees%20.pdf?updatedAt=1707845617770' target='_blank'>click here</a> to know about fees structure and also go through the <a style={{color: '#4E9F3D!important'}} href='https://ik.imagekit.io/72bccx2bu/GUIDELINES.pdf?ik-sdk-version=javascript-1.4.3&updatedAt=1671606076861' target='_blank'>Registration Guidelines</a>",
     },
   ];

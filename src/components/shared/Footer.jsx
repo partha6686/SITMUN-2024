@@ -61,7 +61,7 @@ export default function Footer() {
             <Stack justifyContent={"center"} alignItems={"center"}>
               <Typography variant="h3">SITMUN 2024</Typography>
               <Typography variant="subtitle1" color={"#a7fd6a"} textAlign={"center"}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing
+               REVOLUTION THROUGH RESOLUTION
               </Typography>
             </Stack>
           </Stack>
@@ -70,9 +70,8 @@ export default function Footer() {
             alignItems={"center"}
             direction={{sm: "row", xs: 'column'}}
             spacing={3}
-            display={{xs: 'none', sm: 'flex'}}
           >
-            <Stack spacing={1} justifyContent={"center"} alignItems={"center"}>
+            <Stack spacing={1} justifyContent={"center"} alignItems={"center"} display={{xs: 'none', sm: 'flex'}}>
               <Typography variant="h5" fontWeight={"bold"}>
                 Links
               </Typography>
@@ -92,7 +91,7 @@ export default function Footer() {
               >
                 <Link to="/">Home</Link>
                 <Link to="/teams">Teams</Link>
-                <Link to="/committe">Committe</Link>
+                <Link to="/committe">Committee</Link>
                 <Link>Register</Link>
               </Stack>
             </Stack>
@@ -134,7 +133,7 @@ export default function Footer() {
                 Email:- meta.academics@silicon.ac.in
               </Typography>
               <Typography variant="body1" color={"#a7fd6a"}>
-                Phone:- +91 7717778982
+                Phone:- +91 8763315622
               </Typography>
             </Stack>
           </Stack>
@@ -205,6 +204,8 @@ export default function Footer() {
         <li></li>
         <li></li>
       </ul>
+      <center><hr className="hr"/></center>
+      <div className="copy"><p>&copy; Copyright 2024 SITMUN.</p></div>
     </Box>
   );
 }

@@ -84,7 +84,7 @@
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    color: #737373;
+    color: #c4c4c4;
     margin-top: 6.5%;
     width: 175px;
 }
@@ -151,7 +151,7 @@
 .bigBlockContain {
     padding: 10px;
     position: relative;
-    color: black;
+    color: #fff;
 }
 
 .smlBlockContain {

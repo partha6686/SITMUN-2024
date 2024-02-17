@@ -1,139 +1,61 @@
 import { useEffect, useState, React, useRef } from "react";
-
+import { Box, Stack, Typography, Button } from "@mui/material";
 import styles from "../styles/Team.module.css";
-
+// import IconButton from "@mui/material/IconButton";
+import { heroTeam } from "../data/heroTeam";
 import Footer from "../components/shared/Footer";
 import Navbar from "../components/shared/Navbar";
 
 import { teamdata } from "../data/team";
 import Heading from "../components/shared/Heading";
+import HeroTeam from "../components/Home/HeroTeam";
 const Team = () => {
+  const props = { Heading: "MEET OUR TEAM" };
   const [order, setorder] = useState("Core Secretariat");
+  const [imgUrlIdx, setImgUrlIdx] = useState(0);
+
+  useEffect(() => {
+    const changeImgUrl = () => {
+      setImgUrlIdx((idx) => (idx == heroTeam.length - 1 ? 0 : idx + 1));
+    };
+    const intrval = setInterval(changeImgUrl, 2000);
+    return () => {
+      clearInterval(intrval);
+    };
+  }, []);
   return (
     <div>
       <Navbar order={order} setOrder={setorder} selectList={true} />
       <div className={styles.container}>
-        <div className={styles.head}>
+        <HeroTeam heading={order} order={order} setOrder={setorder} selectList={true} />
+        {/* <div className={styles.head}>
           <div className={styles.head2}>
-            <img
-              src="https://cdn.create.vista.com/api/media/medium/677587082/stock-photo-bachelor-party-multiethnic-best-men-groom-laughing-while-standing-glasses?token="
-              alt="team"
-            />
-            {/* <div className={styles.menu}>
-              <Menu>
-                <MenuButton
-                  as={IconButton}
-                  position="absolute"
-                  top="0"
-                  right="0"
-                  margin="2"
-                  variant="ghost"
-                >
-                  <HamburgerIcon textColor="black" />
-                </MenuButton>
-                <MenuList bgColor="black" color="white">
-                  <MenuOptionGroup
-                    bgColor="black"
-                    color="white"
-                    defaultValue="Core Secretariat"
-                    title="Department"
-                    type="radio"
-                    onChange={(value) => {
-                      console.log(value);
-                      setorder(value);
-                    }}
-                  >
-                    <MenuItemOption
-                      value="Core Secretariat"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Core Secretariat
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="Delegate Affairs"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Delegate Affairs
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="Public Relations"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Public Relations
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="Web Development"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Web Development
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="Hospitality"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Hospitality
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="Finance"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Finance
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="Sponsorship"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Sponsorship
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="Video Editing"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Video Editing
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="Creativity & Designing"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Creativity & Designing
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="Logistics"
-                      bgColor="black"
-                      color="white"
-                    >
-                      Logistics
-                    </MenuItemOption>
-                    <MenuItemOption
-                      value="EB Affairs"
-                      bgColor="black"
-                      color="white"
-                    >
-                      EB Affairs
-                    </MenuItemOption>
-                  </MenuOptionGroup>
-                </MenuList>
-              </Menu>
-            </div> */}
+          <Box
+      sx={{
+        height: "70vh",
+        width: "100%",
+        // background: `url(${HeroImg}),linear-gradient(#4e9f3d, #4E9F3D)`,
+        backgroundImage: `linear-gradient(120deg, rgba(25,26,25,0.9) 71%, rgba(30,81,40,0.8) 97%),url(${heroTeam[imgUrlIdx]})`,
+        
+        backgroundSize: "cover",
+        objectFit:"cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        
+        transition: "backgroundImage ease-in",
+      }}
+   />
           </div>
-          <div className={styles.meet}>
-            <div className={styles.our}>
-                <Heading heading={"Our Team"} />
-            </div>
-          </div>
-        </div>
-        <div className={styles.heading}>
+          
+              
+            
+        </div> */}
+        {/* <div className={styles.heading}>
           <h1>{order}</h1>
-        </div>
+        </div> */}
         <div className={styles.cardrow}>
           <div className={styles.body}>
             {teamdata?.map((item, id) => {

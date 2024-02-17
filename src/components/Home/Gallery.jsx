@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { galleryData } from "../../data/gallery";
 import { Typography } from "@mui/material";
+import Heading from "../shared/Heading";
 const Gallery = () => {
   // const [galleryData, setGalleryData] = useState({ gallery1: [], gallery2: [] });
 
@@ -104,6 +105,7 @@ const Gallery = () => {
 
   return (
     <div className={styles.main}>
+      <Heading heading={"Gallery"}/>
       <div>
         <Slider {...settings} className={styles.slider} ref={sliderRef1}>
           {galleryData?.map((item, id) => {

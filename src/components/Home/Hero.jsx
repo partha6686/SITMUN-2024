@@ -188,19 +188,21 @@ const Hero = () => {
               >
                 Register Now
               </Button>
-              <Button
-                variant="contained"
-                sx={{
-                  padding: "12px 18px",
-                  borderRadius: "28px",
-                  fontSize: 16,
-                  fontWeight: "600",
-                }}
-                color="success"
-                href="#about"
-              >
-                Know More
-              </Button>
+              
+                <Button
+                  variant="contained"
+                  sx={{
+                    padding: "12px 18px",
+                    borderRadius: "28px",
+                    fontSize: 16,
+                    fontWeight: "600",
+                  }}
+                  color="success"
+                  href="#about"
+                >
+                  Know More
+                </Button>
+              
             </Stack>
           </Stack>
         </Box>

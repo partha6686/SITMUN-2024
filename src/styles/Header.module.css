@@ -7,4 +7,20 @@
     color: transparent;
     font-family: 'Monoton', serif;
     text-align: center;
+    font-size: 55px;
+}
+@media screen and (max-width:770px) {
+    .head h1{
+        font-size: 55px;
+    }
+}
+@media screen and (max-width:500px) {
+    .head h1{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:340px) {
+    .head h1{
+        font-size: 34px;
+    }
 }
