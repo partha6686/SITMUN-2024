@@ -32,148 +32,23 @@ const pages = [
   { name: "Home", location: "/" },
   { name: "Teams", location: "/teams" },
   { name: "Committee", location: "/committee" },
-  { name: "Register", location: "/committee" },
+  { name: "Register", location: "https://docs.google.com/forms/d/e/1FAIpQLSc1RWEL-wyxqGATGtESWUhJFOZ3xCQ89nWzZLWG7Bhow337Bg/viewform" },
 ];
 
-// export default function Navbar() {
-//   const [anchorElNav, setAnchorElNav] = React.useState(null);
-//   const [anchorElUser, setAnchorElUser] = React.useState(null);
-
-//   const navigate = useNavigate();
-
-//   const handleOpenNavMenu = (event) => {
-//     setAnchorElNav(event.currentTarget);
-//   };
-//   const handleOpenUserMenu = (event) => {
-//     setAnchorElUser(event.currentTarget);
-//   };
-
-//   const handleCloseNavMenu = () => {
-//     setAnchorElNav(null);
-//   };
-
-//   const handleCloseUserMenu = () => {
-//     setAnchorElUser(null);
-//   };
-
-//   return (
-//     <Container
-//       sx={{
-//         flexGrow: 0,
-//         background: "transparent",
-//         "& .MuiPaper-root": {
-//           maxHeight: "100vh",
-//         },
-//       }}
-//       maxWidth="lg"
-//     >
-//       <AppBar
-//         position="fixed"
-//         sx={{ background: "transparent", boxShadow: "none", color: "black" }}
-//       >
-//         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-//           <Button
-//             sx={{
-//               paddingLeft: "3vw",
-//             }}
-//             onClick={() => navigate("/")}
-//           >
-//             <img src={Logo} alt="" width={"100vw"} />
-//           </Button>
-//           <IconButton
-//             size="large"
-//             edge="end"
-//             color="inherit"
-//             aria-label="menu"
-//             onClick={handleOpenUserMenu}
-//             sx={{ marginLeft: "auto", color: "white" }}
-//           >
-//             <MenuIcon />
-//           </IconButton>
-//         </Toolbar>
-//         <Box
-//           sx={{
-//             background: "transparent",
-//           }}
-//         >
-//           <Menu
-//             anchorEl={anchorElNav}
-//             anchorOrigin={{
-//               vertical: "bottom",
-//               horizontal: "right",
-//             }}
-//             transformOrigin={{
-//               vertical: "top",
-//               horizontal: "right",
-//             }}
-//             open={Boolean(anchorElUser)}
-//             onClose={handleCloseUserMenu}
-//             sx={{
-//               py: 0,
-//               flexGrow: 0.3,
-//               "& .MuiList-root": {
-//                 minWidth: { xs: "80vw", sm: "40vw", md: "25vw" },
-//               },
-//               "& .MuiPaper-root": {
-//                 border: "2px solid ff3cac !important",
-//                 borderRadius: ".75rem !important",
-//                 background: "##00ba47",
-//                 backgroundImage:
-//                   "linear-gradient(225deg, #3fff3c 0%, #00ba47 50%, #2d4f00 100%)",
-//               },
-//             }}
-//           >
-//             <Stack
-//               direction={"column"}
-//               spacing={2}
-//               sx={{
-//                 p: "1rem",
-
-//                 "& li": {
-//                   p: ".5rem",
-//                 },
-//                 "& li:hover": {
-//                   p: ".5rem",
-//                   "& > h6": {
-//                     color: "#014017",
-//                     fontWeight: "bolder",
-//                   },
-//                   borderRadius: ".5rem",
-//                   backgroundColor: "rgba(255, 255, 255, 0.1)",
-//                 },
-//               }}
-//             >
-//               {pages.map((setting, i) => (
-//                 <MenuItem
-//                   key={i}
-//                   onClick={() => navigate(`${setting.location}`)}
-//                 >
-//                   <Typography
-//                     variant="subtitle1"
-//                     sx={{
-//                       textAlign: "center",
-//                       color: "#fff",
-//                       fontWeight: 500,
-//                       width: "100%",
-//                     }}
-//                   >
-//                     {setting.name}
-//                   </Typography>
-//                 </MenuItem>
-//               ))}
-//             </Stack>
-//           </Menu>
-//         </Box>
-//       </AppBar>
-//     </Container>
-//   );
-// }
 export default function Navbar({ order, setOrder, selectList = false }) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const navigate = useNavigate();
-
+  const handleMenuClick = (location) => {
+    if (location.startsWith("http")) {
+      // External link
+      window.open(location, "_blank");
+    } else {
+      // Internal link
+      navigate(location);
+    }
+  };
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -272,12 +147,14 @@ export default function Navbar({ order, setOrder, selectList = false }) {
                     minWidth: 120,
                     color: "#fff",
                     display: { xs: "none", md: "block" },
+                    fontFamily:"comfortaa,cursive"
                   }}
                   size="small"
                 >
                   <InputLabel
                     htmlFor="demo-dialog-native"
-                    sx={{ color: "#fff" }}
+                    sx={{ color: "#fff" ,fontFamily:"comfortaa,cursive"}}
+                    
                   >
                     Department
                   </InputLabel>
@@ -289,6 +166,7 @@ export default function Navbar({ order, setOrder, selectList = false }) {
                       <OutlinedInput label="Position" id="demo-dialog-native" />
                     }
                     sx={{ color: "#fff" }}
+                    fontFamily={"comfortaa,cursive"}
                   >
                     <option value={"Core Secretariat"}>Core Secretariat</option>
                     <option value={"Delegate Affairs"}>Delegate Affairs</option>
@@ -439,9 +317,8 @@ export default function Navbar({ order, setOrder, selectList = false }) {
               "& .MuiPaper-root": {
                 border: "2px solid ff3cac !important",
                 borderRadius: ".75rem !important",
-                background: "#00ba47",
-                backgroundImage:
-                  "linear-gradient(225deg, #3fff3c 0%, #00ba47 50%, #2d4f00 100%)",
+                background: "rgb(0,6,1)",
+          backgroundImage: "linear-gradient(90deg, rgba(0,6,1,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 68%, rgba(5,37,8,1) 100%);",
               },
             }}
           >
@@ -468,7 +345,7 @@ export default function Navbar({ order, setOrder, selectList = false }) {
               {pages.map((setting, i) => (
                 <MenuItem
                   key={i}
-                  onClick={() => navigate(`${setting.location}`)}
+                  onClick={() => handleMenuClick(setting.location)}
                 >
                   <Typography
                     variant="subtitle1"
@@ -477,6 +354,7 @@ export default function Navbar({ order, setOrder, selectList = false }) {
                       color: "#fff",
                       fontWeight: 500,
                       width: "100%",
+                      fontFamily:"comfortaa,cursive"
                     }}
                   >
                     {setting.name}

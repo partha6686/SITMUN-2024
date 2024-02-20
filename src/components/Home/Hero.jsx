@@ -119,21 +119,21 @@ const Hero = () => {
 
             <Typography
               variant="h1"
-              fontFamily={"DM Sans"}
+              fontFamily={"comfortaa,cursive"}
               fontWeight={900}
               textAlign={"center"}
               color={"#D8E9A8"}
               sx={{ letterSpacing: "4px" }}
               data-aos="zoom-in"
             >
-              <span style={{ color: "#4E9F3D", fontFamily: "DM Sans" }}>
+              <span style={{ color: "#4E9F3D", fontFamily:"comfortaa,cursive" }}>
                 SIT
               </span>
               MUN
             </Typography>
             <Typography
               variant="h1"
-              fontFamily={"DM Sans"}
+              fontFamily={"comfortaa,cursive"}
               fontWeight={600}
               textAlign={"center"}
               color={"#D8E9A8"}
@@ -183,21 +183,26 @@ const Hero = () => {
                   borderRadius: "28px",
                   fontSize: 16,
                   fontWeight: "600",
+                  fontFamily:"comfortaa,cursive"
                 }}
-                color="success"
+                className="herbtn"
+                
               >
                 Register Now
               </Button>
               
                 <Button
                   variant="contained"
+                 
                   sx={{
                     padding: "12px 18px",
                     borderRadius: "28px",
                     fontSize: 16,
                     fontWeight: "600",
+                    fontFamily:"comfortaa,cursive"
                   }}
-                  color="success"
+                  // color="success"
+                  className="herbtn"
                   href="#about"
                 >
                   Know More
@@ -220,12 +225,13 @@ export const SideBar = () => {
       direction={"column-reverse"}
       height={"100%"}
       justifyContent={"space-around"}
+      fontFamily={"comfortaa,cursive"}
       sx={{ display: { md: "flex", sm: "none", xs: "none" } }}
     >
       <NavLink to={"/"}>
         <Typography
           variant="h6"
-          fontFamily={"DM Serif Display"}
+          fontFamily={"comfortaa,cursive"}
           className="navLink"
         >
           Home
@@ -235,7 +241,7 @@ export const SideBar = () => {
       <NavLink to={"/teams"}>
         <Typography
           variant="h6"
-          fontFamily={"DM Serif Display"}
+          fontFamily={"comfortaa,cursive"}
           className="navLink"
         >
           Teams
@@ -245,7 +251,7 @@ export const SideBar = () => {
       <NavLink to={"/committee"}>
         <Typography
           variant="h6"
-          fontFamily={"DM Serif Display"}
+          fontFamily={"comfortaa,cursive"}
           className="navLink"
         >
           Committee

@@ -3,6 +3,7 @@ body {
     padding: 0;
     background-color: #000;
     padding-bottom: 100px;
+    font-family: "comfortaa,cursive"
   }
   
   #contact {
@@ -34,7 +35,7 @@ body {
   .form-horizontal {
     /*float: left;*/
     max-width: 400px;
-    font-family: 'Lato';
+    font-family:"comfortaa,cursive";
     font-weight: 400;
   }
   

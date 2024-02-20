@@ -23,7 +23,7 @@ const About = () => {
       >
         <Box className="info">
           <Heading heading={"About us"} />
-          <Typography variant="body1">
+          <Typography variant="body1" fontFamily="comfortaa,cursive" >
             <span className="movie-night">Model United Nations</span> is a
             simulation that imitates the procedures of the United Nations
             finding solutions for real-world problems, done through an academic
@@ -43,12 +43,12 @@ const About = () => {
         </Box>
         <Swiper className="swiper">
           <div className="swiper-wrapper">
-            <SwiperSlide className="swiper-slide"></SwiperSlide>
+            <SwiperSlide className="swiper-slide" style={{height:"100%"}}></SwiperSlide>
           </div>
         </Swiper>
       </Stack>
 
-      <ul className="circles">
+      {/* <ul className="circles">
         <li></li>
         <li></li>
         <li></li>
@@ -59,7 +59,7 @@ const About = () => {
         <li></li>
         <li></li>
         <li></li>
-      </ul>
+      </ul> */}
     </section>
   );
 };

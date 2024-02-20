@@ -26,8 +26,8 @@ body {
 
 .testimonial_bubble {
   position: relative;
-  background: rgb(102, 105, 109);
-  background: linear-gradient(147deg, #166d3b 0%, #000000 74%);;
+  background: rgb(0,6,0);
+background: linear-gradient(90deg, rgba(0,6,0,1) 21%, rgba(0,6,1,1) 79%, rgba(6,44,13,1) 100%);
   border-radius: 20px;
   text-align: center;
   box-shadow: 0 0 10px 0 #555;

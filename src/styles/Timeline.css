@@ -21,20 +21,23 @@
   .timeline-header__title {
     color: #fff;
     font-size: 46px;
-    font-family: 'Your Font Family', sans-serif; /* Replace with your chosen font */
+    font-family: "comfortaa,cursive";
     font-weight: normal;
     margin: 0;
   }
   
   .timeline-header__subtitle {
     color: rgba(255, 255, 255, 0.5);
-    font-family: 'Your Font Family', sans-serif; /* Replace with your chosen font */
+    font-family: "comfortaa,cursive";
     font-size: 16px;
     letter-spacing: 5px;
     margin: 10px 0 0 0;
     font-weight: normal;
   }
-  
+  .timel{
+    background: rgb(0,6,0);
+background: linear-gradient(90deg, rgba(0,6,0,1) 21%, rgba(0,6,1,1) 79%, rgba(1,46,9,1) 100%);
+  }
   /* Timeline Items */
   .timeline {
     display: flex;
@@ -64,7 +67,7 @@
     position: absolute;
     color: rgba(255, 255, 255, 0.5);
     font-size: 13px;
-    font-family: 'Your Font Family', sans-serif; /* Replace with your chosen font */
+    font-family: "comfortaa,cursive";
     border-left: 2px solid rgba(255, 255, 255, 0.5);
     top: 70%;
     margin-top: -5px;

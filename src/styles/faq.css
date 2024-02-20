@@ -2,7 +2,7 @@
   background-color: #191A19;
   padding: 10vh 10vw;
   /* margin: 20px auto; */
-  font-family: sans-serif;
+  font-family:"comfortaa,cursive";
 }
 .faq h2 {
   font-size: 40px;
@@ -47,6 +47,7 @@
   font-size: 16px;
   margin-bottom: 0;
   text-align: justify;
+
 }
 .faq .active {
   animation: faq-active 0.5s;
@@ -58,6 +59,14 @@
   animation-fill-mode: forwards;
   overflow: hidden;
 }
+.faq-link {
+  color: #4e9f3d !important;
+  text-decoration: none;
+}
+.faq-link:hover {
+  text-decoration: underline;
+}
+
 @keyframes faq-active {
   0% {
     opacity: 0;

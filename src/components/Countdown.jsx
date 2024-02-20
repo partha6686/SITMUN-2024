@@ -4,12 +4,15 @@ import styles from "../styles/Countdown.module.css";
 import Heading from "./shared/Heading";
 const CalcTimeDelta = () => {
   const targetDate = "2024-03-27T11:59:59";
+  // const targetDate = "2024-02-17T14:26:59";
 
   const calculateTimeDelta = () => {
     const now = new Date().getTime();
     const target = new Date(targetDate).getTime();
-    const delta = target - now;
-
+    let delta = target - now;
+    if (delta < 0) {
+      delta = 0; 
+    }
     const days = Math.floor(delta / (1000 * 60 * 60 * 24));
     const hours = Math.floor(
       (delta % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)

@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
 body{
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family:"comfortaa,cursive";
   font-weight:300;
   background-color:lightblue;
   color:#FFF;
@@ -77,7 +77,7 @@ height:100%;
   text-align:center;
 }
 .footer h3{
-	font-family: 'Helvetica';
+	font-family:"comfortaa,cursive";
 	font-size: 30px;
 	font-weight: 100;
 	margin-top:70px;
@@ -87,6 +87,7 @@ height:100%;
   /* padding: 20px; */
   text-align: center;
   margin: 40px 0px -20px 0px;
+  font-family:"comfortaa,cursive"
 }
 .hr{
   margin: 51px 0px -17px 0px;
