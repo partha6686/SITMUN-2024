@@ -109,7 +109,7 @@ export default function Footer() {
                 <a href="https://www.instagram.com/sitmunbbsr/?igsh=bDBuMG1lcWJwYWtz" target="_blank">
     <Instagram color="#a7fd6a" />
   </a>
-  <a href="https://wa.me/8763315622" target="_blank">
+  <a href="https://wa.me/+918763315622" target="_blank">
     <WhatsApp color="#a7fd6a" />
   </a>
                 
