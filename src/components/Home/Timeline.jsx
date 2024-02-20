@@ -19,8 +19,8 @@ import { timelineOppositeContentClasses } from "@mui/lab/TimelineOppositeContent
 //     },
 //   }
 // }))
-
 import "../../styles/circles.css"
+import "../../styles/Timeline.css"
 
 const TimelineView = () => {
   return (
@@ -176,9 +176,8 @@ function EventDetail({ heading, details, odd }) {
           borderRight: odd % 2 != 0 ? "0" : "3px solid rgba(78,159,61,1)",
           borderLeft: odd % 2 == 0 ? "0" : "3px solid rgba(78,159,61,1)",
           boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-          background:
-            "linear-gradient(137deg, rgba(78,159,61,1) 0%, rgba(0,0,0,1) 100%)",
         }}
+        className="timel"
       >
         <Typography
           variant="h5"
@@ -214,10 +213,9 @@ function EventDetailMobile({ heading, details, odd, date }) {
           borderRight: odd % 2 != 0 ? "0" : "3px solid rgba(78,159,61,1)",
           borderLeft: odd % 2 == 0 ? "0" : "3px solid rgba(78,159,61,1)",
           boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-          background:
-            "linear-gradient(137deg, rgba(78,159,61,1) 0%, rgba(0,0,0,1) 100%)",
             width: '100%'
         }}
+        className="timel"
       >
         <Typography
           variant="h5"

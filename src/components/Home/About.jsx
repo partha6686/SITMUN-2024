@@ -48,7 +48,7 @@ const About = () => {
         </Swiper>
       </Stack>
 
-      <ul className="circles">
+      {/* <ul className="circles">
         <li></li>
         <li></li>
         <li></li>
@@ -59,7 +59,7 @@ const About = () => {
         <li></li>
         <li></li>
         <li></li>
-      </ul>
+      </ul> */}
     </section>
   );
 };

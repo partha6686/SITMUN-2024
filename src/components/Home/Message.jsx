@@ -71,11 +71,13 @@ const Message = () => {
       sx={{
         display: "flex",
         justifyContent: "center",
+        
         alignItems: "center",
         background: "#000",
         padding: "10vh 5vw",
         position: 'relative'
       }}
+      
     >
       <Grid
         container
@@ -84,13 +86,15 @@ const Message = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          background: `linear-gradient(130deg, rgb(0, 0, 0) 0%, rgb(0, 225, 0, 0.28) 100%)`,
+          background: "rgb(0,6,1)",
+          backgroundImage: "linear-gradient(90deg, rgba(0,6,1,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 68%, rgba(5,37,8,1) 100%);",
           backdropFilter: 'blur(30px)',
           borderRadius: '2rem',
           padding: '2vh 0',
           zIndex: 10,
           boxShadow: '0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset, 0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12)'
         }}
+        // className="msg"
       >
         <Grid
           item
@@ -122,7 +126,7 @@ const Message = () => {
               textAlign: "center",
               padding: "5vh 2vw",
               lineHeight: '1.1rem',
-              fontFamily: 'Poppins'
+              fontFamily:"comfortaa,cursive"
             }}
           >
             <Typography variant="body1" fontFamily="comfortaa,cursive">
@@ -137,7 +141,7 @@ const Message = () => {
           </Grid>
       </Grid>
 
-      <ul className="circles">
+      {/* <ul className="circles">
         <li></li>
         <li></li>
         <li></li>
@@ -148,7 +152,7 @@ const Message = () => {
         <li></li>
         <li></li>
         <li></li>
-      </ul>
+      </ul> */}
     </Box>
   );
 };

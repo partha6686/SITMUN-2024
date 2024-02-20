@@ -12,7 +12,10 @@
 .active h6 {
     color: greenyellow;
 }
-
+.herbtn{
+    background: rgb(17,19,17);
+background: linear-gradient(90deg, rgba(17,19,17,1) 0%, rgba(2,22,6,1) 48%, rgba(4,56,14,1) 95%);
+}
 /* a {
     text-decoration: none;
 } */

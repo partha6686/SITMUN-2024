@@ -1,16 +1,16 @@
 import * as React from "react";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
+import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
-import { Facebook, Instagram, Twitter } from "@mui/icons-material";
+import { Facebook, Instagram, Twitter, WhatsApp } from "@mui/icons-material";
 import { Box, Stack, TextField, Button } from "@mui/material";
 import Logo from "../../assets/logo.png";
 
 import { useState } from "react";
 
 import "../../styles/about.css";
-
+import "../../styles/footer.css";
 export default function Footer() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -35,7 +35,8 @@ export default function Footer() {
     <Box
       component="footer"
       sx={{
-        background: "-webkit-linear-gradient(30deg, #0a3900 50%, #072a00 50%)",
+        background: "rgb(0,6,1)",
+        backgroundImage: "linear-gradient(90deg, rgba(0,6,1,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 68%, rgba(5,37,8,1) 100%);",
         p: 6,
         boxShadow:
           "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset",
@@ -91,8 +92,8 @@ export default function Footer() {
               >
                 <Link to="/">Home</Link>
                 <Link to="/teams">Teams</Link>
-                <Link to="/committe">Committee</Link>
-                <Link>Register</Link>
+                <Link to="/committee">Committee</Link>
+                <a  href="https://docs.google.com/forms/d/e/1FAIpQLSc1RWEL-wyxqGATGtESWUhJFOZ3xCQ89nWzZLWG7Bhow337Bg/viewform" target="_blank">Register</a>
               </Stack>
             </Stack>
             <Stack spacing={1}>
@@ -105,9 +106,13 @@ export default function Footer() {
                 alignItems={"center"}
                 justifyContent={"center"}
               >
-                <Facebook color="#a7fd6a" />
-                <Instagram color="#a7fd6a" />
-                <Twitter color="#a7fd6a" />
+                <a href="https://www.instagram.com/sitmunbbsr/?igsh=bDBuMG1lcWJwYWtz" target="_blank">
+    <Instagram color="#a7fd6a" />
+  </a>
+  <a href="https://wa.me/8763315622" target="_blank">
+    <WhatsApp color="#a7fd6a" />
+  </a>
+                
               </Stack>
             </Stack>
           </Stack>
@@ -120,16 +125,16 @@ export default function Footer() {
               Contact us
             </Typography>
             <Stack direction={"column"} spacing={0} alignItems={"center"}>
-              <Typography variant="body1" color={"#a7fd6a"}fontFamily="comfortaa,cursive">
+              <Typography variant="body1" color={"#a7fd6a"}fontFamily={"comfortaa,cursive"}>
                 Deputy Secretary General
               </Typography>
-              <Typography variant="body1" color={"#a7fd6a"}fontFamily="comfortaa,cursive">
+              <Typography variant="body1" color={"#a7fd6a"}fontFamily={"comfortaa,cursive"}>
                 SIT MUN 2024
               </Typography>
-              <Typography variant="body1" color={"#a7fd6a"}fontFamily="comfortaa,cursive">
+              <Typography variant="body1" color={"#a7fd6a"}fontFamily={"comfortaa,cursive"}>
                 Silicon Institute of Technology
               </Typography>
-              <Typography variant="body1" color={"#a7fd6a"}fontFamily="comfortaa,cursive">
+              <Typography variant="body1" color={"#a7fd6a"}fontFamily={"comfortaa,cursive"}>
                 Email:- meta.academics@silicon.ac.in
               </Typography>
               <Typography variant="body1" color={"#a7fd6a"}fontFamily="comfortaa,cursive">
@@ -178,14 +183,15 @@ export default function Footer() {
           </Stack>
           <Button
             sx={{
-              background: "rgb(0, 180, 0)",
+              // background: "rgb(0, 180, 0)",
               color: "white",
               fontFamily:"comfortaa,cursive",
               transition: "all 0.5s ease-out",
-
+              background: "rgb(17,19,17)",
+                backgroundImage: "linear-gradient(90deg, rgba(17,19,17,1) 0%, rgba(2,22,6,1) 48%, rgba(4,56,14,1) 95%)",
               "&:hover": {
                 boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
-                background: "rgb(0, 180, 0)",
+                
                 borderRadius: "3rem",
               },
             }}
@@ -196,7 +202,7 @@ export default function Footer() {
           </Button>
         </Stack>
       </Stack>
-      <ul className="circles">
+      {/* <ul className="circles">
         <li></li>
         <li></li>
         <li></li>
@@ -207,7 +213,7 @@ export default function Footer() {
         <li></li>
         <li></li>
         <li></li>
-      </ul>
+      </ul> */}
       <center><hr className="hr"/></center>
       <div className="copy" ><p>&copy; Copyright 2024 SITMUN.</p></div>
     </Box>

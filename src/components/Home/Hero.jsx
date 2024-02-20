@@ -185,7 +185,7 @@ const Hero = () => {
                   fontWeight: "600",
                   fontFamily:"comfortaa,cursive"
                 }}
-                color="success"
+                className="herbtn"
                 
               >
                 Register Now
@@ -201,7 +201,8 @@ const Hero = () => {
                     fontWeight: "600",
                     fontFamily:"comfortaa,cursive"
                   }}
-                  color="success"
+                  // color="success"
+                  className="herbtn"
                   href="#about"
                 >
                   Know More

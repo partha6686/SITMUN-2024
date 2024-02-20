@@ -27,8 +27,10 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    background: linear-gradient(90deg, rgba(45, 56, 45, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(7, 67, 19, 1) 100%);
+    background: rgb(0,6,0);
+background: linear-gradient(90deg, rgba(0,6,0,1) 21%, rgba(0,6,1,1) 79%, rgba(1,46,9,1) 100%);
     box-shadow: rgba(0, 251, 51, 0.25) 0px 20px 200px, rgba(0, 251, 51, 0.12) 0px -12px 30px, rgba(0, 251, 51, 0.12) 0px 4px 6px, rgba(0, 251, 51, 0.17) 0px 12px 13px, rgba(0, 251, 51, 0.09) 0px -3px 5px;
+    
     text-align: center;
     color: #ffffff;
     justify-content: center;
