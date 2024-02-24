@@ -189,7 +189,8 @@ const Hero = () => {
                   fontFamily:"comfortaa,cursive"
                 }}
                 className="herbtn"
-                
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc1RWEL-wyxqGATGtESWUhJFOZ3xCQ89nWzZLWG7Bhow337Bg/viewform"
+                target="_blank"
               >
                 Register Now
               </Button>
