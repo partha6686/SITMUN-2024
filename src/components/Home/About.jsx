@@ -35,9 +35,9 @@ const About = () => {
             participants develop skills including public speaking, presentation,
             persuasion, situation analysis, research, and critical thinking.
             SITMUN is an inter-collegiate conference conducted every year.
-            Students from SiliconTech and other institutes across Odisha,
-            participate as delegates in different committees. From each
-            committee the best speakers are awarded.
+            Students from Silicon University and other institutions across and outside Odisha 
+            enthusiastically participate as a represented delegate 
+            in various committees.
           </Typography>
           {/* <button className="btn">Join</button> */}
         </Box>

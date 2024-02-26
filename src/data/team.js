@@ -21,11 +21,11 @@ export const teamdata = [
     Year: "4th",
     desig: "Director General",
     dept: "Core Secretariat",
-    url: "https://ik.imagekit.io/b5egisrd9/toWEBP/357467-Shubhadeep-Dash---Shubhadeep-Dash.webp?updatedAt=1707723410828",
+    url: "https://ik.imagekit.io/0oohdkbtxa/357467-Shubhadeep-Dash---Shubhadeep-Dash.webp?updatedAt=1708954852646",
   },
   {
     Timestamp: "2024/01/24 10:29:30 pm GMT+5:30",
-    name: "NAKKINA BABA SAI",
+    name: "Nakkina Baba Sai",
     Year: "4th Year",
     desig: "Director General OIOS",
     dept: "Core Secretariat",
@@ -41,7 +41,7 @@ export const teamdata = [
   },
   {
     Timestamp: "2024/01/21 8:24:39 am GMT+5:30",
-    name: "BANSHITA SEN",
+    name: "Banshita Sen",
     Year: "2nd Year",
     desig: "Deputy Director",
     dept: "Delegate Affairs",
@@ -89,7 +89,7 @@ export const teamdata = [
   },
   {
     Timestamp: "2024/01/26 10:56:42 am GMT+5:30",
-    name: "SUBHOJEET BISWAS",
+    name: "Subhojeet Biswas",
     Year: "2nd",
     desig: "Deputy Director",
     dept: "Sponsorship",
@@ -106,7 +106,7 @@ export const teamdata = [
   },
   {
     Timestamp: "2024/01/21 10:10:28 am GMT+5:30",
-    name: "S.MANOHAR",
+    name: "S.Manohar",
     Year: "3RD",
     desig: "Director",
     dept: "Logistics",
@@ -124,7 +124,7 @@ export const teamdata = [
     Timestamp: "2024/01/22 1:13:17 am GMT+5:30",
     name: "Navneet Singh",
     Year: "3rd",
-    desig: "Director",
+    desig: "Auditor",
     dept: "Finance",
     url: "https://ik.imagekit.io/b5egisrd9/toWEBP/612135-IMG-20231022-WA0068---Navneet-Singh.webp?updatedAt=1707723414376",
   },
@@ -146,7 +146,7 @@ export const teamdata = [
   },
   {
     Timestamp: "2024/01/22 9:44:51 pm GMT+5:30",
-    name: "ARUNIMA MOHAPATRA",
+    name: "Arunima Mohapatra",
     Year: "3rd",
     desig: "Director",
     dept: "Delegate Affairs",
