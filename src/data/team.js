@@ -193,14 +193,7 @@ export const teamdata = [
     url: "https://ik.imagekit.io/b5egisrd9/toWEBP/300485-IMG_20230429_224730_851---Arpita-Behera.webp?updatedAt=1707723410843",
   },
 
-  {
-    Timestamp: "2024/01/24 10:29:30 pm GMT+5:30",
-    name: "Amlan Jyoti Prakash",
-    Year: "4th Year",
-    desig: "USG",
-    dept: "Video Editing",
-    url: "https://ik.imagekit.io/0oohdkbtxa/WhatsApp%20Image%202024-02-13%20at%2019.38.42.jpeg?updatedAt=1707833398187",
-  },
+  
   {
     Timestamp: "2024/01/24 10:29:30 pm GMT+5:30",
     name: "Swaraj Kumar Padhi",
@@ -213,7 +206,7 @@ export const teamdata = [
     Timestamp: "2024/01/20 11:56:45 pm GMT+5:30",
     name: "Muskan Kumari",
     Year: "4th",
-    desig: "USG",
+    desig: "Under Secretary General",
     dept: "Hospitality",
     url: "https://ik.imagekit.io/b5egisrd9/toWEBP/335471-IMG_7394---Muskan-kumari.webp?updatedAt=1707723410850",
   },
@@ -221,7 +214,7 @@ export const teamdata = [
     Timestamp: "2024/01/22 9:31:22 pm GMT+5:30",
     name: "Anubhav Mohanty",
     Year: "4th",
-    desig: "USG",
+    desig: "Under Secretary General",
     dept: "Public Relations",
     url: "https://ik.imagekit.io/b5egisrd9/toWEBP/478249-WhatsApp-Image-2024-01-22-at-21.30.13_745420b2---Anubhav-Mohanty.webp?updatedAt=1707723413641",
   },
@@ -229,7 +222,7 @@ export const teamdata = [
     Timestamp: "2024/01/23 2:16:42 pm GMT+5:30",
     name: "Abinash Samal",
     Year: "4th",
-    desig: "USG",
+    desig: "Under Secretary General",
     dept: "Sponsorship",
     url: "https://ik.imagekit.io/b5egisrd9/toWEBP/358032-20240123_141548---abinash-samal.webp?updatedAt=1707723410670",
   },
@@ -241,4 +234,12 @@ export const teamdata = [
     dept: "Delegate Affairs",
     url: "https://ik.imagekit.io/b5egisrd9/toWEBP/253781-IMG-20240122-WA0031---Sreelaxmi-Sukhari.webp?updatedAt=1707723410830",
   },
+  {
+    Timestamp: "2024/01/24 10:29:30 pm GMT+5:30",
+    name: "Amlan Jyoti Prakash",
+    Year: "4th Year",
+    desig: "Under Secretary General",
+    dept: "Video Editing",
+    url: "https://ik.imagekit.io/0oohdkbtxa/WhatsApp%20Image%202024-02-13%20at%2019.38.42.jpeg?updatedAt=1707833398187",
+  }
 ];
