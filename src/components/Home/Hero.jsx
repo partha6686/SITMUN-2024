@@ -74,7 +74,7 @@ const Hero = () => {
                 animation: `hashtag-move 10s linear infinite`,
               }}
             >
-              &nbsp;#REVOLUTIONTHROUGHRESOLUTION
+              &nbsp;REVOLUTION THROUGH RESOLUTION
             </Typography>
           </Box>
         </Stack>
@@ -167,7 +167,7 @@ const Hero = () => {
                     animation: `hashtag-move 10s linear infinite`,
                   }}
                 >
-                  #REVOLUTIONTHROUGHRESOLUTION
+                  REVOLUTION THROUGH RESOLUTION
                 </Typography>
               </Box>
             </Stack>

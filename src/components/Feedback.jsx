@@ -76,7 +76,7 @@ const Feedback = () => {
 
   return (
     <div className={styles.main}>
-      <Heading heading={"WHAT PARTICIPANTS SAID?"} />
+      <Heading heading={"Previous Edition Insights"} />
       <Slider {...settings} ref={sliderRef} className={styles.slider}>
         {feedbackdata?.map((item, id) => (
           <div key={id} className={styles.testimonial}>

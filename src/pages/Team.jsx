@@ -28,34 +28,7 @@ const Team = () => {
       <Navbar order={order} setOrder={setorder} selectList={true} />
       <div className={styles.container}>
         <HeroTeam heading={order} order={order} setOrder={setorder} selectList={true} />
-        {/* <div className={styles.head}>
-          <div className={styles.head2}>
-          <Box
-      sx={{
-        height: "70vh",
-        width: "100%",
-        // background: `url(${HeroImg}),linear-gradient(#4e9f3d, #4E9F3D)`,
-        backgroundImage: `linear-gradient(120deg, rgba(25,26,25,0.9) 71%, rgba(30,81,40,0.8) 97%),url(${heroTeam[imgUrlIdx]})`,
-        
-        backgroundSize: "cover",
-        objectFit:"cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        
-        transition: "backgroundImage ease-in",
-      }}
-   />
-          </div>
-          
-              
-            
-        </div> */}
-        {/* <div className={styles.heading}>
-          <h1>{order}</h1>
-        </div> */}
+      
         <div className={styles.cardrow}>
           <div className={styles.body}>
             {teamdata?.map((item, id) => {

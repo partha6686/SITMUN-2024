@@ -20,10 +20,10 @@ export const feedbackdata=[
         desc:"3rd year, B.Tech" 
     },
     {
-        text:"SITMUN 2023 was the best experience for me though it was my first time but I learned a lot .I got to know many things about the Model United Nations.Everyone helped me to deliver my best. It helped me to enhance my public speaking skills and I learned how to convey things in a diplomatic way. Finally, I would like to mention that we should always wisely choose a country to represent and have a very clear knowledge about that country. All the best and don't stop Mun-ning.        ",
+        text:"SITMUN 2023 was the best experience for me though it was my first time but I learned a lot. I got to know many things about the Model United Nations. Everyone helped me to deliver my best. It helped me to enhance my public speaking skills and I learned how to convey things in a diplomatic way. Finally, I would like to mention that we should always wisely choose a country to represent and have a very clear knowledge about that country. All the best and don't stop Mun-ning.",
 
         url:"https://ik.imagekit.io/0oohdkbtxa/Adityaa_9fKJLss5Uwebp.webp?updatedAt=1707854550720", 
-        auth:"Aditya Pandey        ",
+        auth:"Aditya Pandey",
         desc:"3rd year, B.Tech" 
     },
     {

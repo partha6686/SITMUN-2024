@@ -120,11 +120,12 @@ export default function Footer() {
           <Stack
             justifyContent={"center"}
             alignItems={"center"}
+            
           >
             <Typography variant="h5" fontWeight={"bold"} fontFamily="comfortaa,cursive">
               Contact us
             </Typography>
-            <Stack direction={"column"} spacing={0} alignItems={"center"}>
+            <Stack direction={"column"} spacing={0} alignItems={"center"} fontSize={"1 rem"}>
               <Typography variant="body1" color={"#a7fd6a"}fontFamily={"comfortaa,cursive"}>
                 Deputy Secretary General
               </Typography>
@@ -132,7 +133,7 @@ export default function Footer() {
                 SIT MUN 2024
               </Typography>
               <Typography variant="body1" color={"#a7fd6a"}fontFamily={"comfortaa,cursive"}>
-                Silicon Institute of Technology
+                Silicon University
               </Typography>
               <Typography variant="body1" color={"#a7fd6a"}fontFamily={"comfortaa,cursive"}>
                 Email:- meta.academics@silicon.ac.in
