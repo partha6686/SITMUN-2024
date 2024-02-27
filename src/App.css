@@ -6,3 +6,22 @@
     transform: translate(100%);
   }
 }
+
+.slick-prev:before{
+  position: absolute;
+  left: 10px;
+}
+.slick-next:before{
+  position: absolute;
+  right: 10px;
+}
+.slick-dots{
+  bottom: -50px;
+}
+.slick-dots li button:before {
+  color: #247b27;
+  font-size: 12px;
+}
+.slick-dots li.slick-active button:before{
+  color: #247b27;
+}

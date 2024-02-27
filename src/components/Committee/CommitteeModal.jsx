@@ -2,11 +2,12 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import CloseIcon from "@mui/icons-material/Close";
+import { Button } from "@mui/material";
 
 const style = {
   position: "absolute",
@@ -18,7 +19,7 @@ const style = {
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
-  fontFamily:"comfortaa,cursive"
+  fontFamily: "comfortaa,cursive",
 };
 
 const CommitteeModal = ({ open, setOpen, committee }) => {
@@ -30,40 +31,53 @@ const CommitteeModal = ({ open, setOpen, committee }) => {
       aria-describedby="modal-modal-description"
     >
       <Box sx={style}>
-        <Typography
-          sx={{ color: "#4E9F3D" }}
-          id="modal-modal-title"
-          variant="h6"
-          component="h2"
-        >
-          {committee?.name}
-        </Typography>
+        <Box sx={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center'
+        }}>
+          <Typography
+            sx={{ color: "#4E9F3D" }}
+            id="modal-modal-title"
+            variant="h6"
+            component="h2"
+          >
+            {committee?.name}
+          </Typography>
+          <Button onClick={() => setOpen(false)}>
+            <CloseIcon sx={{ color: 'white' }}/>
+          </Button>
+        </Box>
         <Typography id="modal-modal-description" sx={{ mt: 2, color: "#fff" }}>
           {committee?.body}
         </Typography>
-        <Accordion sx={{bgcolor: "#313131",color: '#fff',boxShadow: "none"}}>
+        <Accordion
+          sx={{ bgcolor: "#313131", color: "#fff", boxShadow: "none" }}
+        >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{color: '#fff'}} />}
+            expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
             aria-controls="panel1-content"
             id="panel1-header"
-            sx={{fontWeight: '600',padding: 0, color: "#4E9F3D" }}
+            sx={{ fontWeight: "600", padding: 0, color: "#4E9F3D" }}
           >
             AGENDA
           </AccordionSummary>
-          <AccordionDetails sx={{padding: 0}}>
+          <AccordionDetails sx={{ padding: 0 }}>
             Releasing soon
           </AccordionDetails>
         </Accordion>
-        <Accordion sx={{bgcolor: "#313131",color: '#fff',boxShadow: "none"}}>
+        <Accordion
+          sx={{ bgcolor: "#313131", color: "#fff", boxShadow: "none" }}
+        >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{color: '#fff'}} />}
+            expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
             aria-controls="panel1-content"
             id="panel1-header"
-            sx={{fontWeight: '600',padding: 0, color: "#4E9F3D" }}
+            sx={{ fontWeight: "600", padding: 0, color: "#4E9F3D" }}
           >
             EBs
           </AccordionSummary>
-          <AccordionDetails sx={{padding: 0}}>
+          <AccordionDetails sx={{ padding: 0 }}>
             Releasing soon
           </AccordionDetails>
         </Accordion>
