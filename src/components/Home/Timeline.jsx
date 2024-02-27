@@ -78,46 +78,46 @@ export default TimelineView;
 
 const eventTimeline = [
   {
-    date: "1st January, 2024",
+    date: "1st January 2024",
     heading: " Early Bird Application",
     details:
-      "Early bird Registration was live. The Conference got Overwhelming response of Registration."
+      " The Conference received an overwhelming response of registration. Early Bird Applications are closed now."
   },
   {
-    date: "17th January, 2024",
+    date: "17th January 2024",
     heading: "Dates Revealed",
     details:
-      "Official dates for SITMUN 2023 are declared now that starts from 28th March 2024 - 30th March,2024",
+      "Official dates for SITMUN 2024 are declared now. The conference dates are 28th March 2024 - 30th March 2024",
   },
   {
-    date: "20th January, 2024",
+    date: "20th January 2024",
     heading: "Committee Declaration",
     details:
-      "Committees were declared for the 2024 edition that include SDG Summit ,UNHRC,DISEC,IP",
+      "Committees were declared for the 2024 edition that include SDG Summit, UNHRC, DISEC, IP",
   },
   {
-    date: "9th February, 2024",
+    date: "9th February 2024",
     heading: "First Round Application",
     details:
-      "First Round Registration is Live Now. Hurry up!,Book your seats now.",
+      "First Round Registration is Live Now. Hurry up!! Book your seats now.",
   },
   {
-    date: "16th February, 2024",
-    heading: "EB Reveal",
+    date: "16th February 2024",
+    heading: "Executive Board Revealed",
     details:
-      "Magnificent EB Panels  came On board for the Conference of the Year.",
+      "Qualified EB Panelist came on board for the Conference of the Year.",
   },
   {
     date: "TBD",
     heading: "To Be Revealed Soon!!!",
     details:
-      "Other event dates will be disclosed soon. Stay tuned to the website or follow our Instagram page to stay updated.",
+      "Other event details will be disclosed soon. Stay tuned to the website or follow our Instagram page to stay updated.",
   },
   {
-    date: "28th March - 30th March ,2024",
+    date: "28th March - 30th March 2024",
     heading: "Event Dates",
     details:
-      "Official dates of SITMUN 2023 are 28th of March to 30th of March, 2024.",
+      "Official dates of SITMUN 2024 are 28th March - 30th March 2024.",
   },
 ];
 

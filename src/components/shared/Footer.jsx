@@ -133,7 +133,7 @@ export default function Footer() {
                 SIT MUN 2024
               </Typography>
               <Typography variant="body1" color={"#a7fd6a"}fontFamily={"comfortaa,cursive"}>
-                Silicon Institute of Technology
+                Silicon University
               </Typography>
               <Typography variant="body1" color={"#a7fd6a"}fontFamily={"comfortaa,cursive"}>
                 Email:- meta.academics@silicon.ac.in

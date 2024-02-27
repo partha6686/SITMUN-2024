@@ -237,7 +237,7 @@ export const teamdata = [
     Timestamp: "2024/01/23 9:23:44 pm GMT+5:30",
     name: "Sreelaxmi Sukhari",
     Year: "4",
-    desig: "USG",
+    desig: "Under Secretary General",
     dept: "Delegate Affairs",
     url: "https://ik.imagekit.io/b5egisrd9/toWEBP/253781-IMG-20240122-WA0031---Sreelaxmi-Sukhari.webp?updatedAt=1707723410830",
   },

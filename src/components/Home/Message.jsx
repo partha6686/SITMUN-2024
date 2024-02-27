@@ -103,7 +103,7 @@ const Message = () => {
             padding: "3vh 0",
           }}
         >
-          <Heading heading={"Message From Seceratary General"} />
+          <Heading heading={"Message From Secretary General"} />
         </Grid>
           <Grid
             item
