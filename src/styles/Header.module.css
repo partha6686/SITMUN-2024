@@ -8,6 +8,7 @@
     font-family: 'Monoton', serif;
     text-align: center;
     font-size: 65px;
+   
 }
 @media screen and (max-width:770px) {
     .head h1{
@@ -16,7 +17,7 @@
 }
 @media screen and (max-width:500px) {
     .head h1{
-        font-size: 32px;
+        font-size: 37px;
     }
 }
 @media screen and (max-width:340px) {

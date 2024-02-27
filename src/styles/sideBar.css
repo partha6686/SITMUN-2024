@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 .active {
     /* background: #6e9600; */
     color: #1E5128;
@@ -5,7 +6,10 @@
     text-decoration: none;
     margin-left: 2vw;
 }
-
+.sit{
+    font-family: 'Monoton', serif !important;
+    font-weight: 500 !important;
+}
 .active:hover h6 {
     color: aqua;
 }

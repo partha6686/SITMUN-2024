@@ -74,7 +74,7 @@ const Hero = () => {
                 animation: `hashtag-move 10s linear infinite`,
               }}
             >
-              &nbsp;#REVOLUTIONTHROUGHRESOLUTION
+              &nbsp;REVOLUTION THROUGH RESOLUTION
             </Typography>
           </Box>
         </Stack>
@@ -119,21 +119,24 @@ const Hero = () => {
 
             <Typography
               variant="h1"
-              fontFamily={"comfortaa,cursive"}
+              
               fontWeight={900}
               textAlign={"center"}
               color={"#D8E9A8"}
               sx={{ letterSpacing: "4px" }}
+              className="sit"
               data-aos="zoom-in"
+              
             >
-              <span style={{ color: "#4E9F3D", fontFamily:"comfortaa,cursive" }}>
+              <span style={{ color: "#4E9F3D" }} className="sit">
                 SIT
               </span>
               MUN
             </Typography>
             <Typography
               variant="h1"
-              fontFamily={"comfortaa,cursive"}
+              // fontFamily={"comfortaa,cursive"}
+              className="sit"
               fontWeight={600}
               textAlign={"center"}
               color={"#D8E9A8"}
@@ -164,7 +167,7 @@ const Hero = () => {
                     animation: `hashtag-move 10s linear infinite`,
                   }}
                 >
-                  #REVOLUTIONTHROUGHRESOLUTION
+                  REVOLUTION THROUGH RESOLUTION
                 </Typography>
               </Box>
             </Stack>
@@ -186,7 +189,8 @@ const Hero = () => {
                   fontFamily:"comfortaa,cursive"
                 }}
                 className="herbtn"
-                
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc1RWEL-wyxqGATGtESWUhJFOZ3xCQ89nWzZLWG7Bhow337Bg/viewform"
+                target="_blank"
               >
                 Register Now
               </Button>
