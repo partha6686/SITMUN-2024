@@ -45,7 +45,7 @@ const Feedback = () => {
   };
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     autoplay: false,
     focusOnSelect: true,
@@ -53,8 +53,6 @@ const Feedback = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     vertical: false,
-    // nextArrow: <SampleNextArrow />,
-    // prevArrow: <SamplePrevArrow />,
 
     responsive: [
       {

@@ -14,28 +14,30 @@ const Gallery = () => {
   const sliderRef2 = useRef(null);
 
   const settings = {
-    dots: false,
+    dots: true,
+    arrows: false,
     infinite: true,
-    autoplay: true,
-    autoplaySpeed: 0,
-    speed: 4000,
-    pauseOnHover: true,
-    cssEase: 'linear',
+    autoplay: false,
+    cssEase: "linear",
+    className: "center",
+    centerMode: true,
+    rows: 2,
+    slidesPerRow: 1,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     responsive: [
       {
         breakpoint: 800,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
         },
       },
       {
@@ -56,7 +58,7 @@ const Gallery = () => {
     autoplaySpeed: 0,
     speed: 4000,
     pauseOnHover: true,
-    cssEase: 'linear',
+    cssEase: "linear",
     slidesToShow: 4,
     slidesToScroll: 1,
     rtl: true,
@@ -105,26 +107,20 @@ const Gallery = () => {
 
   return (
     <div className={styles.main}>
-      <Heading heading={"Gallery"}/>
+      <Heading heading={"Gallery"} />
       <div>
         <Slider {...settings} className={styles.slider} ref={sliderRef1}>
-          {galleryData?.map((item, id) => {
-            if (id % 2 == 0) {
-              return (
-                <div key={id} className={styles.sliderItem}>
-                  <img
-                    src={item.url}
-                    alt={`Image ${id}`}
-                    className={styles.sliderimg}
-                  />
-                </div>
-              );
-            } else {
-              return null;
-            }
-          })}
+          {galleryData?.map((item, id) => (
+            <div key={id} className={styles.sliderItem}>
+              <img
+                src={item.url}
+                alt={`Image ${id}`}
+                className={styles.sliderimg}
+              />
+            </div>
+          ))}
         </Slider>
-        <Slider {...settings1} className={styles.slider1} ref={sliderRef2}>
+        {/* <Slider {...settings1} className={styles.slider1} ref={sliderRef2}>
           {galleryData?.map((item, id) => {
             if (id % 2 != 0) {
               return (
@@ -140,7 +136,7 @@ const Gallery = () => {
               return null;
             }
           })}
-        </Slider>
+        </Slider> */}
       </div>
     </div>
   );
