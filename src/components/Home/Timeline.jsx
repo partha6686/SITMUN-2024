@@ -87,7 +87,7 @@ const eventTimeline = [
     date: "17th January 2024",
     heading: "Dates Revealed",
     details:
-      "Official dates for SITMUN 2024 are declared now. The conference dates are 28th March 2024 - 30th March 2024",
+      "Official dates for SITMUN 2024 are declared now. The conference dates are 28th - 30th March 2024",
   },
   {
     date: "20th January 2024",
@@ -103,9 +103,9 @@ const eventTimeline = [
   },
   {
     date: "16th February 2024",
-    heading: "Executive Board Revealed",
+    heading: "Executive Board (EB) Revealed",
     details:
-      "Qualified EB Panelist came on board for the Conference of the Year.",
+      "Qualified EB Panelists came onboard for the Conference.",
   },
   {
     date: "TBD",
