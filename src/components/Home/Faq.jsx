@@ -17,7 +17,7 @@ const Faq = () => {
 
   return (
     <div className="faq">
-      <Heading heading={"HAVE  A  QUESTION?"} />
+      <Heading heading={"HAVE A QUESTION?"} />
       <div className="faq-div">
         <div>
           {allFaq.map((faq) => (

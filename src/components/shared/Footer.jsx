@@ -120,25 +120,24 @@ export default function Footer() {
           <Stack
             justifyContent={"center"}
             alignItems={"center"}
-            
           >
             <Typography variant="h5" fontWeight={"bold"} fontFamily="comfortaa,cursive">
               Contact us
             </Typography>
-            <Stack direction={"column"} spacing={0} alignItems={"center"} fontSize={"1 rem"}>
-              <Typography variant="body1" color={"#a7fd6a"}fontFamily={"comfortaa,cursive"}>
+            <Stack direction={"column"} spacing={0} alignItems={"center"} >
+              <Typography variant="body1" color={"#a7fd6a"}fontFamily={"comfortaa,cursive"} sx={{textWrap: 'nowrap', fontSize: '14px'}}>
                 Deputy Secretary General
               </Typography>
-              <Typography variant="body1" color={"#a7fd6a"}fontFamily={"comfortaa,cursive"}>
-                SIT MUN 2024
+              <Typography variant="body1" color={"#a7fd6a"}fontFamily={"comfortaa,cursive"} >
+                SITMUN 2024
               </Typography>
-              <Typography variant="body1" color={"#a7fd6a"}fontFamily={"comfortaa,cursive"}>
+              <Typography variant="body1" color={"#a7fd6a"}fontFamily={"comfortaa,cursive"} sx={{textWrap: 'nowrap', fontSize: '14px'}}>
                 Silicon University
               </Typography>
-              <Typography variant="body1" color={"#a7fd6a"}fontFamily={"comfortaa,cursive"}>
+              <Typography variant="body1" color={"#a7fd6a"}fontFamily={"comfortaa,cursive"} sx={{textWrap: 'nowrap', fontSize: '14px'}}>
                 Email:- meta.academics@silicon.ac.in
               </Typography>
-              <Typography variant="body1" color={"#a7fd6a"}fontFamily="comfortaa,cursive">
+              <Typography variant="body1" color={"#a7fd6a"}fontFamily="comfortaa,cursive" sx={{textWrap: 'nowrap', fontSize: '14px'}}>
                 Phone:- +91 8763315622
               </Typography>
             </Stack>

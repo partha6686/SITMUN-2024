@@ -3,23 +3,22 @@ import styles from "../../styles/Header.module.css";
 
 const Heading = ({ heading }) => {
   
-  const words = heading.split(" ");
+  // const words = heading.split(" ");
 
   
-  const headingWithSpaces = [];
+  // let headingWithSpaces = "";
 
   
-  words.forEach((word, index) => {
-    headingWithSpaces.push(word); 
-    if (index !== words.length - 1) {
-      
-      headingWithSpaces.push(<>&nbsp;&nbsp;&nbsp;</>);
-    }
-  });
+  // words.forEach((word, index) => {
+  //   headingWithSpaces += word; 
+  //   if (index !== words.length - 1) {
+  //     headingWithSpaces += "<>&nbsp;&nbsp;&nbsp;</>";
+  //   }
+  // });
 
   return (
     <div className={styles.head}>
-      <h1>{headingWithSpaces}</h1>
+      <h1>{heading}</h1>
     </div>
   );
 };
