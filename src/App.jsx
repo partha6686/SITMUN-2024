@@ -5,8 +5,12 @@ import Home from "./pages/Home";
 import Committee from "./pages/Committee";
 import "./App.css";
 import LoadingComponent from "./components/shared/Loader";
+import ReactGA from 'react-ga';
+ 
 
 function App() {
+  const TRACKING_ID = "UA-304386048-1";
+  ReactGA.initialize(TRACKING_ID);
   return (
     <>
       <BrowserRouter>
