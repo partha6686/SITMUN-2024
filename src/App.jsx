@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Team from "./pages/Team";
 import Home from "./pages/Home";
@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
-  
+
   return (
     <>
       <BrowserRouter>
