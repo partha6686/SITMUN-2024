@@ -124,7 +124,6 @@ const Message = () => {
           xs={12}
           sm={9}
           sx={{
-            textAlign: "center",
             padding: "5vh 2vw",
             lineHeight: "1.1rem",
             fontFamily: "comfortaa,cursive",
