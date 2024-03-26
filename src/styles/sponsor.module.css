@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.cont{
+    background-color: black;
+}
+.container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

@@ -9,7 +9,6 @@ import Message from "../components/Home/Message";
 import Faq from "../components/Home/Faq";
 import Gallery from "../components/Home/Gallery";
 import Feedback from "../components/Feedback";
-
 import "../styles/circles.css"
 
 
