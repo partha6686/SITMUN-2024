@@ -17,7 +17,7 @@ const Gallery = () => {
     dots: true,
     arrows: false,
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     cssEase: "linear",
     className: "center",
     centerMode: true,
